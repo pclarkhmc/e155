@@ -1,1 +1,1 @@
-Pierce Clark's collection of Labs and Projects from E155: Microprocessor-based Systems at Harvey Mudd College
+Pierce Clark's collection of Labs and Projects from E155: Microprocessor-based Systems at Harvey Mudd College.
