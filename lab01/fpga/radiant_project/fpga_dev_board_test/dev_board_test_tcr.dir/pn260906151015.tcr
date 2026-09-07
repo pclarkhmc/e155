@@ -1,0 +1,5 @@
+#Start recording tcl command: 9/6/2026 15:07:15
+#Project Location: C:/Users/pclark/Downloads/fpga_dev_board_test; Project name: dev_board_test
+prj_open "C:/Users/pclark/Downloads/fpga_dev_board_test/dev_board_test.rdf"
+prj_close
+#Stop recording: 9/6/2026 15:10:15

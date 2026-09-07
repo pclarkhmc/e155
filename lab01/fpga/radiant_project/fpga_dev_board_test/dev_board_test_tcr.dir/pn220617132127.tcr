@@ -1,0 +1,4 @@
+#Start recording tcl command: 6/17/2022 13:17:01
+#Project Location: //Mac/Home/dev/E155FA22/tutorials/Development_Board_Test/fpga_dev_board_test; Project name: dev_board_test
+prj_open "//Mac/Home/dev/E155FA22/tutorials/Development_Board_Test/fpga_dev_board_test/dev_board_test.rdf"
+#Stop recording: 6/17/2022 13:21:27

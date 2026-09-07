@@ -1,0 +1,6 @@
+#Start recording tcl command: 9/6/2026 20:13:14
+#Project Location: C:/Users/pclark/Downloads/iCE40_demo; Project name: iCE40_demo
+prj_open "C:/Users/pclark/Downloads/iCE40_demo/iCE40_demo.rdf"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 9/6/2026 20:48:49

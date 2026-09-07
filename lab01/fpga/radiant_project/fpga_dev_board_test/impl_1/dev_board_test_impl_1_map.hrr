@@ -1,0 +1,8 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         27        100.0
+                                 IOBUF	          3        100.0
+                                PFUREG	         25        100.0

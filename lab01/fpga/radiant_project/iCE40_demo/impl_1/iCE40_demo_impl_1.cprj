@@ -1,0 +1,8 @@
+-ver "C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd"
+-sver "C:/Users/pclark/Downloads/iCE40_demo/source/impl_1/demo.sv"
+-path "C:/Users/pclark/Downloads/iCE40_demo" "C:/Users/pclark/Downloads/iCE40_demo"
+-top demo
+-isTop
+-a "iCE40UP"
+-t "iCE40UP5K"
