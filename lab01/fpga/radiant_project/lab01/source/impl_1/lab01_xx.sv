@@ -1,8 +1,6 @@
-/* The top level module for lab 1
-Pierce Clark
-pclark@hmc.edu
-9/7/2026
-
+/* 
+Pierce Clark  pclark@hmc.edu
+The top level module for lab 1, contianing clock
 */
 module lab01_xx(
 	input logic [3:0] s,
@@ -13,21 +11,18 @@ module lab01_xx(
 	assign led[0] = ^s;
 	assign led[1] = &s;
 	
-	// Blink led[2] at 2.4hz
-	logic int_osc;
-	logic [31:0] counter;
-	
 	//declare an internal clock
 	//High-frequency oscillator. Generates 48MHz nominal clock, ±10%, with user programmable divider. Can drive global clock network or fabric routing.
+	logic int_osc;
 	HSOSC #(.CLKHF_DIV(2'b01))
 		 hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(int_osc));
 
 	// Counter
-	always_ff @(posedge int_osc) begin
-		if(reset) counter <= 0;
-		else if(counter == 8'd20000000)  counter <= 0;
-		else            counter <= counter + 1;
-	end
+	counter1 #(
+    .DATA_WIDTH (32),
+    .DEPTH      (16)
+) counter(int_osc, reset, led[2]);
+	
 	// Assign LED output
 	assign led[2] = counter[24];
 	

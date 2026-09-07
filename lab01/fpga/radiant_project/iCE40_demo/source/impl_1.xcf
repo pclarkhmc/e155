@@ -21,6 +21,7 @@
 			</Bypass>
 			<File>../../impl_1/iCE40_demo_impl_1.bin</File>
 			<FileTime>09/06/26 20:14:38</FileTime>
+			<JedecChecksum>0x5F4D</JedecChecksum>
 			<MemoryType>Compressed Random Access Memory (CRAM)</MemoryType>
 			<Operation>Fast Configuration</Operation>
 			<Option>
@@ -44,5 +45,6 @@
 	<CableOptions>
 		<CableName>USB2</CableName>
 		<PortAdd>FTUSB-0</PortAdd>
+		<USBID>UPduino v3.1 Location 0014 Serial </USBID>
 	</CableOptions>
 </ispXCF>

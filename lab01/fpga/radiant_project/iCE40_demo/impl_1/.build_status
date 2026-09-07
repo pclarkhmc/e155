@@ -6,14 +6,14 @@
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1788750860">
-            <Task name="Map" build_result="2" update_result="0" update_time="1788750860"/>
+        <Milestone name="Map" build_result="0" build_time="1788809347">
+            <Task name="Map" build_result="0" update_result="2" update_time="1788809347"/>
             <Task name="MapTrace" build_result="0" update_result="2" update_time="1788736716"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1788750871">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1788750871"/>
+        <Milestone name="PAR" build_result="0" build_time="1788809347">
+            <Task name="PAR" build_result="0" update_result="2" update_time="1788809347"/>
             <Task name="PostParVM" build_result="0" update_result="3" update_time="0"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1788750871"/>
+            <Task name="PARTrace" build_result="0" update_result="2" update_time="1788809347"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
         <Milestone name="Synthesis" build_result="2" build_time="1788750857">

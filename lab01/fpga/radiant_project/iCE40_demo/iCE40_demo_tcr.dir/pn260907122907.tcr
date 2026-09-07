@@ -1,0 +1,5 @@
+#Start recording tcl command: 9/7/2026 12:17:01
+#Project Location: C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/iCE40_demo; Project name: iCE40_demo
+prj_open "C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/iCE40_demo/iCE40_demo.rdf"
+prj_close
+#Stop recording: 9/7/2026 12:29:07

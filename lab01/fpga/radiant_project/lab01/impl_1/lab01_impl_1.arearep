@@ -1,0 +1,32 @@
+----------------------------------------------------------------------
+Report for cell lab01_pc.TECH
+Register bits:  32 of 5280 (0.606%)
+I/O cells:      14
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        17          100.0
+                            FD1P3XZ        32          100.0
+                         HSOSC_CORE         1          100.0
+                                 IB         4          100.0
+                               LUT4        27          100.0
+                                 OB        10          100.0
+SUB MODULES
+                            counter         1
+                          seven_seg         1
+                              TOTAL        93
+----------------------------------------------------------------------
+Report for cell counter.v1
+Instance Path : counter1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        17          100.0
+                            FD1P3XZ        32          100.0
+                               LUT4        18           66.7
+                              TOTAL        67
+----------------------------------------------------------------------
+Report for cell seven_seg.v1
+Instance Path : display1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         8           29.6
+                              TOTAL         8
