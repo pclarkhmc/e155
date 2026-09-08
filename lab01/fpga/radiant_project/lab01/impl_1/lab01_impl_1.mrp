@@ -8,7 +8,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2026.1.0.37.0
-Mapped on: Mon Sep  7 12:57:52 2026
+Mapped on: Mon Sep  7 18:34:55 2026
 
 Design Information
 ------------------
@@ -22,18 +22,18 @@ Design Summary
 
    Number of slice registers:  32 out of  5280 (1%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:            62 out of  5280 (1%)
-      Number of logic LUT4s:              28
+   Number of LUT4s:            63 out of  5280 (1%)
+      Number of logic LUT4s:              29
       Number of ripple logic:             17 (34 LUT4s)
-   Number of IO sites used:   14 out of 39 (36%)
-      Number of IO sites used for general PIO: 14
+   Number of IO sites used:   15 out of 39 (38%)
+      Number of IO sites used for general PIO: 15
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 14 out of 36 (39%)
+      Number of IO sites used for PIO+I3C: 15 out of 36 (42%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 14 out of 39 (36%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 15 out of 39 (38%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  1 out of 1 (100%)
@@ -51,15 +51,15 @@ Design Summary
    Number of Clock Enables:  1
       Net VCC_net: 1 loads, 0 SLICEs
    Number of LSRs:  1
-      Net counter1.n177: 17 loads, 17 SLICEs
+      Net counter1.n16: 17 loads, 17 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net counter1.n177: 17 loads
+      Net counter1.n16: 17 loads
       Net s_c[0]: 9 loads
       Net s_c[1]: 9 loads
       Net s_c[2]: 9 loads
       Net s_c[3]: 9 loads
-      Net counter1.counter[10]: 3 loads
-      Net counter1.counter[11]: 3 loads
+      Net counter1.counter[15]: 3 loads
+      Net counter1.counter[16]: 3 loads
 
                                     Page 1
 
@@ -69,9 +69,9 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net counter1.counter[12]: 3 loads
-      Net counter1.counter[15]: 3 loads
       Net counter1.counter[19]: 3 loads
+      Net counter1.counter[20]: 3 loads
+      Net counter1.counter[23]: 3 loads
 
 
 
@@ -101,6 +101,8 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+-------+-------+-----------+
 | s[0]                | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+| reset               | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
 | led[2]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | led[1]              | OUTPUT    |           |       |       |           |
@@ -122,10 +124,8 @@ IO (PIO) Attributes
 | seg[0]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 
-Removed logic
--------------
 
-Block i1 was optimized away.
+
 
 
                                     Page 2
@@ -133,6 +133,11 @@ Block i1 was optimized away.
 
 
 
+
+Removed logic
+-------------
+
+Block i1 was optimized away.
 
 OSC Summary
 -----------
@@ -162,12 +167,7 @@ Run Time and Memory Usage
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 65 MB
-Checksum -- map: f5dcaa20ba6204ba4db032f3c6965b6e2614ce18
-
-
-
-
-
+Checksum -- map: 2eb78f7ce3dff86ee55fab8a0187fffe6b84cb
 
 
 

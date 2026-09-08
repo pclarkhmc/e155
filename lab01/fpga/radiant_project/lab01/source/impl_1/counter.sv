@@ -4,14 +4,15 @@ module counter #(
 )(
 	input clk,
 	input reset,
-	output enable
+	input enable,
+	output led
 );
 	logic [count_width-1:0] counter;
 	always_ff @(posedge clk) begin
 		if(reset) counter <= 0;
 		else if(counter == maxcount>>1)  counter <= 0;
-		else            counter <= counter + 1;
+		else if(enable)counter <= counter + 1;
 	end
 	
-	assign enable = (counter >= maxcount>>1);
+	assign led = (counter >= maxcount>>1);
 endmodule

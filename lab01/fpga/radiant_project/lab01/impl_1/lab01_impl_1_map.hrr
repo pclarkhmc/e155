@@ -3,22 +3,22 @@ Report for cell lab01_pc
    Instance path: lab01_pc
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         62        100.0
-                               LUTGATE	         28        100.0
+                                  LUT4	         63        100.0
+                               LUTGATE	         29        100.0
                                 LUTCCU	         34        100.0
-                                 IOBUF	         14        100.0
+                                 IOBUF	         15        100.0
                                 PFUREG	         32        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                               counter	          1        83.9
-                             seven_seg	          1        12.9
+                               counter	          1        84.1
+                             seven_seg	          1         9.5
 ---------------------------------------------------
 Report for cell counter
    Instance path: lab01_pc/counter1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         52        83.9
-                               LUTGATE	         18        64.3
+                                  LUT4	         53        84.1
+                               LUTGATE	         19        65.5
                                 LUTCCU	         34        100.0
                                 PFUREG	         32        100.0
 ---------------------------------------------------
@@ -26,5 +26,5 @@ Report for cell seven_seg
    Instance path: lab01_pc/display1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          8        12.9
-                               LUTGATE	          8        28.6
+                                  LUT4	          6         9.5
+                               LUTGATE	          6        20.7

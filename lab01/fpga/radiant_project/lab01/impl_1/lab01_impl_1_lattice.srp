@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2026 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Sep  7 12:57:45 2026
+Mon Sep  7 18:34:47 2026
 
 
 Command Line:  C:\lscc\radiant\2026.1\ispfpga\bin\nt64\synthesis.exe -f C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/impl_1/lab01_impl_1_lattice.synproj -logfile lab01_impl_1_lattice.srp -gui -msgset C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/promote.xml 
@@ -158,6 +158,7 @@ WARNING <35002062> - synthesis: Port rejected for I/O register mapping: s[3]
 WARNING <35002062> - synthesis: Port rejected for I/O register mapping: s[2]
 WARNING <35002062> - synthesis: Port rejected for I/O register mapping: s[1]
 WARNING <35002062> - synthesis: Port rejected for I/O register mapping: s[0]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: reset
 WARNING <35002062> - synthesis: Port rejected for I/O register mapping: led[2]
 WARNING <35002062> - synthesis: Port rejected for I/O register mapping: led[1]
 WARNING <35002062> - synthesis: Port rejected for I/O register mapping: led[0]
@@ -174,8 +175,8 @@ Number of register bits => 32 of 5280 (0 % )
 CCU2 => 17
 FD1P3XZ => 32
 HSOSC_CORE => 1
-IB => 4
-LUT4 => 27
+IB => 5
+LUT4 => 28
 OB => 10
 ################### End Area Report ##################
 Number of odd-length carry chains : 0
@@ -189,16 +190,16 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : counter1/n177, loads : 39
-  Net : counter1/n367, loads : 18
-  Net : counter1/n101[31], loads : 18
-  Net : counter1/n365, loads : 17
-  Net : counter1/n101[30], loads : 17
-  Net : counter1/n101[29], loads : 17
-  Net : counter1/n363, loads : 16
-  Net : counter1/n101[28], loads : 16
-  Net : counter1/n101[27], loads : 16
-  Net : counter1/n101[26], loads : 15
+  Net : counter1/n16, loads : 40
+  Net : counter1/n272, loads : 18
+  Net : counter1/n133[31], loads : 18
+  Net : counter1/n133[30], loads : 17
+  Net : counter1/n270, loads : 17
+  Net : counter1/n133[29], loads : 17
+  Net : counter1/n133[28], loads : 16
+  Net : counter1/n268, loads : 16
+  Net : counter1/n133[27], loads : 16
+  Net : counter1/n266, loads : 15
 ################### End Clock Report ##################
 
 ################### Begin Constraint Report ######################
@@ -207,10 +208,10 @@ Constraint Summary:
   Total number of constraints dropped: 0
 ###################  End Constraint Report  ######################
 
-Peak Memory Usage: 88 MB
+Peak Memory Usage: 89 MB
 
 --------------------------------------------------------------
 Total CPU Time: 0 secs 
 Total REAL Time: 3 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: 386ce56df1ea87801791e33dd5b725893a085c96
+Checksum -- synthesis -- netlist: 9db3ca5a5cfd05c48c05701d711c72a3c20abcef

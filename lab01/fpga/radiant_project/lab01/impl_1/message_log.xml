@@ -857,6 +857,11 @@
         <Message>
             <ID>35002062</ID>
             <Severity>16</Severity>
+            <Dynamic>reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002062</ID>
+            <Severity>16</Severity>
             <Dynamic>led[2]</Dynamic>
         </Message>
         <Message>

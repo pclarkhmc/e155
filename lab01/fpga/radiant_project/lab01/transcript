@@ -1,0 +1,53 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading project Lab01Sim
+# Compile of counter.sv was successful.
+# Compile of lab01_pc.sv was successful.
+# Compile of seven_seg.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.counter work.lab01_pc work.seven_seg -L iCE40UP -voptargs=+acc
+# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/Lab01Sim.mpf' is used as the ini file.
+# vsim -gui work.counter work.lab01_pc work.seven_seg -L iCE40UP -voptargs="+acc" 
+# Start time: 18:58:39 on Sep 07,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/Lab01Sim.mpf' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.counter(fast)
+# Loading work.lab01_pc(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.seven_seg(fast__1)
+# Loading work.seven_seg(fast)
+force s 4'b0000
+# ** UI-Msg (Error) (suppressible): (vsim-4008) Object 's' not found.
+# 
+add wave -position insertpoint  \
+sim:/lab01_pc/s
+add wave -position insertpoint  \
+sim:/lab01_pc/reset
+add wave -position insertpoint  \
+sim:/lab01_pc/led
+add wave -position insertpoint  \
+sim:/lab01_pc/seg
+force s 4'b0000
+run 100
+force s 4'b0001
+run 100
+# Causality operation skipped due to absence of debug database file
+force s 4'b0010
+run 50
+run 50
