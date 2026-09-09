@@ -1,3 +1,11 @@
-1 7 counter 7 fast__1 75 C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/work 0 0 0 0 38 0
-1 16 lab01_counter_tb 4 fast 75 C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/work 0 0 0 0 31 0
-1 7 counter 4 fast 75 C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/work 0 0 0 0 38 0
+1 9 seven_seg 4 fast 75 C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/work 0 0 0 0 45 0
+1 3 VLO 4 fast 58 C:/lscc/radiant/2026.1/cae_library/simulation/libs/iCE40UP 0 0 0 0 6 0
+1 10 HFOSC_CORE 4 fast 58 C:/lscc/radiant/2026.1/cae_library/simulation/libs/iCE40UP 0 0 0 0 167 0
+1 5 HFOSC 4 fast 58 C:/lscc/radiant/2026.1/cae_library/simulation/libs/iCE40UP 0 0 0 0 184 0
+1 10 HSOSC_CORE 4 fast 58 C:/lscc/radiant/2026.1/cae_library/simulation/libs/iCE40UP 0 0 131072 0 854 0
+1 5 HSOSC 4 fast 58 C:/lscc/radiant/2026.1/cae_library/simulation/libs/iCE40UP 0 0 131072 0 887 0
+1 7 counter 4 fast 75 C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/work 0 0 0 0 37 0
+1 9 seven_seg 7 fast__1 75 C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/work 0 0 0 0 45 0
+1 8 lab01_pc 7 fast__1 75 C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/work 0 0 0 0 60 0
+1 8 lab01_tb 4 fast 75 C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/work 0 0 0 0 219 0
+1 8 lab01_pc 4 fast 75 C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/work 0 0 0 0 60 0

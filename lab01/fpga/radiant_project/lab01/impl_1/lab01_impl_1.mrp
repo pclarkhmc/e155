@@ -8,7 +8,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2026.1.0.37.0
-Mapped on: Tue Sep  8 18:36:04 2026
+Mapped on: Wed Sep  9 15:38:25 2026
 
 Design Information
 ------------------
@@ -148,7 +148,7 @@ OSC 1:                                 Pin/Node Value
   Power UP:                            NODE     VCC_net
   Enable Signal:                       NODE     VCC_net
   OSC Output:                          NODE     int_osc
-  DIV Setting:                                  01
+  DIV Setting:                                  00
 
 ASIC Components
 ---------------
@@ -167,8 +167,8 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 66 MB
-Checksum -- map: 34ad1cc1ac52f1cf8c41ef30727ba0865f2ba15d
+   Peak Memory Usage: 67 MB
+Checksum -- map: 70a63885425d6a345d1c1888a619df9833eac55
 
 
 

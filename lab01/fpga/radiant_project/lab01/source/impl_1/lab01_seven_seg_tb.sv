@@ -11,7 +11,6 @@ module lab01_seven_seg_tb();
 	for (int i=0; i<16; i++) begin
 	s = i;
 	#10;
-	end
-	$stop;  
+	end 
   end	
 endmodule

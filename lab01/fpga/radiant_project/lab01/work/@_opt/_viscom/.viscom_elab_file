@@ -1,1 +1,1 @@
-C:/lscc/radiant/2026.1/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 934320 work.lab01_seven_seg_tb work.seven_seg -quiet -auto_acc_if_foreign -work work +acc -allow_unnamed -o _opt -id 1-8cf8c5f816aa-6aa09b64-108-42f4 +__betafsm
+C:/lscc/radiant/2026.1/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 934320 work.counter work.lab01_pc work.lab01_tb work.seven_seg -quiet -auto_acc_if_foreign -work work -L iCE40UP +acc -L iCE40UP -allow_unnamed -o _opt -id 1-8cf8c5f815bf-6aa1eb41-4e-2dd0 +__betafsm

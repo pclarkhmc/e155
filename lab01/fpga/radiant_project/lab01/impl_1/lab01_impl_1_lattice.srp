@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2026 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Sep  8 18:31:41 2026
+Wed Sep  9 15:38:17 2026
 
 
 Command Line:  C:\lscc\radiant\2026.1\ispfpga\bin\nt64\synthesis.exe -f C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/impl_1/lab01_impl_1_lattice.synproj -logfile lab01_impl_1_lattice.srp -gui -msgset C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/promote.xml 
@@ -123,6 +123,7 @@ Verilog design file: ../source/impl_1/lab01_pc.sv
 Verilog design file: ../source/impl_1/seven_seg.sv
 Verilog design file: ../source/impl_1/lab01_seven_seg_tb.sv
 Verilog design file: ../source/impl_1/lab01_counter_tb.sv
+Verilog design file: ../source/impl_1/lab01_tb.sv
 VHDL library: pmi
 VHDL design file: C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd
 
@@ -138,16 +139,17 @@ Analyzing Verilog file ../source/impl_1/lab01_pc.sv. VERI-1482
 Analyzing Verilog file ../source/impl_1/seven_seg.sv. VERI-1482
 Analyzing Verilog file ../source/impl_1/lab01_seven_seg_tb.sv. VERI-1482
 Analyzing Verilog file ../source/impl_1/lab01_counter_tb.sv. VERI-1482
+Analyzing Verilog file ../source/impl_1/lab01_tb.sv. VERI-1482
 Top module name (Verilog): lab01_pc
 INFO <35901018> - synthesis: ../source/impl_1/lab01_pc.sv(5): compiling module lab01_pc. VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v(756): compiling module HSOSC(CLKHF_DIV=2'b01). VERI-1018
+INFO <35901018> - synthesis: C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v(756): compiling module HSOSC(CLKHF_DIV=2'b0). VERI-1018
 INFO <35901018> - synthesis: ../source/impl_1/counter.sv(5): compiling module counter. VERI-1018
 INFO <35901018> - synthesis: ../source/impl_1/seven_seg.sv(5): compiling module seven_seg. VERI-1018
 [Parameter Setting Section Start]
 
 	[Parameter Settings for Instance(s): hf_osc]
 	(Module: HSOSC)
-		CLKHF_DIV                 2'b01
+		CLKHF_DIV                 2'b00
 
 	[Parameter Settings for Instance(s): counter1]
 	(Module: counter)
@@ -202,9 +204,9 @@ Top 10 highest fanout non-clock nets:
   Net : counter1/n433, loads : 17
   Net : counter1/n167[29], loads : 17
   Net : counter1/n167[30], loads : 17
-  Net : counter1/n431, loads : 16
   Net : counter1/n167[28], loads : 16
   Net : counter1/n167[27], loads : 16
+  Net : counter1/n431, loads : 16
 ################### End Clock Report ##################
 
 ################### Begin Constraint Report ######################
@@ -213,10 +215,10 @@ Constraint Summary:
   Total number of constraints dropped: 0
 ###################  End Constraint Report  ######################
 
-Peak Memory Usage: 88 MB
+Peak Memory Usage: 89 MB
 
 --------------------------------------------------------------
 Total CPU Time: 0 secs 
 Total REAL Time: 3 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: d5f4d2babde2548ec9fb237102d628e714ee0ed
+Checksum -- synthesis -- netlist: 9aa1d136151bef2a9dcd31651f888689cf2f1f31
