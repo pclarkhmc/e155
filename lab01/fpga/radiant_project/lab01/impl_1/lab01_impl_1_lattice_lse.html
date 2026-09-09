@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2026 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Sep  7 18:34:47 2026
+Tue Sep  8 18:31:41 2026
 
 
 Command Line:  C:\lscc\radiant\2026.1\ispfpga\bin\nt64\synthesis.exe -f C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/impl_1/lab01_impl_1_lattice.synproj -logfile lab01_impl_1_lattice.srp -gui -msgset C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/promote.xml 
@@ -164,6 +164,8 @@ Verilog design file: C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v
 Verilog design file: ../source/impl_1/counter.sv
 Verilog design file: ../source/impl_1/lab01_pc.sv
 Verilog design file: ../source/impl_1/seven_seg.sv
+Verilog design file: ../source/impl_1/lab01_seven_seg_tb.sv
+Verilog design file: ../source/impl_1/lab01_counter_tb.sv
 VHDL library: pmi
 VHDL design file: C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd
 
@@ -177,11 +179,13 @@ Analyzing Verilog file C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v. VERI-1482
 Analyzing Verilog file ../source/impl_1/counter.sv. VERI-1482
 Analyzing Verilog file ../source/impl_1/lab01_pc.sv. VERI-1482
 Analyzing Verilog file ../source/impl_1/seven_seg.sv. VERI-1482
+Analyzing Verilog file ../source/impl_1/lab01_seven_seg_tb.sv. VERI-1482
+Analyzing Verilog file ../source/impl_1/lab01_counter_tb.sv. VERI-1482
 Top module name (Verilog): lab01_pc
 INFO <35901018> - synthesis: ../source/impl_1/lab01_pc.sv(5): compiling module lab01_pc. VERI-1018
 INFO <35901018> - synthesis: C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v(756): compiling module HSOSC(CLKHF_DIV=2'b01). VERI-1018
-INFO <35901018> - synthesis: ../source/impl_1/counter.sv(1): compiling module counter. VERI-1018
-INFO <35901018> - synthesis: ../source/impl_1/seven_seg.sv(1): compiling module seven_seg. VERI-1018
+INFO <35901018> - synthesis: ../source/impl_1/counter.sv(5): compiling module counter. VERI-1018
+INFO <35901018> - synthesis: ../source/impl_1/seven_seg.sv(5): compiling module seven_seg. VERI-1018
 
 <A name="lse_parameter"></A><B><U><big>Parameter Setting</big></U></B>
 
@@ -205,6 +209,7 @@ WARNING <35002062> - synthesis: Port rejected for I/O register mapping: s[2]
 WARNING <35002062> - synthesis: Port rejected for I/O register mapping: s[1]
 WARNING <35002062> - synthesis: Port rejected for I/O register mapping: s[0]
 WARNING <35002062> - synthesis: Port rejected for I/O register mapping: reset
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: enable
 WARNING <35002062> - synthesis: Port rejected for I/O register mapping: led[2]
 WARNING <35002062> - synthesis: Port rejected for I/O register mapping: led[1]
 WARNING <35002062> - synthesis: Port rejected for I/O register mapping: led[0]
@@ -224,8 +229,8 @@ Number of register bits => 32 of 5280 (0 % )
 CCU2 => 17
 FD1P3XZ => 32
 HSOSC_CORE => 1
-IB => 5
-LUT4 => 28
+IB => 6
+LUT4 => 25
 OB => 10
 ################### End Area Report ##################
 Number of odd-length carry chains : 0
@@ -242,16 +247,16 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : counter1/n16, loads : 40
-  Net : counter1/n272, loads : 18
-  Net : counter1/n133[31], loads : 18
-  Net : counter1/n133[30], loads : 17
-  Net : counter1/n270, loads : 17
-  Net : counter1/n133[29], loads : 17
-  Net : counter1/n133[28], loads : 16
-  Net : counter1/n268, loads : 16
-  Net : counter1/n133[27], loads : 16
-  Net : counter1/n266, loads : 15
+  Net : n346, loads : 50
+  Net : counter1/n25, loads : 32
+  Net : counter1/n167[31], loads : 18
+  Net : counter1/n435, loads : 18
+  Net : counter1/n433, loads : 17
+  Net : counter1/n167[29], loads : 17
+  Net : counter1/n167[30], loads : 17
+  Net : counter1/n431, loads : 16
+  Net : counter1/n167[28], loads : 16
+  Net : counter1/n167[27], loads : 16
 ################### End Clock Report ##################
 
 
@@ -263,13 +268,13 @@ Constraint Summary:
   Total number of constraints dropped: 0
 ###################  End Constraint Report  ######################
 
-Peak Memory Usage: 89 MB
+Peak Memory Usage: 88 MB
 
 --------------------------------------------------------------
 Total CPU Time: 0 secs 
 Total REAL Time: 3 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: 9db3ca5a5cfd05c48c05701d711c72a3c20abcef
+Checksum -- synthesis -- netlist: d5f4d2babde2548ec9fb237102d628e714ee0ed
 
 
 

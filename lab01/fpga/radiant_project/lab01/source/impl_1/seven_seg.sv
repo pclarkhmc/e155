@@ -1,13 +1,17 @@
+/* 
+Pierce Clark  pclark@hmc.edu
+Seven Segment Display 4 to 7 combinational logic.
+*/
 module seven_seg(
-	input logic [3:0] switch,
+	input logic [3:0] switches,
 	output logic [6:0] seg
 );
 	// Seven segment display logic
 	always_comb begin
-		case (switch)
+		case (switches)
 			4'h0: seg = 7'b0000001;
 			4'h1: seg = 7'b1001111;
-			4'h2: seg = 7'b1101101;
+			4'h2: seg = 7'b0010010;
 			4'h3: seg = 7'b0000110;
 			4'h4: seg = 7'b1001100;
 			4'h5: seg = 7'b0100100;

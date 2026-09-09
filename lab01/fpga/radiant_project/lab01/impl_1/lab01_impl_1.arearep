@@ -1,19 +1,26 @@
 ----------------------------------------------------------------------
 Report for cell lab01_pc.TECH
 Register bits:  32 of 5280 (0.606%)
-I/O cells:      15
+I/O cells:      16
                                   Cell usage:
                                cell     count   Res Usage(%)
                                CCU2        17          100.0
                             FD1P3XZ        32          100.0
                          HSOSC_CORE         1          100.0
-                                 IB         5          100.0
-                               LUT4        28          100.0
+                                 IB         6          100.0
+                               LUT4        25          100.0
                                  OB        10          100.0
 SUB MODULES
                             counter         1
                           seven_seg         1
-                              TOTAL        95
+                              TOTAL        93
+----------------------------------------------------------------------
+Report for cell seven_seg.v1
+Instance Path : display1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         8           32.0
+                              TOTAL         8
 ----------------------------------------------------------------------
 Report for cell counter.v1
 Instance Path : counter1
@@ -21,12 +28,5 @@ Instance Path : counter1
                                cell     count   Res Usage(%)
                                 FA2        17          100.0
                             FD1P3XZ        32          100.0
-                               LUT4        19           67.9
-                              TOTAL        68
-----------------------------------------------------------------------
-Report for cell seven_seg.v1
-Instance Path : display1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         6           21.4
-                              TOTAL         6
+                               LUT4        15           60.0
+                              TOTAL        64

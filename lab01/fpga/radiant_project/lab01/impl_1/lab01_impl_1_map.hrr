@@ -3,28 +3,28 @@ Report for cell lab01_pc
    Instance path: lab01_pc
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         63        100.0
-                               LUTGATE	         29        100.0
+                                  LUT4	         60        100.0
+                               LUTGATE	         26        100.0
                                 LUTCCU	         34        100.0
-                                 IOBUF	         15        100.0
+                                 IOBUF	         16        100.0
                                 PFUREG	         32        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                               counter	          1        84.1
-                             seven_seg	          1         9.5
----------------------------------------------------
-Report for cell counter
-   Instance path: lab01_pc/counter1
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         53        84.1
-                               LUTGATE	         19        65.5
-                                LUTCCU	         34        100.0
-                                PFUREG	         32        100.0
+                               counter	          1        81.7
+                             seven_seg	          1        13.3
 ---------------------------------------------------
 Report for cell seven_seg
    Instance path: lab01_pc/display1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          6         9.5
-                               LUTGATE	          6        20.7
+                                  LUT4	          8        13.3
+                               LUTGATE	          8        30.8
+---------------------------------------------------
+Report for cell counter
+   Instance path: lab01_pc/counter1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         49        81.7
+                               LUTGATE	         15        57.7
+                                LUTCCU	         34        100.0
+                                PFUREG	         32        100.0

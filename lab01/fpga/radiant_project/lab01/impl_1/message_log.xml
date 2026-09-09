@@ -785,18 +785,18 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/counter.sv(1): </Dynamic>
+            <Dynamic>C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/counter.sv(5): </Dynamic>
             <Dynamic>counter</Dynamic>
             <Navigation>C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/counter.sv</Navigation>
-            <Navigation>1</Navigation>
+            <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/seven_seg.sv(1): </Dynamic>
+            <Dynamic>C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/seven_seg.sv(5): </Dynamic>
             <Dynamic>seven_seg</Dynamic>
             <Navigation>C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/seven_seg.sv</Navigation>
-            <Navigation>1</Navigation>
+            <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35001797</ID>
@@ -821,18 +821,18 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>../source/impl_1/counter.sv(1): </Dynamic>
+            <Dynamic>../source/impl_1/counter.sv(5): </Dynamic>
             <Dynamic>counter</Dynamic>
             <Navigation>../source/impl_1/counter.sv</Navigation>
-            <Navigation>1</Navigation>
+            <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>../source/impl_1/seven_seg.sv(1): </Dynamic>
+            <Dynamic>../source/impl_1/seven_seg.sv(5): </Dynamic>
             <Dynamic>seven_seg</Dynamic>
             <Navigation>../source/impl_1/seven_seg.sv</Navigation>
-            <Navigation>1</Navigation>
+            <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35002062</ID>
@@ -858,6 +858,11 @@
             <ID>35002062</ID>
             <Severity>16</Severity>
             <Dynamic>reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002062</ID>
+            <Severity>16</Severity>
+            <Dynamic>enable</Dynamic>
         </Message>
         <Message>
             <ID>35002062</ID>

@@ -13,41 +13,70 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-# Loading project Lab01Sim
+# Loading project sim
 # Compile of counter.sv was successful.
-# Compile of lab01_pc.sv was successful.
-# Compile of seven_seg.sv was successful.
-# 3 compiles, 0 failed with no errors.
-vsim -gui work.counter work.lab01_pc work.seven_seg -L iCE40UP -voptargs=+acc
-# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/Lab01Sim.mpf' is used as the ini file.
-# vsim -gui work.counter work.lab01_pc work.seven_seg -L iCE40UP -voptargs="+acc" 
-# Start time: 18:58:39 on Sep 07,2026
-# ** Note: (vsim-3812) Design is being optimized...
+# Compile of lab01_counter_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of counter.sv was successful.
+# Compile of lab01_counter_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.counter work.lab01_counter_tb -voptargs=+acc
+# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/sim.mpf' is used as the ini file.
+# vsim -gui work.counter work.lab01_counter_tb -voptargs="+acc" 
+# Start time: 18:00:18 on Sep 08,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/Lab01Sim.mpf' is used as the ini file.
+# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/sim.mpf' is used as the ini file.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
 # Loading work.counter(fast)
-# Loading work.lab01_pc(fast)
-# Loading iCE40UP.HSOSC(fast)
-# Loading work.seven_seg(fast__1)
-# Loading work.seven_seg(fast)
-force s 4'b0000
-# ** UI-Msg (Error) (suppressible): (vsim-4008) Object 's' not found.
-# 
+# Loading work.lab01_counter_tb(fast)
+# Loading work.counter(fast__1)
 add wave -position insertpoint  \
-sim:/lab01_pc/s
-add wave -position insertpoint  \
-sim:/lab01_pc/reset
-add wave -position insertpoint  \
-sim:/lab01_pc/led
-add wave -position insertpoint  \
-sim:/lab01_pc/seg
-force s 4'b0000
+sim:/lab01_counter_tb/dut/clk \
+sim:/lab01_counter_tb/dut/reset \
+sim:/lab01_counter_tb/dut/enable \
+sim:/lab01_counter_tb/dut/led \
+sim:/lab01_counter_tb/dut/counter
+run
+run -all
+# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_counter_tb.sv(18)
+#    Time: 300 ns  Iteration: 0  Instance: /lab01_counter_tb
+# Break in Module lab01_counter_tb at C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_counter_tb.sv line 18
+force /lab01_counter_tb/dut/counter 8'd09999999
+force /lab01_counter_tb/dut/reset 1'b0
 run 100
-force s 4'b0001
 run 100
-# Causality operation skipped due to absence of debug database file
-force s 4'b0010
-run 50
-run 50
+force /lab01_counter_tb/dut/counter 1'b1
+run 100
+quit -sim
+# End time: 18:12:08 on Sep 08,2026, Elapsed time: 0:11:50
+# Errors: 0, Warnings: 7
+# Compile of counter.sv was successful.
+# Compile of lab01_counter_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of counter.sv was successful.
+# Compile of lab01_counter_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.counter work.lab01_counter_tb -voptargs=+acc
+# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/sim.mpf' is used as the ini file.
+# vsim -gui work.counter work.lab01_counter_tb -voptargs="+acc" 
+# Start time: 18:14:42 on Sep 08,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/sim.mpf' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.counter(fast)
+# Loading work.lab01_counter_tb(fast)
+# Loading work.counter(fast__1)
+add wave -position insertpoint  \
+sim:/lab01_counter_tb/dut/clk \
+sim:/lab01_counter_tb/dut/reset \
+sim:/lab01_counter_tb/dut/enable \
+sim:/lab01_counter_tb/dut/led \
+sim:/lab01_counter_tb/dut/counter
+run -all
+# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_counter_tb.sv(18)
+#    Time: 1020 ns  Iteration: 0  Instance: /lab01_counter_tb
+# Break in Module lab01_counter_tb at C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_counter_tb.sv line 18

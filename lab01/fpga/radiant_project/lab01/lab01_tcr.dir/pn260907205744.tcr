@@ -1,0 +1,9 @@
+#Start recording tcl command: 9/7/2026 18:31:11
+#Project Location: C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01; Project name: lab01
+prj_open "C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/lab01.rdf"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_tb.sv"
+prj_add_source "C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_counter_tb.sv"
+prj_add_source "C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_seven_seg_tb.sv"
+#Stop recording: 9/7/2026 20:57:44

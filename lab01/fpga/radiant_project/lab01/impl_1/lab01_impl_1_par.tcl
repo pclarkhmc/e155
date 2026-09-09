@@ -23,6 +23,9 @@ if {[file exists {C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_proje
   file copy -force -- {C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/impl_1/lab01_impl_1_syn.udb} {C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/impl_1/incr/postsyn.udb}
   file copy -force -- {C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/impl_1/lab01_impl_1_map.udb} {C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/impl_1/incr/postmap.udb}
   file copy -force -- {C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/impl_1/lab01_impl_1.udb} {C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/impl_1/incr/postpar.udb}
+  if [file exists {C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/pdc.pdc}] {
+    file copy -force -- {C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/pdc.pdc} {C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/impl_1/incr/lastrun.pdc}
+  }
 }
 
 } out]} {

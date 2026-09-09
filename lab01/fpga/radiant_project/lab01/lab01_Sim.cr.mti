@@ -1,0 +1,17 @@
+C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/seven_seg.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/seven_seg.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/lab01_Sim.mpf' is used as the ini file.
+-- Compiling module seven_seg
+
+Top level modules:
+	seven_seg
+
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_seven_seg_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_seven_seg_tb.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/lab01_Sim.mpf' is used as the ini file.
+-- Compiling module lab01_seven_seg_tb
+
+Top level modules:
+	lab01_seven_seg_tb
+
+} {} {}}
