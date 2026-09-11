@@ -80,3 +80,5 @@ run -all
 # ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_counter_tb.sv(18)
 #    Time: 1020 ns  Iteration: 0  Instance: /lab01_counter_tb
 # Break in Module lab01_counter_tb at C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_counter_tb.sv line 18
+# End time: 19:01:31 on Sep 08,2026, Elapsed time: 0:46:49
+# Errors: 0, Warnings: 4
