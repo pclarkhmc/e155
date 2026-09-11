@@ -1,25 +1,13 @@
 m255
 K4
 z2
-Z0 !s12c _opt1
+Z0 !s12c _opt2
 Z1 !s99 nomlopt
 R0
 R1
-R0
+Z2 !s12c _opt
 R1
-R0
-R1
-Z2 !s12c _opt2
-R1
-R0
-R1
-Z3 !s12c _opt
-R1
-R3
-R1
-R3
-R1
-R3
+R2
 R1
 R2
 R1
@@ -27,7 +15,53 @@ R2
 R1
 R0
 R1
+R0
+R1
+R0
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R0
+R1
+R2
+R1
+R0
+R1
+Z3 !s12c _opt1
+R1
 R3
+R1
+R3
+R1
+R3
+R1
+R0
+R1
+R3
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R0
+R1
+R0
+R1
+R3
+R1
+R2
 R1
 !s11f vlog 2025.2 2025.05, May 31 2025
 13
@@ -40,203 +74,207 @@ Z4 dC:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01
 T_opt
 !i145 1
 !i144 0
-!s110 1788910436
-VPAh^jXE^A`9e8aWbilCQm0
-04 18 4 work lab01_seven_seg_tb fast 0
-04 9 4 work seven_seg fast 0
-=1-8cf8c5f816aa-6aa09b64-108-42f4
+!s110 1788996417
+VD=:eE9k8APlc>W?Ub6kzK1
+Z5 04 7 4 work counter fast 0
+Z6 04 8 4 work lab01_pc fast 0
+Z7 04 8 4 work lab01_tb fast 0
+Z8 04 9 4 work seven_seg fast 0
+=1-8cf8c5f815bf-6aa1eb41-4e-2dd0
 R1
-Z5 !s12f OEM25U3 
-Z6 !s12b OEM100
-Z7 !s124 OEM100
-Z8 !s135 nogc
-Z9 o-quiet -auto_acc_if_foreign -work work +acc
-Z10 tCvgOpt 0 defaultOptions 1107585188
+Z9 !s12f OEM25U9 
+Z10 !s12b OEM100
+Z11 !s124 OEM100
+Z12 !s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L iCE40UP +acc -L iCE40UP
+Z13 tCvgOpt 0 defaultOptions 1107585188
 n@_opt
-Z11 OL;O;2025.2;82
+Z14 OL;O;2025.2;82
 R4
 T_opt1
 !i145 1
 !i144 0
 !s110 1788916483
 VQhGa>XeULj=eo9EQQQX_d3
-Z12 04 7 4 work counter fast 0
-Z13 04 16 4 work lab01_counter_tb fast 0
+R5
+04 16 4 work lab01_counter_tb fast 0
 =1-8cf8c5f816aa-6aa0b302-397-5b10
 R1
-R5
-R6
-R7
-R8
-R9
+!s12f OEM25U3 
 R10
-n@_opt1
 R11
+R12
+o-quiet -auto_acc_if_foreign -work work +acc
+R13
+n@_opt1
+R14
+R4
 T_opt2
 !i145 1
 !i144 0
-!s110 1788914562
-VL2KdlZROal8VWIffk<Z2X3
-R12
-R13
-=1-8cf8c5f816aa-6aa0ab81-354-6d0
-R1
+!s110 1788997816
+Vnd]fRBC01H<:==bAo8:Qz0
 R5
 R6
 R7
 R8
+=1-8cf8c5f815bf-6aa1f0b8-141-3b0c
+R1
 R9
 R10
-n@_opt2
 R11
-R4
+R12
+o-quiet -auto_acc_if_foreign -work work -L iCE40UP +acc
+R13
+n@_opt2
+R14
 vcounter
 2C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/counter.sv
-Z14 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
-Z15 !s110 1788916456
+Z15 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+Z16 !s110 1788997725
 !i10b 1
-!s100 4f^I0jNM8SlRUCM:W_nOD3
-I5Zi7:i:lBP1LYJbSRM8P_2
+!s100 8GkE1@l1VE^bcPe?Se=R>1
+I@9afkb5_SB2SM[ND1n=;k1
 S1
 R4
-w1788915207
+w1788995487
 8C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/counter.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/counter.sv
-!i122 55
-L0 5 18
-Z16 VDg1SIo80bB@j0V0VzS_@n1
-Z17 OL;L;2025.2;82
+!i122 125
+L0 5 20
+Z17 VDg1SIo80bB@j0V0VzS_@n1
+Z18 OL;L;2025.2;82
 r1
 !s85 0
 31
-Z18 !s108 1788916456.000000
+Z19 !s108 1788997725.000000
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/counter.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/counter.sv|
 !i113 0
-Z19 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z20 tCvgOpt 0 defaultOptions 1085333592
+Z20 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z21 tCvgOpt 0 defaultOptions 1085333592
 vlab01_counter_tb
 2C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_counter_tb.sv
-R14
 R15
+!s110 1788992050
 !i10b 1
-!s100 _4G>zG@m_]_48@clmJgC<2
-I;jmMRPT?Z>`iHM8B>D6Fh1
+!s100 MHcRbK14@8Sb=dP>bR`^o1
+I6SW4>eOS`C7@NiIHN>e2T0
 S1
 R4
-w1788916450
+w1788992044
 8C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_counter_tb.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_counter_tb.sv
-!i122 56
-L0 3 18
-R16
+!i122 60
+L0 3 20
 R17
+R18
 r1
 !s85 0
 31
-R18
+!s108 1788992050.000000
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_counter_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_counter_tb.sv|
 !i113 0
-R19
 R20
+R21
 vlab01_pc
 2C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_pc.sv
-R14
-!s110 1788832680
+R15
+R16
 !i10b 1
-!s100 =WDER4M>YLoME?f;FRJ8Q3
-IaJV;_?iWaH1AV0hV@SGLE1
+!s100 f>IXd=OHo:YW[[TjZMZRI0
+IR6jk^IK`XFCE``zjJ8`SA0
 S1
 R4
-w1788831282
+w1788992273
 8C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_pc.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_pc.sv
-!i122 16
-L0 5 25
-R16
+!i122 126
+Z22 L0 5 28
 R17
+R18
 r1
 !s85 0
 31
-!s108 1788832680.000000
+R19
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_pc.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_pc.sv|
 !i113 0
-R19
 R20
+R21
 vlab01_seven_seg_tb
-Z21 2C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_seven_seg_tb.sv
-R14
-Z22 !s110 1788914661
+2C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_seven_seg_tb.sv
+R15
+!s110 1788914661
 !i10b 1
 !s100 c<SEK6XcFEHz?4Ea>3Q0j3
 ITN3ETL>:MP<8UJWRGSdP?1
 S1
 R4
 w1788913614
-Z23 8C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_seven_seg_tb.sv
-Z24 FC:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_seven_seg_tb.sv
+8C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_seven_seg_tb.sv
+FC:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_seven_seg_tb.sv
 !i122 43
 L0 3 15
-R16
 R17
+R18
 r1
 !s85 0
 31
-Z25 !s108 1788914661.000000
-Z26 !s107 C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_seven_seg_tb.sv|
-Z27 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_seven_seg_tb.sv|
+!s108 1788914661.000000
+!s107 C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_seven_seg_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_seven_seg_tb.sv|
 !i113 0
-R19
 R20
-vlab01_tb
 R21
-R14
-!s110 1788909219
+vlab01_tb
+2C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_tb.sv
+R15
+R16
 !i10b 1
-!s100 J8z?^Q>ib[EO0Yoi<Nz8B2
-IdTAWcMU2DP[lTfjKh;`>Y2
+!s100 eidfYBmHDKdQ<g2`@:Bl03
+I_BN5gZ1cAccGSTOHN4MV52
 S1
 R4
-w1788909217
-R23
-R24
-!i122 21
-L0 3 13
-R16
+w1788996814
+8C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_tb.sv
+FC:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_tb.sv
+!i122 127
+L0 3 74
 R17
+R18
 r1
 !s85 0
 31
-!s108 1788909219.000000
-R26
-R27
-!i113 0
 R19
+!s107 C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_tb.sv|
+!i113 0
 R20
+R21
 vseven_seg
 2C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/seven_seg.sv
-R14
-R22
+R15
+R16
 !i10b 1
-!s100 o<Xj=Rnj9X9d3@_8DW>Y<0
-IaXNnjzLRkbaoMMD]kBCVW1
+!s100 hL8YJkP^o=0g24hM^Yn_o1
+I?>7[T6giMIK?VXaXe:aT@2
 S1
 R4
-w1788913591
+w1788991589
 8C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/seven_seg.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/seven_seg.sv
-!i122 44
-L0 5 27
-R16
+!i122 128
+R22
 R17
+R18
 r1
 !s85 0
 31
-R25
+R19
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/seven_seg.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/seven_seg.sv|
 !i113 0
-R19
 R20
+R21

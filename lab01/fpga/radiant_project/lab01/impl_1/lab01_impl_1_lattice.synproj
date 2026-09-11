@@ -45,6 +45,7 @@
 -sver "../source/impl_1/seven_seg.sv"
 -sver "../source/impl_1/lab01_seven_seg_tb.sv"
 -sver "../source/impl_1/lab01_counter_tb.sv"
+-sver "../source/impl_1/lab01_tb.sv"
 -path ".."
 -top lab01_pc
 # Output Configuration

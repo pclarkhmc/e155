@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BuildStatus>
     <Strategy name="Strategy1">
-        <Milestone name="Export" build_result="2" build_time="1788917782">
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1788917782"/>
+        <Milestone name="Export" build_result="2" build_time="1788993523">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1788993523"/>
             <Task name="IBIS" build_result="0" update_result="2" update_time="1788753628"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1788753628"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1788917765">
-            <Task name="Map" build_result="2" update_result="0" update_time="1788917765"/>
+        <Milestone name="Map" build_result="2" build_time="1788993505">
+            <Task name="Map" build_result="2" update_result="0" update_time="1788993505"/>
             <Task name="MapTrace" build_result="0" update_result="2" update_time="1788912314"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1788917774">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1788917774"/>
+        <Milestone name="PAR" build_result="2" build_time="1788993515">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1788993515"/>
             <Task name="PostParVM" build_result="0" update_result="2" update_time="1788753628"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1788917775"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1788993516"/>
             <Task name="IOTiming" build_result="0" update_result="2" update_time="1788753628"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1788917504">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1788917504"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1788917525"/>
-            <Task name="LSE_Lint" build_result="0" update_result="2" update_time="1788913944"/>
-            <Task name="SynTrace" build_result="0" update_result="2" update_time="1788913944"/>
-            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1788913944"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1788993501">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1788993501"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1788993516"/>
+            <Task name="LSE_Lint" build_result="0" update_result="2" update_time="1788991668"/>
+            <Task name="SynTrace" build_result="0" update_result="2" update_time="1788991668"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1788991668"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
             <Task name="HDLE" build_result="0" update_result="2" update_time="1788810273"/>
@@ -30,13 +30,14 @@
             <Task name="PIODRC" build_result="0" update_result="2" update_time="1788753628"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="1788753628"/>
         </Milestone>
-        <Report name="lab01_impl_1.bgn" last_build_time="1788917782" last_build_size="1280"/>
-        <Report name="lab01_impl_1.bin" last_build_time="1788917782" last_build_size="104156"/>
+        <Report name="lab01_impl_1.bgn" last_build_time="1788993523" last_build_size="1280"/>
+        <Report name="lab01_impl_1.bin" last_build_time="1788993523" last_build_size="104156"/>
         <Report name="lab01_impl_1.lsedata" last_build_time="0" last_build_size="0"/>
-        <Report name="lab01_impl_1.twr.html" last_build_time="1788917775" last_build_size="270127"/>
-        <Report name="lab01_impl_1.udb" last_build_time="1788917774" last_build_size="12409"/>
-        <Report name="lab01_impl_1_map.udb" last_build_time="1788917765" last_build_size="8316"/>
-        <Report name="lab01_impl_1_rtl.udb" last_build_time="1788917504" last_build_size="5639"/>
-        <Report name="lab01_impl_1_syn.udb" last_build_time="1788917504" last_build_size="5209"/>
+        <Report name="lab01_impl_1.twr.html" last_build_time="1788993516" last_build_size="333008"/>
+        <Report name="lab01_impl_1.udb" last_build_time="1788993515" last_build_size="12366"/>
+        <Report name="lab01_impl_1_map.udb" last_build_time="1788993505" last_build_size="8330"/>
+        <Report name="lab01_impl_1_rtl.udb" last_build_time="1788993500" last_build_size="5631"/>
+        <Report name="lab01_impl_1_syn.udb" last_build_time="1788993501" last_build_size="5219"/>
     </Strategy>
 </BuildStatus>
+                                    

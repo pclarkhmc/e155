@@ -21,7 +21,7 @@ module lab01_pc(
 	// Led 2 behavior
 	// declare an internal clock of 48 Mhz
 	logic int_osc;
-	HSOSC #(.CLKHF_DIV(2'b01))
+	HSOSC #(.CLKHF_DIV(2'b00))
 		 hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(int_osc));
 	counter #(32, 20000000)
 		counter1(.clk(int_osc), .reset(!reset), .enable(!enable), .led(led[2]));

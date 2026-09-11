@@ -778,7 +778,7 @@
             <ID>35901018</ID>
             <Severity>1</Severity>
             <Dynamic>C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v(756): </Dynamic>
-            <Dynamic>HSOSC(CLKHF_DIV=2'b01)</Dynamic>
+            <Dynamic>HSOSC(CLKHF_DIV=2'b0)</Dynamic>
             <Navigation>C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v</Navigation>
             <Navigation>756</Navigation>
         </Message>
@@ -814,7 +814,7 @@
             <ID>35901018</ID>
             <Severity>1</Severity>
             <Dynamic>C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v(756): </Dynamic>
-            <Dynamic>HSOSC(CLKHF_DIV=2'b01)</Dynamic>
+            <Dynamic>HSOSC(CLKHF_DIV=2'b0)</Dynamic>
             <Navigation>C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v</Navigation>
             <Navigation>756</Navigation>
         </Message>

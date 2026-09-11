@@ -11,7 +11,9 @@ module counter #(
 	input enable,
 	output led
 );
+	
 	logic [count_width-1:0] counter;
+	
 	always_ff @(posedge clk) begin
 		if(reset) counter <= 0;
 		else if(counter >= maxcount)  counter <= 0;

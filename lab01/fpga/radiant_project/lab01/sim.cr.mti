@@ -6,12 +6,39 @@ Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 Top level modules:
 	lab01_counter_tb
 
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_pc.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_pc.sv
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/sim.mpf' is used as the ini file.
+-- Compiling module lab01_pc
+
+Top level modules:
+	lab01_pc
+
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/seven_seg.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/seven_seg.sv
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/sim.mpf' is used as the ini file.
+-- Compiling module seven_seg
+
+Top level modules:
+	seven_seg
+
 } {} {}} C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/counter.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/counter.sv
 Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 ** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/sim.mpf' is used as the ini file.
 -- Compiling module counter
 
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/sim.mpf' is used as the ini file.
+-- Compiling module counter
+
 Top level modules:
 	counter
+
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_tb.sv
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/sim.mpf' is used as the ini file.
+-- Compiling module lab01_tb
+
+Top level modules:
+	lab01_tb
 
 } {} {}}

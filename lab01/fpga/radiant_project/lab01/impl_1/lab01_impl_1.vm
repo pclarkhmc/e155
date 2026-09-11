@@ -1,88 +1,89 @@
 // Verilog netlist produced by program LSE :  version Radiant Software (64-bit) 2026.1.0.37.0
-// Netlist written on Tue Sep  8 18:31:44 2026
+// Netlist written on Wed Sep  9 15:38:20 2026
 // Source file index table: 
 // Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
 // file 0 "c:/users/pclark/documents/github/e155/lab01/fpga/radiant_project/lab01/source/impl_1/counter.sv"
 // file 1 "c:/users/pclark/documents/github/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_counter_tb.sv"
 // file 2 "c:/users/pclark/documents/github/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_pc.sv"
 // file 3 "c:/users/pclark/documents/github/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_seven_seg_tb.sv"
-// file 4 "c:/users/pclark/documents/github/e155/lab01/fpga/radiant_project/lab01/source/impl_1/seven_seg.sv"
-// file 5 "c:/lscc/radiant/2026.1/ip/pmi/pmi_ice40up.v"
-// file 6 "c:/lscc/radiant/2026.1/ip/pmi/pmi_ice40up.vhd"
-// file 7 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v"
-// file 8 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_distributed_ram.v"
-// file 9 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_ecc.v"
-// file 10 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_flag_and_cnts_logic.v"
-// file 11 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_gray_reg.v"
-// file 12 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_gray_synchronizer.v"
-// file 13 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden.v"
-// file 14 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_prim.v"
-// file 15 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_rd_ctrl_logic.v"
-// file 16 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_rd_output_logic.v"
-// file 17 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_ring_counter.v"
-// file 18 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_wr_ctrl_logic.v"
-// file 19 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_prim_gen.v"
-// file 20 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_rd_ctrl_logic.v"
-// file 21 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_wr_ctrl_logic.v"
-// file 22 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v"
-// file 23 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dp/rtl/lscc_lfmxo4_ram_dp_behavioral.v"
-// file 24 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dp/rtl/lscc_lfmxo4_ram_dp_functions.vh"
-// file 25 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v"
-// file 26 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dp/rtl/lscc_lfmxo4_ram_dp_lut_decode.v"
-// file 27 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dq/rtl/hsiao_ecc_decoder.v"
-// file 28 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dq/rtl/hsiao_ecc_encoder.v"
-// file 29 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v"
-// file 30 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dq/rtl/lscc_lfmxo4_ram_dq_lut_decode.v"
-// file 31 "c:/lscc/radiant/2026.1/ip/common/adder/rtl/lscc_adder.v"
-// file 32 "c:/lscc/radiant/2026.1/ip/common/adder_subtractor/rtl/lscc_add_sub.v"
-// file 33 "c:/lscc/radiant/2026.1/ip/common/complex_mult/rtl/lscc_complex_mult.v"
-// file 34 "c:/lscc/radiant/2026.1/ip/common/counter/rtl/lscc_cntr.v"
-// file 35 "c:/lscc/radiant/2026.1/ip/common/fifo/rtl/lscc_fifo.v"
-// file 36 "c:/lscc/radiant/2026.1/ip/common/fifo_dc/rtl/lscc_fifo_dc.v"
-// file 37 "c:/lscc/radiant/2026.1/ip/common/mult_accumulate/rtl/lscc_mult_accumulate.v"
-// file 38 "c:/lscc/radiant/2026.1/ip/common/mult_add_sub/rtl/lscc_mult_add_sub.v"
-// file 39 "c:/lscc/radiant/2026.1/ip/common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v"
-// file 40 "c:/lscc/radiant/2026.1/ip/common/multiplier/rtl/lscc_multiplier.v"
-// file 41 "c:/lscc/radiant/2026.1/ip/common/ram_dp/rtl/lscc_ram_dp.v"
-// file 42 "c:/lscc/radiant/2026.1/ip/common/ram_dq/rtl/lscc_ram_dq.v"
-// file 43 "c:/lscc/radiant/2026.1/ip/common/rom/rtl/lscc_rom.v"
-// file 44 "c:/lscc/radiant/2026.1/ip/common/subtractor/rtl/lscc_subtractor.v"
-// file 45 "c:/lscc/radiant/2026.1/ip/pmi/pmi_add.v"
-// file 46 "c:/lscc/radiant/2026.1/ip/pmi/pmi_addsub.v"
-// file 47 "c:/lscc/radiant/2026.1/ip/pmi/pmi_complex_mult.v"
-// file 48 "c:/lscc/radiant/2026.1/ip/pmi/pmi_counter.v"
-// file 49 "c:/lscc/radiant/2026.1/ip/pmi/pmi_dsp.v"
-// file 50 "c:/lscc/radiant/2026.1/ip/pmi/pmi_fifo.v"
-// file 51 "c:/lscc/radiant/2026.1/ip/pmi/pmi_fifo_dc.v"
-// file 52 "c:/lscc/radiant/2026.1/ip/pmi/pmi_mac.v"
-// file 53 "c:/lscc/radiant/2026.1/ip/pmi/pmi_mult.v"
-// file 54 "c:/lscc/radiant/2026.1/ip/pmi/pmi_multaddsub.v"
-// file 55 "c:/lscc/radiant/2026.1/ip/pmi/pmi_multaddsubsum.v"
-// file 56 "c:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dp.v"
-// file 57 "c:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dp_be.v"
-// file 58 "c:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dq.v"
-// file 59 "c:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dq_be.v"
-// file 60 "c:/lscc/radiant/2026.1/ip/pmi/pmi_rom.v"
-// file 61 "c:/lscc/radiant/2026.1/ip/pmi/pmi_sub.v"
-// file 62 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/ccu2_b.v"
-// file 63 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/fd1p3bz.v"
-// file 64 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/fd1p3dz.v"
-// file 65 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/fd1p3iz.v"
-// file 66 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/fd1p3jz.v"
-// file 67 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/hsosc.v"
-// file 68 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/hsosc1p8v.v"
-// file 69 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/ib.v"
-// file 70 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/ifd1p3az.v"
-// file 71 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/lsosc.v"
-// file 72 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/lsosc1p8v.v"
-// file 73 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/ob.v"
-// file 74 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/obz_b.v"
-// file 75 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/ofd1p3az.v"
-// file 76 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/pdp4k.v"
-// file 77 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/rgb.v"
-// file 78 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/rgb1p8v.v"
-// file 79 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/sp256k.v"
-// file 80 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/legacy.v"
+// file 4 "c:/users/pclark/documents/github/e155/lab01/fpga/radiant_project/lab01/source/impl_1/lab01_tb.sv"
+// file 5 "c:/users/pclark/documents/github/e155/lab01/fpga/radiant_project/lab01/source/impl_1/seven_seg.sv"
+// file 6 "c:/lscc/radiant/2026.1/ip/pmi/pmi_ice40up.v"
+// file 7 "c:/lscc/radiant/2026.1/ip/pmi/pmi_ice40up.vhd"
+// file 8 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v"
+// file 9 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_distributed_ram.v"
+// file 10 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_ecc.v"
+// file 11 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_flag_and_cnts_logic.v"
+// file 12 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_gray_reg.v"
+// file 13 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_gray_synchronizer.v"
+// file 14 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden.v"
+// file 15 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_prim.v"
+// file 16 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_rd_ctrl_logic.v"
+// file 17 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_rd_output_logic.v"
+// file 18 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_ring_counter.v"
+// file 19 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_wr_ctrl_logic.v"
+// file 20 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_prim_gen.v"
+// file 21 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_rd_ctrl_logic.v"
+// file 22 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_wr_ctrl_logic.v"
+// file 23 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v"
+// file 24 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dp/rtl/lscc_lfmxo4_ram_dp_behavioral.v"
+// file 25 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dp/rtl/lscc_lfmxo4_ram_dp_functions.vh"
+// file 26 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v"
+// file 27 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dp/rtl/lscc_lfmxo4_ram_dp_lut_decode.v"
+// file 28 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dq/rtl/hsiao_ecc_decoder.v"
+// file 29 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dq/rtl/hsiao_ecc_encoder.v"
+// file 30 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v"
+// file 31 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dq/rtl/lscc_lfmxo4_ram_dq_lut_decode.v"
+// file 32 "c:/lscc/radiant/2026.1/ip/common/adder/rtl/lscc_adder.v"
+// file 33 "c:/lscc/radiant/2026.1/ip/common/adder_subtractor/rtl/lscc_add_sub.v"
+// file 34 "c:/lscc/radiant/2026.1/ip/common/complex_mult/rtl/lscc_complex_mult.v"
+// file 35 "c:/lscc/radiant/2026.1/ip/common/counter/rtl/lscc_cntr.v"
+// file 36 "c:/lscc/radiant/2026.1/ip/common/fifo/rtl/lscc_fifo.v"
+// file 37 "c:/lscc/radiant/2026.1/ip/common/fifo_dc/rtl/lscc_fifo_dc.v"
+// file 38 "c:/lscc/radiant/2026.1/ip/common/mult_accumulate/rtl/lscc_mult_accumulate.v"
+// file 39 "c:/lscc/radiant/2026.1/ip/common/mult_add_sub/rtl/lscc_mult_add_sub.v"
+// file 40 "c:/lscc/radiant/2026.1/ip/common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v"
+// file 41 "c:/lscc/radiant/2026.1/ip/common/multiplier/rtl/lscc_multiplier.v"
+// file 42 "c:/lscc/radiant/2026.1/ip/common/ram_dp/rtl/lscc_ram_dp.v"
+// file 43 "c:/lscc/radiant/2026.1/ip/common/ram_dq/rtl/lscc_ram_dq.v"
+// file 44 "c:/lscc/radiant/2026.1/ip/common/rom/rtl/lscc_rom.v"
+// file 45 "c:/lscc/radiant/2026.1/ip/common/subtractor/rtl/lscc_subtractor.v"
+// file 46 "c:/lscc/radiant/2026.1/ip/pmi/pmi_add.v"
+// file 47 "c:/lscc/radiant/2026.1/ip/pmi/pmi_addsub.v"
+// file 48 "c:/lscc/radiant/2026.1/ip/pmi/pmi_complex_mult.v"
+// file 49 "c:/lscc/radiant/2026.1/ip/pmi/pmi_counter.v"
+// file 50 "c:/lscc/radiant/2026.1/ip/pmi/pmi_dsp.v"
+// file 51 "c:/lscc/radiant/2026.1/ip/pmi/pmi_fifo.v"
+// file 52 "c:/lscc/radiant/2026.1/ip/pmi/pmi_fifo_dc.v"
+// file 53 "c:/lscc/radiant/2026.1/ip/pmi/pmi_mac.v"
+// file 54 "c:/lscc/radiant/2026.1/ip/pmi/pmi_mult.v"
+// file 55 "c:/lscc/radiant/2026.1/ip/pmi/pmi_multaddsub.v"
+// file 56 "c:/lscc/radiant/2026.1/ip/pmi/pmi_multaddsubsum.v"
+// file 57 "c:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dp.v"
+// file 58 "c:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dp_be.v"
+// file 59 "c:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dq.v"
+// file 60 "c:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dq_be.v"
+// file 61 "c:/lscc/radiant/2026.1/ip/pmi/pmi_rom.v"
+// file 62 "c:/lscc/radiant/2026.1/ip/pmi/pmi_sub.v"
+// file 63 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/ccu2_b.v"
+// file 64 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/fd1p3bz.v"
+// file 65 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/fd1p3dz.v"
+// file 66 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/fd1p3iz.v"
+// file 67 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/fd1p3jz.v"
+// file 68 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/hsosc.v"
+// file 69 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/hsosc1p8v.v"
+// file 70 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/ib.v"
+// file 71 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/ifd1p3az.v"
+// file 72 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/lsosc.v"
+// file 73 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/lsosc1p8v.v"
+// file 74 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/ob.v"
+// file 75 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/obz_b.v"
+// file 76 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/ofd1p3az.v"
+// file 77 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/pdp4k.v"
+// file 78 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/rgb.v"
+// file 79 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/rgb1p8v.v"
+// file 80 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/sp256k.v"
+// file 81 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/legacy.v"
 
 //
 // Verilog Description of module lab01_pc
@@ -108,10 +109,10 @@ module lab01_pc (input [3:0]s, input reset, input enable, output [2:0]led,
     (* lut_function="((B)+!A)" *) LUT4 i300_2_lut (.A(enable_c), .B(n25), 
             .Z(n346));
     defparam i300_2_lut.INIT = "0xdddd";
-    (* LSE_LINE_FILE_ID=26, LSE_LCOL=12, LSE_RCOL=46, LSE_LLINE=30, LSE_RLINE=30 *) seven_seg display1 (led_c[0], 
-            {s_c}, {seg_c});
+    (* LSE_LINE_FILE_ID=26, LSE_LCOL=12, LSE_RCOL=46, LSE_LLINE=30, LSE_RLINE=30 *) seven_seg display1 ({s_c}, 
+            {seg_c}, led_c[0]);
     (* LSE_LINE_FILE_ID=26, LSE_LCOL=3, LSE_RCOL=74, LSE_LLINE=27, LSE_RLINE=27 *) counter counter1 (n346, 
-            int_osc, n25, reset_c, led_c[2]);
+            reset_c, int_osc, n25, led_c[2]);
     IB \s_pad[3]  (.I(s[3]), .O(s_c[3]));
     IB \s_pad[2]  (.I(s[2]), .O(s_c[2]));
     IB \s_pad[1]  (.I(s[1]), .O(s_c[1]));
@@ -132,7 +133,7 @@ module lab01_pc (input [3:0]s, input reset, input enable, output [2:0]led,
             .TRIM9(GND_net), .TRIM8(GND_net), .TRIM7(GND_net), .TRIM6(GND_net), 
             .TRIM5(GND_net), .TRIM4(GND_net), .TRIM3(GND_net), .TRIM2(GND_net), 
             .TRIM1(GND_net), .TRIM0(GND_net), .CLKHF(int_osc));
-    defparam hf_osc.CLKHF_DIV = "0b01";
+    defparam hf_osc.CLKHF_DIV = "0b00";
     defparam hf_osc.FABRIC_TRIME = "DISABLE";
     
 endmodule
@@ -141,7 +142,7 @@ endmodule
 // Verilog Description of module seven_seg
 //
 
-module seven_seg (output \led_c[0] , input [3:0]s_c, output [6:0]seg_c);
+module seven_seg (input [3:0]s_c, output [6:0]seg_c, output \led_c[0] );
     
     
     (* lut_function="(A (B (D)+!B !((D)+!C))+!A !((C+(D))+!B))" *) LUT4 s_c_3__N_1_I_0_4_lut (.A(s_c[1]), 
@@ -175,20 +176,21 @@ endmodule
 // Verilog Description of module counter
 //
 
-module counter (input n346, input int_osc, output n25, input reset_c, 
+module counter (input n346, input reset_c, input int_osc, output n25, 
             output \led_c[2] );
     
     wire [31:0]counter;
     (* is_clock=1 *) wire int_osc;
     
-    wire GND_net, VCC_net, n966, n28, n984;
+    wire GND_net, VCC_net;
     wire [31:0]n167;
     
-    wire n4, n433, n312, n993, n957, n427, n990, n999, n34, 
-        n307, n4_adj_52, n548, n407, n417, n981, n419, n975, 
-        n431, n415, n435, n429, n411, n551, n972, n1002, n423, 
-        n996, n960, n969, n12, n413, n425, n987, n421, n978, 
-        n4_adj_53, n409, n963, n26, n32, n4_adj_54, n405, n954;
+    wire n419, n4, n963, n28, n433, n1002, n954, n429, n409, 
+        n975, n34, n990, n312, n4_adj_52, n417, n548, n993, 
+        n435, n551, n307, n415, n972, n999, n431, n996, n427, 
+        n12, n413, n981, n969, n411, n966, n425, n987, n957, 
+        n423, n984, n421, n978, n4_adj_53, n26, n32, n4_adj_54, 
+        n407, n960, n405;
     
     (* lut_function="(A (B (C+(D)))+!A (B (C)))" *) LUT4 i93_4_lut (.A(counter[11]), 
             .B(counter[13]), .C(counter[12]), .D(n4), .Z(n28));

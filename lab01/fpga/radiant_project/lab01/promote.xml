@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<userSetting name="C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/promote.xml" version="Diamond (64-bit) 2026.1.0.37.0" date="Tue Sep 08 18:36:22 2026" vendor="Lattice Semiconductor Corporation" >
-  <msg mid="35901328" type="Info" internal="true" />
+<userSetting name="C:/Users/pclark/Documents/GitHub/e155/lab01/fpga/radiant_project/lab01/promote.xml" version="Diamond (64-bit) 2026.1.0.37.0" date="Wed Sep 09 15:38:43 2026" vendor="Lattice Semiconductor Corporation" >
   <msg mid="2043310" type="Info" internal="true" />
+  <msg mid="35901328" type="Info" internal="true" />
   <msg mid="35901172" type="Warning" internal="true" />
-  <msg mid="2044344" type="Error" internal="true" />
-  <msg mid="2043330" type="Warning" internal="true" />
   <msg mid="35901137" type="Warning" internal="true" />
+  <msg mid="2043330" type="Warning" internal="true" />
   <msg mid="2043007" type="Error" internal="true" />
+  <msg mid="2044344" type="Error" internal="true" />
   <msg mid="2043072" type="Error" internal="true" />
-  <msg mid="35901208" type="Warning" internal="true" />
   <msg mid="2043137" type="Error" internal="true" />
+  <msg mid="35901208" type="Warning" internal="true" />
   <msg mid="35931002" type="Warning" internal="true" />
   <msg mid="2043018" type="Info" internal="true" />
   <msg mid="35901128" type="Warning" internal="true" />
