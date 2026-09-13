@@ -8,9 +8,9 @@ module scanner#(
 	
 	logic toggle;
 	counter_mux #(count_width, maxcount)
-		counter1(.clk(clk), .reset(reset), .enable(enable), .toggle(toggle));
-	logic [3:0] state;
-	always_ff @(posedge toggle or posedge reset) begin
+		counter1(.clk(clk), .reset(1'b0), .enable(1'b1), .toggle(toggle));
+	logic [4:0] state;
+	always_ff @(posedge toggle) begin
 		if (reset) state <= 4'b0001;
 		else if(enable) begin
 			case (state)
@@ -22,5 +22,4 @@ module scanner#(
 			endcase
 			end
 		end
-	assign scan = state;
 endmodule

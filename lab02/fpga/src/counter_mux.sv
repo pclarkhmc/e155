@@ -2,7 +2,7 @@
 Pierce Clark  pclark@hmc.edu
 Counter module with reset, enable, maxcount
 */
-module counter #(
+module counter_mux#(
 	parameter int count_width = 32,
 	parameter int maxcount = 20000000 // Default value is 20 million
 )(
