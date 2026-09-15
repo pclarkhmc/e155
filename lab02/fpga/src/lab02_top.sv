@@ -5,7 +5,8 @@ module lab02_top#(
 	input logic [7:0] switches,
 	input logic enable, reset,
 	output logic [6:0] display,
-	output logic [1:0] seg_power
+	output logic [1:0] seg_power,
+	output logic [3:0] scan
 );
 
 	//Swtiches worked backwards, flip signal
@@ -31,8 +32,7 @@ module lab02_top#(
 	
 
 	// keypad scanner:
-	logic [3:0] scan;
-	scanner #(32, 5)
-		scanner1 (.clk(int_clk), .enable(enable), .reset(reset), .scan(scan));
+	scanner #(32, 480000)
+		scanner1 (.clk(int_clk), .enable(!enable), .reset(!reset), .scan(scan));
 
 endmodule
