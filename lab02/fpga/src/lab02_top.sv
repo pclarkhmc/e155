@@ -32,7 +32,7 @@ module lab02_top#(
 	
 
 	// keypad scanner:
-	scanner #(32, 480000)
+	scanner #(32, 6000000)
 		scanner1 (.clk(int_clk), .enable(!enable), .reset(!reset), .scan(scan));
 
 endmodule
