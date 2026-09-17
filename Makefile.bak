@@ -1,7 +1,7 @@
 BOARD    := ice40_generic
 CABLE    := ft232
 BINDIR   := Bin-to-flash
-LOADER   ?= C:/Users/pierc/Microprocessors/Tools_mvtest/openFPGALoaderWSL/openFPGALoaderWSL.bat
+LOADER   := openFPGALoaderWSL.bat
 BINFILE  := $(firstword $(wildcard $(BINDIR)/*.bin))
 
 .DEFAULT_GOAL := load
