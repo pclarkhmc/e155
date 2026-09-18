@@ -1,0 +1,25 @@
+module scanner#(
+	parameter int count_width = 32,
+	parameter int maxcount = 20000000 // Default value is 20 million
+)(
+	input clk, enable, reset,
+	output [3:0] scan
+	);
+	
+	logic toggle;
+	counter_mux #(count_width, maxcount)
+		counter1(.clk(clk), .reset(1'b0), .enable(1'b1), .toggle(toggle));
+	logic [4:0] state;
+	always_ff @(posedge toggle) begin
+		if (reset) state <= 4'b0001;
+		else if(enable) begin
+			case (state)
+				4'b0001: state <= 4'b0010;
+				4'b0010: state <= 4'b0100;
+				4'b0100: state <= 4'b1000;
+				4'b1000: state <= 4'b0001;
+				default: state <= 4'b0001;
+			endcase
+			end
+		end
+endmodule
