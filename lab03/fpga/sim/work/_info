@@ -1,0 +1,415 @@
+m255
+K4
+z2
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+Z2 !s12c _opt
+R1
+!s12c _opt2
+R1
+R0
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z3 dC:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03
+T_opt
+!i145 1
+!i144 0
+!s110 1789956338
+VN:1a6PlN^KYOQ<7IS^X@K3
+04 16 4 work tb_keypad_reader fast 0
+=1-8cf8c5f841ed-6ab090f1-33c-7cf0
+R1
+!s12f OEM25U2 
+Z4 !s12b OEM100
+Z5 !s124 OEM100
+Z6 !s135 nogc
+Z7 o-quiet -auto_acc_if_foreign -work work +acc
+Z8 tCvgOpt 0 defaultOptions 1107585188
+n@_opt
+Z9 OL;O;2025.2;82
+R3
+T_opt1
+!i145 1
+!i144 0
+!s110 1789962719
+VL_DD13^U5LI2J5o`^XSI40
+04 12 4 work tb_lab03_top fast 0
+=1-8cf8c5f841ed-6ab0a9de-36a-9750
+R1
+!s12f OEM25U19 
+R4
+R5
+R6
+o-quiet -auto_acc_if_foreign -work work -L iCE40UP +acc
+R8
+n@_opt1
+R9
+T_opt2
+!i145 1
+!i144 0
+!s110 1789954894
+VIOc7N4XAg^B0l705`kT301
+04 14 4 work keypad_decoder fast 0
+04 17 4 work tb_keypad_decoder fast 0
+=1-8cf8c5f841ed-6ab08b4d-385-6808
+R1
+!s12f OEM25U3 
+R4
+R5
+R6
+R7
+R8
+n@_opt2
+R9
+R3
+vcounter
+2C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/counter.sv
+Z10 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+Z11 !s110 1789962705
+!i10b 1
+!s100 99@V]9KN>]Ci65Hf?UdF_2
+IneXeQ[fL4Qmo<`kkgf>fZ3
+S1
+Z12 dC:/Users/pclark/Documents/GitHub/e155/lab03/fpga/sim
+Z13 w1789938366
+8C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/counter.sv
+FC:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/counter.sv
+!i122 131
+L0 5 15
+Z14 VDg1SIo80bB@j0V0VzS_@n1
+Z15 OL;L;2025.2;82
+r1
+!s85 0
+31
+!s108 1789962704.000000
+!s107 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/counter.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/counter.sv|
+!i113 0
+Z16 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z17 tCvgOpt 0 defaultOptions 1085333592
+vdebouncer
+2C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/debouncer.sv
+R10
+R11
+!i10b 1
+!s100 hNk1>4g2OC6iVRdk5[jVb2
+If99gbQ5;nT;@4:fiGJc8C3
+S1
+R12
+w1789954560
+8C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/debouncer.sv
+FC:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/debouncer.sv
+!i122 132
+Z18 L0 1 32
+R14
+R15
+r1
+!s85 0
+31
+Z19 !s108 1789962705.000000
+!s107 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/debouncer.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/debouncer.sv|
+!i113 0
+R16
+R17
+vdisplay
+2C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/display.sv
+R10
+R11
+!i10b 1
+!s100 DU7a673eBAQPjd2GIJ7LM3
+I4W<_V=_EM2nUYedXQjzAc0
+S1
+R12
+w1789948889
+8C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/display.sv
+FC:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/display.sv
+!i122 133
+L0 1 23
+R14
+R15
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/display.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/display.sv|
+!i113 0
+R16
+R17
+vkeypad_decoder
+2C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/keypad_decoder.sv
+R10
+R11
+!i10b 1
+!s100 1PUT:UQW3MBnzgZ>SGV`B2
+I_3bE>>8RndN]hflEnCBBd3
+S1
+R12
+w1789948850
+8C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/keypad_decoder.sv
+FC:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/keypad_decoder.sv
+!i122 134
+R18
+R14
+R15
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/keypad_decoder.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/keypad_decoder.sv|
+!i113 0
+R16
+R17
+vkeypad_reader
+2C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/keypad_reader.sv
+R10
+R11
+!i10b 1
+!s100 H4LTGKldlPzzZ^M>8EWT22
+I1O04YXMZH;MKCW>NTdN]G3
+S1
+R12
+w1789959824
+8C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/keypad_reader.sv
+FC:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/keypad_reader.sv
+!i122 135
+L0 1 42
+R14
+R15
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/keypad_reader.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/keypad_reader.sv|
+!i113 0
+R16
+R17
+vlab03_top
+2C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/lab03_top.sv
+R10
+R11
+!i10b 1
+!s100 V1Te4lj<cNLmHkh]^l3>D1
+I9XFjkaE`FaV6LCQj_LSM=0
+S1
+R12
+w1789958384
+8C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/lab03_top.sv
+FC:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/lab03_top.sv
+!i122 136
+L0 1 77
+R14
+R15
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/lab03_top.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/lab03_top.sv|
+!i113 0
+R16
+R17
+vscanner
+2C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/scanner.sv
+R10
+R11
+!i10b 1
+!s100 VH<Rm[^TPzQVZolaW=kG^2
+Ih@nza6EnR_3>d`X`_cTXR2
+S1
+R12
+w1789962106
+8C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/scanner.sv
+FC:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/scanner.sv
+!i122 137
+L0 1 28
+R14
+R15
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/scanner.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/scanner.sv|
+!i113 0
+R16
+R17
+vseven_seg
+2C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/seven_seg.sv
+R10
+R11
+!i10b 1
+!s100 hL8YJkP^o=0g24hM^Yn_o1
+IYeX;=`d>1:G@Vd>Oj^G091
+S1
+R12
+R13
+8C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/seven_seg.sv
+FC:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/seven_seg.sv
+!i122 138
+L0 5 28
+R14
+R15
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/seven_seg.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/seven_seg.sv|
+!i113 0
+R16
+R17
+vsync
+2C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/sync.sv
+R10
+Z20 !s110 1789962706
+!i10b 1
+!s100 o0JXz=Y6amS<3mKZob[Ff2
+I[6G:N?C?ho1=hdiWT6=:j2
+S1
+R12
+w1789948903
+8C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/sync.sv
+FC:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/sync.sv
+!i122 139
+L0 1 14
+R14
+R15
+r1
+!s85 0
+31
+Z21 !s108 1789962706.000000
+!s107 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/sync.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/sync.sv|
+!i113 0
+R16
+R17
+vtb_debouncer
+2C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_debouncer.sv
+R10
+Z22 !s110 1789956310
+!i10b 1
+!s100 1iS<9`W`gee?<FXFB4gWZ0
+IHcYPM_ndC<kP7UN2=^TY>2
+S1
+R12
+w1789954594
+8C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_debouncer.sv
+FC:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_debouncer.sv
+!i122 16
+L0 3 44
+R14
+R15
+r1
+!s85 0
+31
+Z23 !s108 1789956310.000000
+!s107 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_debouncer.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_debouncer.sv|
+!i113 0
+R16
+R17
+vtb_keypad_decoder
+2C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_keypad_decoder.sv
+R10
+R22
+!i10b 1
+!s100 4J3h?`cNRmWcD>f5KbN?61
+ICLoU>_eCVHimD<O3TjC>72
+S1
+R12
+w1789954857
+8C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_keypad_decoder.sv
+FC:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_keypad_decoder.sv
+!i122 19
+L0 4 55
+R14
+R15
+r1
+!s85 0
+31
+R23
+!s107 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_keypad_decoder.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_keypad_decoder.sv|
+!i113 0
+R16
+R17
+vtb_keypad_reader
+2C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_keypad_reader.sv
+R10
+!s110 1789956311
+!i10b 1
+!s100 ?lAdic0:a1BC?8i_1PY5F2
+IFO^fWHDlUN>oAQA<0^5Q;1
+S1
+R12
+w1789955671
+8C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_keypad_reader.sv
+FC:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_keypad_reader.sv
+!i122 21
+L0 3 81
+R14
+R15
+r1
+!s85 0
+31
+R23
+!s107 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_keypad_reader.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_keypad_reader.sv|
+!i113 0
+R16
+R17
+vtb_lab03_top
+2C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_lab03_top.sv
+R10
+R20
+!i10b 1
+!s100 ZP625LISGn40mAHjoXgV40
+Id?OT@kflhNY`^iQKG?<JD3
+S1
+R12
+w1789962695
+8C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_lab03_top.sv
+FC:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_lab03_top.sv
+!i122 140
+L0 3 75
+R14
+R15
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_lab03_top.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_lab03_top.sv|
+!i113 0
+R16
+R17

@@ -10,7 +10,7 @@ module keypad_reader(
 	statetype state, nextstate;
 	logic any_key;
 
-	assign any_key = ~&cols; // low-asserted: any column pulled down
+	assign any_key = |cols; // low-asserted: any column pulled down
 
 	always_ff @(posedge clk, posedge reset)
 		if (reset) state <= SCAN;

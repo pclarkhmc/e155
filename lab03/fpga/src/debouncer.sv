@@ -1,4 +1,6 @@
-module debouncer(
+module debouncer#(
+	parameter int flip_bit = 19
+)(
     input logic sw,
 	input logic clk, reset,
 	output logic debounced_sw
@@ -20,7 +22,7 @@ module debouncer(
 		case (state)
 			IDLE: nextstate = sw ? WAIT : IDLE;
 			WAIT: if (!sw) nextstate = IDLE; // a bounce
-				else if (counter[19]) nextstate = PRESSED;
+				else if (counter[flip_bit]) nextstate = PRESSED;
 				else nextstate = WAIT;
 			PRESSED: nextstate = sw ? PRESSED : IDLE;
 			default: nextstate = IDLE;

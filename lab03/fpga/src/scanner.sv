@@ -10,7 +10,7 @@ module scanner#(
 	logic [31:0] counter;
 	counter #(32, 480000)
 		counter1(.clk(clk), .reset(reset), .enable(enable), .count(counter));
-	assign toggle = (counter >= maxcount>>1);
+	assign toggle = (counter >= 480000>>1);
 	logic [3:0] state;
 	always_ff @(posedge toggle or posedge reset) begin
 		if (reset) state <= 4'b0001;

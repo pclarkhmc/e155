@@ -32,7 +32,7 @@ module tb_keypad_decoder();
 		cols = 8;
 		#5;
 		//scan through row 3
-		rows = 3;
+		rows = 4;
 		cols = 1;
 		#5;
 		cols = 2;
@@ -42,7 +42,7 @@ module tb_keypad_decoder();
 		cols = 8;
 		#5;
 		//scan through row 4
-		rows = 4;
+		rows = 8;
 		cols = 1;
 		#5;
 		cols = 2;

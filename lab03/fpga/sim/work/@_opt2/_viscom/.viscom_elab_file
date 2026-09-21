@@ -1,0 +1,1 @@
+C:/lscc/radiant/2026.1/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 934320 work.keypad_decoder work.tb_keypad_decoder -quiet -auto_acc_if_foreign -work work +acc -allow_unnamed -o _opt2 -id 1-8cf8c5f841ed-6ab08b4d-385-6808 +__betafsm

@@ -3,7 +3,7 @@
 module tb_debouncer();
 
 	logic sw, clk, reset, debounced_sw;
-	debouncer dut(.sw(sw), .clk(clk), .reset(reset), .debounced_sw(debounced_sw));
+	debouncer #(6) dut(.sw(sw), .clk(clk), .reset(reset), .debounced_sw(debounced_sw));
 
 	always begin
 		clk = 0; #5;
@@ -37,8 +37,10 @@ module tb_debouncer();
 		#50
 		sw = 1;
 		#40
-		sw = 0;
+		sw = 1;
 		#5000;
+		sw = 0;
+		#50
 		$stop;
 	end
 endmodule
