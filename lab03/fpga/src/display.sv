@@ -9,7 +9,7 @@ module display(
 	logic toggle;
     logic [31:0] count;
 	counter #(32, 480000)
-		counter1(.clk(clk), .reset(!reset), .enable(!enable), .count(count));
+		counter1(.clk(clk), .reset(reset), .enable(enable), .count(count));
     assign toggle = (count >= 480000>>1);
  
 	//muxing logic:

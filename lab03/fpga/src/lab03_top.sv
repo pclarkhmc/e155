@@ -1,5 +1,5 @@
 module lab03_top#(
-	parameter int flip_bit = 19
+	parameter int flip_bit = 17
 )(
 	// control
 	input logic enable_in, reset_in,
@@ -59,12 +59,14 @@ module lab03_top#(
 
 	// keypad scanner:
 	logic scan;
+	logic [3:0] row_sel;
 	scanner #(32, 6000000)
-		scanner1 (.clk(int_clk), .enable(scan), .reset(reset), .scan(rows));
+		scanner1 (.clk(int_clk), .enable(scan), .reset(reset), .scan(row_sel));
+	assign rows = ~row_sel;
 
 	// decode to get key
 	logic [3:0] key;
-	keypad_decoder keypad_decoder1 (.cols(cols_debounce), .rows(rows), .key(key));
+	keypad_decoder keypad_decoder1 (.cols(cols_debounce), .rows(row_sel), .key(key));
 	
 	// determine when to send
 	logic [3:0] d0, d1;
