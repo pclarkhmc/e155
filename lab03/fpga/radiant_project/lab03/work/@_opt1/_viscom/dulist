@@ -1,0 +1,4 @@
+2 7 counter 4 fast 75 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/work 0 0 0 0 30 0
+2 9 seven_seg 4 fast 75 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/work 0 0 0 0 45 0
+2 7 display 4 fast 75 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/work 0 0 0 0 39 0
+1 10 tb_display 4 fast 75 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/work 0 0 0 0 84 0

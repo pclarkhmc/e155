@@ -12,10 +12,12 @@ module keypad_reader(
 
 	assign any_key = |cols; // low-asserted: any column pulled down
 
+	// reset logic
 	always_ff @(posedge clk, posedge reset)
 		if (reset) state <= SCAN;
 		else state <= nextstate;
 
+	// next state logic
 	always_comb
 		case (state)
 			SCAN: nextstate = any_key ? PRESS : SCAN;
@@ -24,6 +26,7 @@ module keypad_reader(
 			default: nextstate = SCAN;
 		endcase
 	
+	// scan / display logic
 	always_ff @(posedge clk, posedge reset)
 		if (reset) begin
 			scan <= 1'b0;
@@ -35,12 +38,14 @@ module keypad_reader(
 			else scan <= 0;
 			if (state == PRESS) begin
 				d1 <= d0;
-				d0 <= key; // combinational decode of {rows, cols}
+				d0 <= key; // take current key
 			end
 		end
-		
+		// if (state == hold) & (key != oldkey) & onekey
+
 endmodule
 
+ 
 
 
 

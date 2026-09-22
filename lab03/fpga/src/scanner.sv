@@ -1,7 +1,4 @@
-module scanner#(
-	parameter int count_width = 32,
-	parameter int maxcount = 20000000 // Default value is 20 million
-)(
+module scanner(
 	input clk, enable, reset,
 	output [3:0] scan
 	);

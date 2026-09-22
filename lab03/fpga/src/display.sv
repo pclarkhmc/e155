@@ -14,7 +14,7 @@ module display(
  
 	//muxing logic:
 	logic [3:0] seven_comb_in;
-	assign seg_power = {toggle, !toggle};
+	assign seg_power = {!toggle, toggle};
 	assign seven_comb_in = toggle ? data[7:4] : data[3:0];
 
     // instantiate seven segment logic
