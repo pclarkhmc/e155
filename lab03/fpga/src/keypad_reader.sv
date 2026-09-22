@@ -6,7 +6,7 @@ module keypad_reader(
 	output logic [3:0] d0, d1
 	);
 	
-	typedef enum logic [2:0] {SCAN = 3'b001, PRESS = 3'b010, HOLD = 3'b100} statetype;
+	typedef enum logic [3:0] {SCAN = 4'b0001, PRESS = 4'b0010, HOLD = 4'b0100, UNPRESS = 4'b1000} statetype;
 	statetype state, nextstate;
 	logic any_key;
 
@@ -22,7 +22,8 @@ module keypad_reader(
 		case (state)
 			SCAN: nextstate = any_key ? PRESS : SCAN;
 			PRESS: nextstate = HOLD;
-			HOLD: nextstate = any_key ? HOLD : SCAN;
+			HOLD: nextstate = any_key ? HOLD : UNPRESS;
+			UNPRESS: nextstate = SCAN;
 			default: nextstate = SCAN;
 		endcase
 	
@@ -36,7 +37,7 @@ module keypad_reader(
 			// Only SCAN moves the row pattern. Everything else freezes it.
 			if (state == SCAN && !any_key) scan <= 1;
 			else scan <= 0;
-			if (state == PRESS) begin
+			if (state == PRESS) | ((state == UNPRESS) & (key != oldkey) & onekey)) begin
 				d1 <= d0;
 				d0 <= key; // take current key
 			end
