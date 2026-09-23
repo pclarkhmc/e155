@@ -2,7 +2,7 @@
 <RadiantProject version="4.2" radiant="2026.1.0.37.0" title="lab03" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" family_int="ice40tp" device_int="itpa08" package_int="SG48" operation_int="IND" speed_int="6" default_implementation="impl_1">
     <Options/>
     <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="lse" default_strategy="Strategy1">
-        <Options def_top="tb_lab03_top" top="lab03_top"/>
+        <Options def_top="tb_display" top="lab03_top"/>
         <Source name="../../src/counter.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
@@ -24,9 +24,6 @@
         <Source name="../../src/tb_scanner.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../src/tb_top.sv" type="Verilog" type_short="Verilog">
-            <Options VerilogStandard="System Verilog"/>
-        </Source>
         <Source name="../../src/keypad_reader.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
@@ -46,6 +43,9 @@
             <Options VerilogStandard="System Verilog"/>
         </Source>
         <Source name="../../src/tb_lab03_top.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/tb_display.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
         <Source name="pdc.pdc" type="Physical Constraints File" type_short="PDC">

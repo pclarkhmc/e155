@@ -725,3 +725,5 @@ run -all
 # ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_keypad_reader.sv(53)
 #    Time: 380 ns  Iteration: 0  Instance: /tb_keypad_reader
 # Break in Module tb_keypad_reader at C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_keypad_reader.sv line 53
+# End time: 19:11:31 on Sep 22,2026, Elapsed time: 0:14:36
+# Errors: 0, Warnings: 3

@@ -1,0 +1,110 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading project AISim
+# Compile of clk_divider.sv was successful.
+# Compile of display_mux.sv was successful.
+# Compile of hex_to_7seg.sv was successful.
+# Compile of keypad_display_core.sv was successful.
+# Compile of keypad_scanner.sv was successful.
+# Compile of sync2.sv was successful.
+# Compile of tb_keypad_display.sv was successful.
+# Compile of top.sv was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_keypad_display -voptargs=+acc
+# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/AIProto/AISim.mpf' is used as the ini file.
+# vsim -gui work.tb_keypad_display -voptargs="+acc" 
+# Start time: 19:33:36 on Sep 22,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.tb_keypad_display(fast)
+# Loading work.keypad_display_core(fast)
+# Loading work.sync2(fast)
+# Loading work.clk_divider(fast)
+# Loading work.clk_divider(fast__1)
+# Loading work.sync2(fast__1)
+# Loading work.keypad_scanner(fast)
+# Loading work.display_mux(fast)
+# Loading work.hex_to_7seg(fast)
+add wave -position insertpoint  \
+sim:/tb_keypad_display/dut/CLK_HZ \
+sim:/tb_keypad_display/dut/SCAN_HZ \
+sim:/tb_keypad_display/dut/MUX_HZ \
+sim:/tb_keypad_display/dut/PHASE_TICKS \
+sim:/tb_keypad_display/dut/BLANK_TICKS \
+sim:/tb_keypad_display/dut/SEG_ACTIVE_LOW \
+sim:/tb_keypad_display/dut/DIG_ACTIVE_LOW \
+sim:/tb_keypad_display/dut/clk \
+sim:/tb_keypad_display/dut/reset_n \
+sim:/tb_keypad_display/dut/rows_n \
+sim:/tb_keypad_display/dut/col_drive \
+sim:/tb_keypad_display/dut/seg \
+sim:/tb_keypad_display/dut/dig_en \
+sim:/tb_keypad_display/dut/rst_n_sync \
+sim:/tb_keypad_display/dut/rst \
+sim:/tb_keypad_display/dut/scan_tick \
+sim:/tb_keypad_display/dut/mux_tick \
+sim:/tb_keypad_display/dut/rows_n_sync \
+sim:/tb_keypad_display/dut/key_valid \
+sim:/tb_keypad_display/dut/key_code \
+sim:/tb_keypad_display/dut/digit_older \
+sim:/tb_keypad_display/dut/digit_recent
+run -all
+# ** Warning: (vsim-8315) No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Process: /tb_keypad_display/dut/u_display/u_dec/#implicit#unique__19 File: C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/hex_to_7seg.sv Line: 19
+# ** Warning: (vsim-8315) No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Process: /tb_keypad_display/dut/u_scanner/#implicit#unique__75 File: C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/keypad_scanner.sv Line: 75
+# pass: bouncy '5' registers exactly once
+# pass: recent digit = 5
+# pass: second key ignored while any key held
+# pass: no late registration after full release
+# pass: digits shift: older=5 recent=A
+# pass: sub-tick glitches rejected
+# pass: all 16 keys decode once each
+# pass: left digit shows older key (2)
+# pass: right digit shows recent key (7)
+# pass: balanced on-time (left == right)
+# pass: blanking present between digits
+#   on_left=380 on_right=380 blank=40
+# 
+# 20 key registrations total; 0 errors
+# ALL TESTS PASSED
+# ** Note: $finish    : C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/tb_keypad_display.sv(157)
+#    Time: 296935 ns  Iteration: 1  Instance: /tb_keypad_display
+# 1
+# Break in Module tb_keypad_display at C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/tb_keypad_display.sv line 157
+add wave -position insertpoint  \
+sim:/tb_keypad_display/dut/CLK_HZ \
+sim:/tb_keypad_display/dut/SCAN_HZ \
+sim:/tb_keypad_display/dut/MUX_HZ \
+sim:/tb_keypad_display/dut/PHASE_TICKS \
+sim:/tb_keypad_display/dut/BLANK_TICKS \
+sim:/tb_keypad_display/dut/SEG_ACTIVE_LOW \
+sim:/tb_keypad_display/dut/DIG_ACTIVE_LOW \
+sim:/tb_keypad_display/dut/clk \
+sim:/tb_keypad_display/dut/reset_n \
+sim:/tb_keypad_display/dut/rows_n \
+sim:/tb_keypad_display/dut/col_drive \
+sim:/tb_keypad_display/dut/seg \
+sim:/tb_keypad_display/dut/dig_en \
+sim:/tb_keypad_display/dut/rst_n_sync \
+sim:/tb_keypad_display/dut/rst \
+sim:/tb_keypad_display/dut/scan_tick \
+sim:/tb_keypad_display/dut/mux_tick \
+sim:/tb_keypad_display/dut/rows_n_sync \
+sim:/tb_keypad_display/dut/key_valid \
+sim:/tb_keypad_display/dut/key_code \
+sim:/tb_keypad_display/dut/digit_older \
+sim:/tb_keypad_display/dut/digit_recent

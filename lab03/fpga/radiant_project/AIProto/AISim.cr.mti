@@ -1,0 +1,65 @@
+C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/top.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/top.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/AIProto/AISim.mpf' is used as the ini file.
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/sync2.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/sync2.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/AIProto/AISim.mpf' is used as the ini file.
+-- Compiling module sync2
+
+Top level modules:
+	sync2
+
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/keypad_scanner.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/keypad_scanner.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/AIProto/AISim.mpf' is used as the ini file.
+-- Compiling module keypad_scanner
+
+Top level modules:
+	keypad_scanner
+
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/keypad_display_core.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/keypad_display_core.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/AIProto/AISim.mpf' is used as the ini file.
+-- Compiling module keypad_display_core
+
+Top level modules:
+	keypad_display_core
+
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/display_mux.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/display_mux.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/AIProto/AISim.mpf' is used as the ini file.
+-- Compiling module display_mux
+
+Top level modules:
+	display_mux
+
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/tb_keypad_display.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/tb_keypad_display.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/AIProto/AISim.mpf' is used as the ini file.
+-- Compiling module tb_keypad_display
+
+Top level modules:
+	tb_keypad_display
+
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/hex_to_7seg.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/hex_to_7seg.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/AIProto/AISim.mpf' is used as the ini file.
+-- Compiling module hex_to_7seg
+
+Top level modules:
+	hex_to_7seg
+
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/clk_divider.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/ai_proto_src/clk_divider.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/AIProto/AISim.mpf' is used as the ini file.
+-- Compiling module clk_divider
+
+Top level modules:
+	clk_divider
+
+} {} {}}

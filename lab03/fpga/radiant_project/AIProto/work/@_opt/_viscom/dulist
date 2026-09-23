@@ -1,0 +1,9 @@
+1 5 sync2 4 fast 77 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/AIProto/work 0 0 0 0 39 0
+1 11 clk_divider 4 fast 77 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/AIProto/work 0 0 0 0 69 0
+1 11 clk_divider 7 fast__1 77 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/AIProto/work 0 0 0 0 69 0
+1 5 sync2 7 fast__1 77 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/AIProto/work 0 0 0 0 39 0
+1 14 keypad_scanner 4 fast 77 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/AIProto/work 0 0 0 0 212 0
+1 11 hex_to_7seg 4 fast 77 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/AIProto/work 0 0 0 0 48 0
+1 11 display_mux 4 fast 77 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/AIProto/work 0 0 0 0 122 0
+1 19 keypad_display_core 4 fast 77 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/AIProto/work 0 0 0 0 97 0
+1 17 tb_keypad_display 4 fast 77 C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/AIProto/work 0 0 0 0 572 0
