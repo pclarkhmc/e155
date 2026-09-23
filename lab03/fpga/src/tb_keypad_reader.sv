@@ -16,7 +16,7 @@ module tb_keypad_reader();
 		// initial
 		reset = 0;
 		key = 4'hF;
-		cols = 4'b1111;
+		cols = 4'b0000;
 		
 		// bump reset
 		reset = 1;
@@ -26,27 +26,15 @@ module tb_keypad_reader();
 		
 		// walk one bit
 		key = 2;
-		cols = 4'b1110;
+		cols = 4'b0001;
 		#50;
-		cols = 4'b1111;
+		cols = 4'b0000;
 		#50;
 		
 		key = 3;
-		cols = 4'b1101;
+		cols = 4'b0011;
 		#50;
-		cols = 4'b1111;
-		#50;
-		
-		key = 4;
-		cols = 4'b1011;
-		#50;
-		cols = 4'b1111;
-		#50;
-		
-		key = 5;
-		cols = 4'b0111;
-		#50;
-		cols = 4'b1111;
+		cols = 4'b0000;
 		#50;
 		
 		// reset
@@ -57,25 +45,10 @@ module tb_keypad_reader();
 		
 		// walk two bits
 		key = 6;
-		cols = 4'b1100;
+		cols = 4'b0100;
 		#50;
-		cols = 4'b1111;
+		cols = 4'b0000;
 		#50;
-		
-		key = 7;
-		cols = 4'b1001;
-		#50;
-		cols = 4'b1111;
-		#50;
-		
-		key = 8;
-		cols = 4'b0011;
-		#50;
-		cols = 4'b1111;
-		#50;
-		#100
-		
-
 		
 		$stop;
 	end

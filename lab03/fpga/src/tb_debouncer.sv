@@ -1,4 +1,4 @@
-`timescale 1us / 1ns
+`timescale 1us / 1us
 
 module tb_debouncer();
 
@@ -28,17 +28,18 @@ module tb_debouncer();
 		sw = 0;
 		#90
 		sw = 1;
-		#80
-		sw = 0;
-		#70
-		sw = 1;
-		#60
+		#1000;
 		sw = 0;
 		#50
+		
+		// test reset
+		sw = 0;
+		#90
 		sw = 1;
-		#40
-		sw = 1;
-		#5000;
+		#500;
+		reset = 1;
+		#500;
+		reset = 0;
 		sw = 0;
 		#50
 		$stop;

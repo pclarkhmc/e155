@@ -1,20 +1,4 @@
-C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_lab03_top.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_lab03_top.sv
-Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
--- Compiling module tb_lab03_top
-
-Top level modules:
-	tb_lab03_top
-
-} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/sync.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/sync.sv
-Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
--- Compiling module sync
-
-Top level modules:
-	sync
-
-} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/scanner.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/scanner.sv
+C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/scanner.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/scanner.sv
 Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 ** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
 -- Compiling module scanner
@@ -30,13 +14,45 @@ Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 Top level modules:
 	tb_display
 
-} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/seven_seg.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/seven_seg.sv
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_debouncer.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_debouncer.sv
 Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 ** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
--- Compiling module seven_seg
+-- Compiling module tb_debouncer
 
 Top level modules:
-	seven_seg
+	tb_debouncer
+
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/lab03_top.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/lab03_top.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+-- Compiling module lab03_top
+
+Top level modules:
+	lab03_top
+
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/sync.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/sync.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+-- Compiling module sync
+
+Top level modules:
+	sync
+
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/counter.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/counter.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_lab03_top.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_lab03_top.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+-- Compiling module tb_lab03_top
+
+Top level modules:
+	tb_lab03_top
 
 } {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/keypad_decoder.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/keypad_decoder.sv
 Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
@@ -46,6 +62,14 @@ Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 Top level modules:
 	keypad_decoder
 
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/display.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/display.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+-- Compiling module display
+
+Top level modules:
+	display
+
 } {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/debouncer.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/debouncer.sv
 Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 ** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
@@ -54,12 +78,20 @@ Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 Top level modules:
 	debouncer
 
-} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/counter.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/counter.sv
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/seven_seg.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/seven_seg.sv
 Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 ** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
--- Compiling module counter
+-- Compiling module seven_seg
 
 Top level modules:
-	counter
+	seven_seg
+
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/keypad_reader.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/keypad_reader.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+-- Compiling module keypad_reader
+
+Top level modules:
+	keypad_reader
 
 } {} {}}

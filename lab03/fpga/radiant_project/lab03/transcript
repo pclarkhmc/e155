@@ -263,3 +263,465 @@ sim:/tb_display/dut/seven_comb_in
 run -all
 # Break key hit
 # Simulation stop requested.
+quit -sim
+# End time: 18:13:28 on Sep 22,2026, Elapsed time: 23:18:05
+# Errors: 0, Warnings: 3
+# Compile of counter.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of display.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_reader.sv failed with 2 errors.
+# Compile of lab03_top.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of seven_seg.sv was successful.
+# Compile of sync.sv was successful.
+# Compile of tb_lab03_top.sv was successful.
+# Compile of tb_display.sv was successful.
+# 11 compiles, 1 failed with 2 errors.
+# Compile of counter.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of display.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_reader.sv was successful.
+# Compile of lab03_top.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of seven_seg.sv was successful.
+# Compile of sync.sv was successful.
+# Compile of tb_lab03_top.sv was successful.
+# Compile of tb_display.sv was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui -L iCE40UP -voptargs=+acc work.tb_lab03_top
+# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+# vsim -gui -L iCE40UP -voptargs="+acc" work.tb_lab03_top 
+# Start time: 18:15:04 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+# ** Error (suppressible): C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_lab03_top.sv(12): (vopt-2912) Port 'enable_in' not found in module 'lab03_top' (1st connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 18:15:04 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 4
+# Compile of counter.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of display.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_reader.sv was successful.
+# Compile of lab03_top.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of seven_seg.sv was successful.
+# Compile of sync.sv was successful.
+# Compile of tb_lab03_top.sv was successful.
+# Compile of tb_display.sv was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui -L iCE40UP -voptargs=+acc work.tb_lab03_top
+# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+# vsim -gui -L iCE40UP -voptargs="+acc" work.tb_lab03_top 
+# Start time: 18:17:05 on Sep 22,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+# ** Note: (vopt-143) Recognized 1 FSM in module "keypad_reader(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncer(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "scanner(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_lab03_top(fast)
+# Loading work.lab03_top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.sync(fast)
+# Loading work.debouncer(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast)
+# Loading work.keypad_decoder(fast)
+# Loading work.keypad_reader(fast)
+# Loading work.display(fast)
+# Loading work.seven_seg(fast)
+add wave -position insertpoint  \
+sim:/tb_lab03_top/dut/rows \
+sim:/tb_lab03_top/dut/display \
+sim:/tb_lab03_top/dut/seg_power \
+sim:/tb_lab03_top/dut/int_clk \
+sim:/tb_lab03_top/dut/cols \
+sim:/tb_lab03_top/dut/enable \
+sim:/tb_lab03_top/dut/reset \
+sim:/tb_lab03_top/dut/scan \
+sim:/tb_lab03_top/dut/key \
+sim:/tb_lab03_top/dut/d0 \
+sim:/tb_lab03_top/dut/d1
+run -all
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 18:20:28 on Sep 22,2026, Elapsed time: 0:03:23
+# Errors: 0, Warnings: 3
+# Compile of counter.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of display.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_reader.sv was successful.
+# Compile of lab03_top.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of seven_seg.sv was successful.
+# Compile of sync.sv was successful.
+# Compile of tb_lab03_top.sv was successful.
+# Compile of tb_display.sv was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui -L iCE40UP -voptargs=+acc work.tb_lab03_top
+# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+# vsim -gui -L iCE40UP -voptargs="+acc" work.tb_lab03_top 
+# Start time: 18:21:27 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_lab03_top(fast)
+# Loading work.lab03_top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.sync(fast)
+# Loading work.debouncer(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast)
+# Loading work.keypad_decoder(fast)
+# Loading work.keypad_reader(fast)
+# Loading work.display(fast)
+# Loading work.seven_seg(fast)
+add wave -position insertpoint  \
+sim:/tb_lab03_top/dut/rows \
+sim:/tb_lab03_top/dut/display \
+sim:/tb_lab03_top/dut/int_clk \
+sim:/tb_lab03_top/dut/cols \
+sim:/tb_lab03_top/dut/reset \
+sim:/tb_lab03_top/dut/scan \
+sim:/tb_lab03_top/dut/key \
+sim:/tb_lab03_top/dut/d0 \
+sim:/tb_lab03_top/dut/d1
+run -all
+# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_lab03_top.sv(57)
+#    Time: 470 ms  Iteration: 0  Instance: /tb_lab03_top
+# Break in Module tb_lab03_top at C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_lab03_top.sv line 57
+# Break key hit
+quit -sim
+# End time: 18:27:23 on Sep 22,2026, Elapsed time: 0:05:56
+# Errors: 0, Warnings: 3
+# Compile of counter.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of display.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_reader.sv was successful.
+# Compile of lab03_top.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of seven_seg.sv was successful.
+# Compile of sync.sv was successful.
+# Compile of tb_lab03_top.sv was successful.
+# Compile of tb_display.sv was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui -L iCE40UP -voptargs=+acc work.tb_lab03_top
+# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+# vsim -gui -L iCE40UP -voptargs="+acc" work.tb_lab03_top 
+# Start time: 18:27:39 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_lab03_top(fast)
+# Loading work.lab03_top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.sync(fast)
+# Loading work.debouncer(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast)
+# Loading work.keypad_decoder(fast)
+# Loading work.keypad_reader(fast)
+# Loading work.display(fast)
+# Loading work.seven_seg(fast)
+add wave -position insertpoint  \
+sim:/tb_lab03_top/dut/rows \
+sim:/tb_lab03_top/dut/display \
+sim:/tb_lab03_top/dut/int_clk \
+sim:/tb_lab03_top/dut/cols \
+sim:/tb_lab03_top/dut/reset \
+sim:/tb_lab03_top/dut/scan \
+sim:/tb_lab03_top/dut/key \
+sim:/tb_lab03_top/dut/d0 \
+sim:/tb_lab03_top/dut/d1
+run -all
+# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_lab03_top.sv(62)
+#    Time: 570 ms  Iteration: 0  Instance: /tb_lab03_top
+# Break in Module tb_lab03_top at C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_lab03_top.sv line 62
+# Break key hit
+quit -sim
+# End time: 18:34:04 on Sep 22,2026, Elapsed time: 0:06:25
+# Errors: 0, Warnings: 3
+# Compile of counter.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of display.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_reader.sv was successful.
+# Compile of lab03_top.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of seven_seg.sv was successful.
+# Compile of sync.sv was successful.
+# Compile of tb_lab03_top.sv was successful.
+# Compile of tb_display.sv was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui -L iCE40UP -voptargs=+acc work.tb_lab03_top
+# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+# vsim -gui -L iCE40UP -voptargs="+acc" work.tb_lab03_top 
+# Start time: 18:34:18 on Sep 22,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.tb_lab03_top(fast)
+# Loading work.lab03_top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.sync(fast)
+# Loading work.debouncer(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast)
+# Loading work.keypad_decoder(fast)
+# Loading work.keypad_reader(fast)
+# Loading work.display(fast)
+# Loading work.seven_seg(fast)
+add wave -position insertpoint  \
+sim:/tb_lab03_top/dut/rows \
+sim:/tb_lab03_top/dut/display \
+sim:/tb_lab03_top/dut/int_clk \
+sim:/tb_lab03_top/dut/cols \
+sim:/tb_lab03_top/dut/enable \
+sim:/tb_lab03_top/dut/reset \
+sim:/tb_lab03_top/dut/scan \
+sim:/tb_lab03_top/dut/key \
+sim:/tb_lab03_top/dut/d0 \
+sim:/tb_lab03_top/dut/d1
+run -all
+# Causality operation skipped due to absence of debug database file
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 18:36:43 on Sep 22,2026, Elapsed time: 0:02:25
+# Errors: 0, Warnings: 2
+# Compile of counter.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of display.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_reader.sv was successful.
+# Compile of lab03_top.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of seven_seg.sv was successful.
+# Compile of sync.sv was successful.
+# Compile of tb_lab03_top.sv was successful.
+# Compile of tb_display.sv was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui -L iCE40UP -voptargs=+acc work.tb_lab03_top
+# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+# vsim -gui -L iCE40UP -voptargs="+acc" work.tb_lab03_top 
+# Start time: 18:36:56 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_lab03_top(fast)
+# Loading work.lab03_top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.sync(fast)
+# Loading work.debouncer(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast)
+# Loading work.keypad_decoder(fast)
+# Loading work.keypad_reader(fast)
+# Loading work.display(fast)
+# Loading work.seven_seg(fast)
+add wave -position insertpoint  \
+sim:/tb_lab03_top/dut/rows \
+sim:/tb_lab03_top/dut/display \
+sim:/tb_lab03_top/dut/int_clk \
+sim:/tb_lab03_top/dut/cols \
+sim:/tb_lab03_top/dut/reset \
+sim:/tb_lab03_top/dut/scan \
+sim:/tb_lab03_top/dut/key \
+sim:/tb_lab03_top/dut/d0 \
+sim:/tb_lab03_top/dut/d1
+run -all
+# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_lab03_top.sv(62)
+#    Time: 150 ms  Iteration: 0  Instance: /tb_lab03_top
+# Break in Module tb_lab03_top at C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_lab03_top.sv line 62
+quit -sim
+# End time: 18:44:30 on Sep 22,2026, Elapsed time: 0:07:34
+# Errors: 0, Warnings: 3
+# Compile of counter.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of display.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_reader.sv was successful.
+# Compile of lab03_top.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of seven_seg.sv was successful.
+# Compile of sync.sv was successful.
+# Compile of tb_lab03_top.sv was successful.
+# Compile of tb_display.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui -L iCE40UP -voptargs=+acc work.tb_debouncer
+# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+# vsim -gui -L iCE40UP -voptargs="+acc" work.tb_debouncer 
+# Start time: 18:45:10 on Sep 22,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncer(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_debouncer(fast)
+# Loading work.debouncer(fast)
+add wave -position insertpoint  \
+sim:/tb_debouncer/dut/sw \
+sim:/tb_debouncer/dut/clk \
+sim:/tb_debouncer/dut/reset \
+sim:/tb_debouncer/dut/debounced_sw \
+sim:/tb_debouncer/dut/state \
+sim:/tb_debouncer/dut/nextstate \
+sim:/tb_debouncer/dut/counter
+run -all
+# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_debouncer.sv(34)
+#    Time: 5561 us  Iteration: 0  Instance: /tb_debouncer
+# Break in Module tb_debouncer at C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_debouncer.sv line 34
+quit -sim
+# End time: 18:48:27 on Sep 22,2026, Elapsed time: 0:03:17
+# Errors: 0, Warnings: 4
+# Compile of counter.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of display.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_reader.sv was successful.
+# Compile of lab03_top.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of seven_seg.sv was successful.
+# Compile of sync.sv was successful.
+# Compile of tb_lab03_top.sv was successful.
+# Compile of tb_display.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui -L iCE40UP -voptargs=+acc work.tb_debouncer
+# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+# vsim -gui -L iCE40UP -voptargs="+acc" work.tb_debouncer 
+# Start time: 18:48:42 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_debouncer(fast)
+# Loading work.debouncer(fast)
+add wave -position insertpoint  \
+sim:/tb_debouncer/dut/sw \
+sim:/tb_debouncer/dut/clk \
+sim:/tb_debouncer/dut/reset \
+sim:/tb_debouncer/dut/debounced_sw \
+sim:/tb_debouncer/dut/state \
+sim:/tb_debouncer/dut/nextstate \
+sim:/tb_debouncer/dut/counter
+run -all
+# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_debouncer.sv(45)
+#    Time: 2701 us  Iteration: 0  Instance: /tb_debouncer
+# Break in Module tb_debouncer at C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_debouncer.sv line 45
+quit -sim
+# End time: 18:52:38 on Sep 22,2026, Elapsed time: 0:03:56
+# Errors: 0, Warnings: 3
+# Compile of counter.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of display.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_reader.sv was successful.
+# Compile of lab03_top.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of seven_seg.sv was successful.
+# Compile of sync.sv was successful.
+# Compile of tb_lab03_top.sv was successful.
+# Compile of tb_display.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+# Compile of tb_keypad_reader.sv was successful.
+# 13 compiles, 0 failed with no errors.
+vsim -gui -L iCE40UP -voptargs=+acc work.tb_keypad_reader
+# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+# vsim -gui -L iCE40UP -voptargs="+acc" work.tb_keypad_reader 
+# Start time: 18:53:15 on Sep 22,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+# ** Note: (vopt-143) Recognized 1 FSM in module "keypad_reader(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_keypad_reader(fast)
+# Loading work.keypad_reader(fast)
+run -all
+# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_keypad_reader.sv(80)
+#    Time: 880 ns  Iteration: 0  Instance: /tb_keypad_reader
+# Break in Module tb_keypad_reader at C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_keypad_reader.sv line 80
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_keypad_reader(fast)
+# Loading work.keypad_reader(fast)
+add wave -position insertpoint  \
+sim:/tb_keypad_reader/dut/cols \
+sim:/tb_keypad_reader/dut/key \
+sim:/tb_keypad_reader/dut/clk \
+sim:/tb_keypad_reader/dut/reset \
+sim:/tb_keypad_reader/dut/scan \
+sim:/tb_keypad_reader/dut/d0 \
+sim:/tb_keypad_reader/dut/d1 \
+sim:/tb_keypad_reader/dut/state \
+sim:/tb_keypad_reader/dut/nextstate \
+sim:/tb_keypad_reader/dut/any_key
+run -all
+# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_keypad_reader.sv(80)
+#    Time: 880 ns  Iteration: 0  Instance: /tb_keypad_reader
+# Break in Module tb_keypad_reader at C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_keypad_reader.sv line 80
+quit -sim
+# End time: 18:56:34 on Sep 22,2026, Elapsed time: 0:03:19
+# Errors: 0, Warnings: 2
+# Compile of counter.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of display.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_reader.sv was successful.
+# Compile of lab03_top.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of seven_seg.sv was successful.
+# Compile of sync.sv was successful.
+# Compile of tb_lab03_top.sv was successful.
+# Compile of tb_display.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+# Compile of tb_keypad_reader.sv was successful.
+# 13 compiles, 0 failed with no errors.
+vsim -gui -L iCE40UP -voptargs=+acc work.tb_keypad_reader
+# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+# vsim -gui -L iCE40UP -voptargs="+acc" work.tb_keypad_reader 
+# Start time: 18:56:55 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/radiant_project/lab03/sim.mpf' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_keypad_reader(fast)
+# Loading work.keypad_reader(fast)
+add wave -position insertpoint  \
+sim:/tb_keypad_reader/dut/cols \
+sim:/tb_keypad_reader/dut/key \
+sim:/tb_keypad_reader/dut/clk \
+sim:/tb_keypad_reader/dut/reset \
+sim:/tb_keypad_reader/dut/scan \
+sim:/tb_keypad_reader/dut/d0 \
+sim:/tb_keypad_reader/dut/d1 \
+sim:/tb_keypad_reader/dut/state \
+sim:/tb_keypad_reader/dut/nextstate \
+sim:/tb_keypad_reader/dut/any_key
+run -all
+# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_keypad_reader.sv(53)
+#    Time: 380 ns  Iteration: 0  Instance: /tb_keypad_reader
+# Break in Module tb_keypad_reader at C:/Users/pclark/Documents/GitHub/e155/lab03/fpga/src/tb_keypad_reader.sv line 53
