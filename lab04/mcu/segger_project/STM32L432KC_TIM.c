@@ -7,19 +7,19 @@
 void play_note(uint32_t freq, uint32_t duration){
     uint32_t n; // number of overflows
 
-    if (freq == 0){
+    if(freq == 0){
         TIM16->ARR  = 999; // 1 ms cycle time
-        TIM16->CCR1 = 0;
+        TIM16->CCR1 = 0;   // duty cycle = 0%
         n = duration;
-    } else {
+    } else{
         TIM16->ARR  = (1000000/freq) - 1;
-        TIM16->CCR1 = (TIM16->ARR) >> 1; // 50% duty cycle
-        n = freq * duration / 1000;
+        TIM16->CCR1 = (TIM16->ARR) >> 1;  // 50% duty cycle
+        n = (freq * duration) / 1000;     // (overflows/s * ms) / 1000; multiply first to avoid truncation
     }
     TIM16->EGR = 1; // Update counter
     TIM16->SR &= ~1;
     for (uint32_t i = 0; i < n; i++) {
-        while (!(TIM16->SR & 1));    // wait for overflow
+        while (!(TIM16->SR & 1)); // wait for UIF
         TIM16->SR &= ~1;
     }
 
