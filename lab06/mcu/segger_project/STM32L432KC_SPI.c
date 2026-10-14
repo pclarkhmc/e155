@@ -17,11 +17,11 @@
 void initSPI(int br, int cpol, int cpha){
   // Turn on SPI Clock
   RCC->APB2ENR |= RCC_APB2ENR_SPI1EN;
-  //Disable SPI
+  // Disable SPI
   SPI1->CR1 &= ~SPI_CR1_SPE_Msk;
 
   //  1. Write proper GPIO registers: Configure GPIO for MOSI, MISO and SCK pins.
-  //Set alt functions to 5
+  // Set alt functions to 5
 
   //NSS - Chip Enable
   pinMode(PB0, GPIO_OUTPUT);
@@ -76,7 +76,7 @@ void initSPI(int br, int cpol, int cpha){
   //3. Write to SPI_CR2 register:
   //a) Configure the DS[3:0] bits to select the data length for the transfer.
   SPI1->CR2 &= ~SPI_CR2_DS_Msk;
-  SPI1->CR2 |= (0b0111 << SPI_CR2_DS_Pos); //0111: 8-bit
+  SPI1->CR2 |= (0b0111 << SPI_CR2_DS_Pos); // 0111: 8-bit
 
   //b) Configure SSOE (Notes: 1 & 2 & 3).
   SPI1->CR2 &= ~SPI_CR2_SSOE_Msk;

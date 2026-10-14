@@ -272,7 +272,7 @@ Sections by address:
   08002648-08002653  __SEGGER_RTL_ascii_towlower  
                                                         12   2  Code  RX  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
   08002654-080026FE  [.rodata..L.str.1]                171   1  Cnst  RO  main.o
-  080026FF-0800270D  [.rodata..L.str.2]                 15   1  Cnst  RO  main.o
+  080026FF-0800270D  [.rodata..L.str.3]                 15   1  Cnst  RO  main.o
   0800270E-08002714  [.rodata..L.str.4]                  7   1  Cnst  RO  main.o
   08002715-08002717  [.rodata..L.str.12]                 3   1  Cnst  RO  main.o
   08002718-08002722  [.rodata..L.str.18]                11   1  Cnst  RO  main.o
@@ -297,7 +297,7 @@ Sections by address:
   080028C0-080028C1  [.rodata.libc..L.str]               2   1  Cnst  RO  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
   080028C2-080028C3  __SEGGER_RTL_data_utf8_period  
                                                          2   1  Cnst  RO  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
-  080028C4-08002A48  [.rodata..L.str.3]                389   1  Cnst  RO  main.o
+  080028C4-08002A48  [.rodata..L.str.2]                389   1  Cnst  RO  main.o
   08002A49-08002A69  [.rodata..L.str.13]                33   1  Cnst  RO  main.o
   08002A6A-08002A8A  [.rodata..L.str.14]                33   1  Cnst  RO  main.o
   08002A8B-08002AAB  [.rodata..L.str.15]                33   1  Cnst  RO  main.o

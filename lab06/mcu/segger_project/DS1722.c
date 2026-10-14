@@ -10,7 +10,7 @@
 void configureSensor(char config){
   digitalWrite(PB0, PIO_HIGH);
   spiSendReceive(0x80); // CONFIGURATION/STATUS REGISTER write address
-  spiSendReceive(config); //Write Shutdown bit to 0. E -> 1SHOT = 0. 8h -> 12 bit resolution
+  spiSendReceive(config); // Write Shutdown bit to 0. E -> 1SHOT = 0. 8h -> 12 bit resolution
   while (SPI1->SR & SPI_SR_BSY);
   digitalWrite(PB0, PIO_LOW);
 }

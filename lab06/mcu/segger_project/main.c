@@ -22,14 +22,13 @@ char* webpageStart = "<!DOCTYPE html><html><head><title>E155 Lab 6 Webpage</titl
 	<body><h1>E155 Lab 6 Webpage</h1>";
 char* ledStr = "<p>LED Control:</p><form action=\"ledon\"><input type=\"submit\" value=\"Turn the LED on!\"></form>\
 	<form action=\"ledoff\"><input type=\"submit\" value=\"Turn the LED off!\"></form>";
-char* webpageEnd   = "</body></html>";
-
 char* resStr = "<p>Temperature Resolution:</p>\
         <form action=\"res08\"><input type=\"submit\" value=\"8-bit\"></form>\
         <form action=\"res09\"><input type=\"submit\" value=\"9-bit\"></form>\
         <form action=\"res10\"><input type=\"submit\" value=\"10-bit\"></form>\
         <form action=\"res11\"><input type=\"submit\" value=\"11-bit\"></form>\
         <form action=\"res12\"><input type=\"submit\" value=\"12-bit\"></form>";
+char* webpageEnd   = "</body></html>";
 
 //determines whether a given character sequence is in a char array request, returning 1 if present, -1 if not present
 int inString(char request[], char des[]) {
@@ -143,7 +142,6 @@ int main(void) {
     else
         sprintf(tempStr, "Current temperature: %.1f &deg;C", temp);  // default
 
-
     // Update string with current LED state  
     int led_status = updateLEDStatus(request);
 
@@ -172,7 +170,6 @@ int main(void) {
     sendString(USART, tempStr);             // temperature
     sendString(USART, "</p>");
 
-  
     sendString(USART, webpageEnd);
   }
 }
