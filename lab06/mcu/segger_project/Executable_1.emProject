@@ -13,7 +13,7 @@
     gcc_omit_frame_pointer="Yes"
     gcc_optimization_level="Level 2 balanced"
     link_dedupe_code="Yes" />
-  <project Name="Executable_1">
+  <project Name="Lab06">
     <configuration
       LIBRARY_IO_TYPE="RTT"
       Name="Common"
@@ -42,6 +42,7 @@
       macros="DeviceHeaderFile=$(PackagesDir)/STM32L4xx/Device/Include/stm32l4xx.h;DeviceSystemFile=$(PackagesDir)/STM32L4xx/Device/Source/system_stm32l4xx.c;DeviceVectorsFile=$(PackagesDir)/STM32L4xx/Source/stm32l432xx_Vectors.s;DeviceFamily=STM32L4xx;DeviceSubFamily=STM32L432;Target=STM32L432KCUx"
       project_directory=""
       project_type="Executable" />
+    <configuration Name="Debug" linker_printf_fp_enabled="Float" />
     <folder Name="CMSIS Files">
       <file file_name="STM32L4xx/Device/Include/stm32l4xx.h" />
       <file file_name="STM32L4xx/Device/Source/system_stm32l4xx.c">
@@ -58,7 +59,27 @@
     </folder>
     <folder Name="Source Files">
       <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc" />
-      <file file_name="main.c" />
+      <folder Name="lib">
+        <file file_name="DS1722.c" />
+        <file file_name="DS1722.h" />
+        <file file_name="STM32L432KC.h" />
+        <file file_name="STM32L432KC_FLASH.c" />
+        <file file_name="STM32L432KC_FLASH.h" />
+        <file file_name="STM32L432KC_GPIO.c" />
+        <file file_name="STM32L432KC_GPIO.h" />
+        <file file_name="STM32L432KC_RCC.c" />
+        <file file_name="STM32L432KC_RCC.h" />
+        <file file_name="STM32L432KC_SPI.c" />
+        <file file_name="STM32L432KC_SPI.h" />
+        <file file_name="STM32L432KC_TIM.c" />
+        <file file_name="STM32L432KC_TIM.h" />
+        <file file_name="STM32L432KC_USART.c" />
+        <file file_name="STM32L432KC_USART.h" />
+      </folder>
+      <folder Name="src">
+        <file file_name="main.c" />
+        <file file_name="main.h" />
+      </folder>
     </folder>
     <folder Name="System Files">
       <file file_name="SEGGER_THUMB_Startup.s" />

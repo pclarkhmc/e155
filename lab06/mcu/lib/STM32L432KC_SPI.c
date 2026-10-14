@@ -1,8 +1,8 @@
 // STM32L432KC_SPI.c
-// TODO: <YOUR NAME>
-// TODO: <YOUR EMAIL>
-// TODO: <DATE>
-// TODO: <SHORT DESCRIPTION OF WHAT THIS FILE DOES>
+// Pierce Clark
+// pclark@hmc.edu
+// 10/8/2026
+// SPI functions
 
 
 

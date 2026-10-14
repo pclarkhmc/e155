@@ -16,13 +16,20 @@ Date: 9/14/19
 /////////////////////////////////////////////////////////////////
 
 //Defining the web page in two chunks: everything before the current time, and everything after the current time
-char* webpageStart = "<!DOCTYPE html><html><head><title>E155 Web Server Demo Webpage</title>\
+char* webpageStart = "<!DOCTYPE html><html><head><title>E155 Lab 6 Webpage</title>\
 	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\
 	</head>\
-	<body><h1>E155 Web Server Demo Webpage</h1>";
+	<body><h1>E155 Lab 6 Webpage</h1>";
 char* ledStr = "<p>LED Control:</p><form action=\"ledon\"><input type=\"submit\" value=\"Turn the LED on!\"></form>\
 	<form action=\"ledoff\"><input type=\"submit\" value=\"Turn the LED off!\"></form>";
 char* webpageEnd   = "</body></html>";
+
+char* resStr = "<p>Temperature Resolution:</p>\
+        <form action=\"res08\"><input type=\"submit\" value=\"8-bit\"></form>\
+        <form action=\"res09\"><input type=\"submit\" value=\"9-bit\"></form>\
+        <form action=\"res10\"><input type=\"submit\" value=\"10-bit\"></form>\
+        <form action=\"res11\"><input type=\"submit\" value=\"11-bit\"></form>\
+        <form action=\"res12\"><input type=\"submit\" value=\"12-bit\"></form>";
 
 //determines whether a given character sequence is in a char array request, returning 1 if present, -1 if not present
 int inString(char request[], char des[]) {
@@ -46,6 +53,31 @@ int updateLEDStatus(char request[])
 	return led_status;
 }
 
+int updateResStatus(char request[]) {
+        int res_status = 12;
+        if (inString(request, "res08") == 1) {
+                configureSensor(0xE0);
+                res_status = 8;
+        }
+        else if (inString(request, "res09") == 1) {
+                configureSensor(0xE2);
+                res_status = 9;
+        }
+        else if (inString(request, "res10") == 1) {
+                configureSensor(0xE4);
+                res_status = 10;
+        }
+        else if (inString(request, "res11") == 1) {
+                configureSensor(0xE6);
+                res_status = 11;
+        }
+        else if (inString(request, "res12") == 1) {
+                configureSensor(0xE8);
+                res_status = 12;
+        }
+        return res_status;
+}
+
 /////////////////////////////////////////////////////////////////
 // Solution Functions
 /////////////////////////////////////////////////////////////////
@@ -65,7 +97,12 @@ int main(void) {
   
   USART_TypeDef * USART = initUSART(USART1_ID, 125000);
 
-  // TODO: Add SPI initialization code
+  // Add SPI initialization code
+  int br = 0b111; // baud rate = 7
+  initSPI(br, 0, 1); // cpol = 0, cpha = 1
+
+  // Configure Sensor
+  configureSensor(0xE8);
 
   while(1) {
     /* Wait for ESP8266 to send a request.
@@ -84,10 +121,30 @@ int main(void) {
       request[charIndex++] = readChar(USART);
     }
 
-    // TODO: Add SPI code here for reading temperature
-  
-    // Update string with current LED state
-  
+    // SPI code for reading temperature
+    int resolution = updateResStatus(request);
+    float temp = readTemp();
+    
+    char tempStr[50];
+    char resStatusStr[20];
+
+    sprintf(resStatusStr, "%d", resolution);
+
+    if (resolution == 8)
+        sprintf(tempStr, "Current temperature: %.0f &deg;C", temp);
+    else if (resolution == 9)
+        sprintf(tempStr, "Current temperature: %.1f &deg;C", temp);
+    else if (resolution == 10)
+        sprintf(tempStr, "Current temperature: %.2f &deg;C", temp);
+    else if (resolution == 11)
+        sprintf(tempStr, "Current temperature: %.3f &deg;C", temp);
+    else if (resolution == 12)
+        sprintf(tempStr, "Current temperature: %.4f &deg;C", temp);
+    else
+        sprintf(tempStr, "Current temperature: %.1f &deg;C", temp);  // default
+
+
+    // Update string with current LED state  
     int led_status = updateLEDStatus(request);
 
     char ledStatusStr[20];
@@ -96,18 +153,28 @@ int main(void) {
     else if (led_status == 0)
       sprintf(ledStatusStr,"LED is off!");
 
+    
     // finally, transmit the webpage over UART
     sendString(USART, webpageStart); // webpage header code
+
     sendString(USART, ledStr); // button for controlling LED
-
     sendString(USART, "<h2>LED Status</h2>");
-
-
     sendString(USART, "<p>");
     sendString(USART, ledStatusStr);
+    sendString(USART, "</p>");
+    
+    sendString(USART, resStr);              // resolution buttons
+    sendString(USART, "<h2>Resolution Status</h2>");
+    sendString(USART, "<p>");
+    sendString(USART, resStatusStr);        
+    sendString(USART, "</p>");
+    sendString(USART, "<p>");
+    sendString(USART, tempStr);             // temperature
     sendString(USART, "</p>");
 
   
     sendString(USART, webpageEnd);
   }
 }
+
+

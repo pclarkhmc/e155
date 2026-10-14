@@ -1,8 +1,8 @@
 // STM32L432KC_SPI.h
-// TODO: <YOUR NAME>
-// TODO: <YOUR EMAIL>
-// TODO: <DATE>
-// TODO: <SHORT DESCRIPTION OF WHAT THIS FILE DOES>
+// Pierce Clark
+// pclark@hmc.edu
+// 10/8/2026
+// Header for SPI functions
 
 #ifndef STM32L4_SPI_H
 #define STM32L4_SPI_H
