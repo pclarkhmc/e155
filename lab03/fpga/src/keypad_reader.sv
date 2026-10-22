@@ -6,11 +6,12 @@ module keypad_reader(
 	output logic [3:0] d0, d1
 	);
 	
+	// define states and signals
 	typedef enum logic [2:0] {SCAN = 3'b001, PRESS = 3'b010, HOLD = 3'b100} statetype;
 	statetype state, nextstate;
 	logic any_key;
 
-	assign any_key = |cols; // low-asserted: any column pulled down
+	assign any_key = |cols;
 
 	// reset logic
 	always_ff @(posedge clk, posedge reset)
@@ -33,7 +34,7 @@ module keypad_reader(
 			d0 <= 4'h0;
 			d1 <= 4'h0;
 		end else begin
-			// Only SCAN moves the row pattern. Everything else freezes it.
+			// Scan logic. Stop moving when a column press is detected
 			if (state == SCAN && !any_key) scan <= 1;
 			else scan <= 0;
 			if (state == PRESS) begin
