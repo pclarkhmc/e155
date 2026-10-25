@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.2" radiant="2026.1.0.37.0" title="lab07" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" family_int="ice40tp" device_int="itpa08" package_int="SG48" operation_int="IND" speed_int="6" default_implementation="impl_1">
+    <Options/>
+    <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="subbyte_tb"/>
+        <Source name="../../src/aes_core_tb.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog" top_module="testbench_aes_core"/>
+        </Source>
+        <Source name="../../src/aes_sbox_tb.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog" top_module="testbench_aes_sbox"/>
+        </Source>
+        <Source name="../../src/aes_spi_tb.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog" top_module="testbench_aes_spi"/>
+        </Source>
+        <Source name="../../src/flopen.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/mux3.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/addroundkey.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/aes.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/aes_core.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/aes_spi.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/cipher_controller.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/cipher_core.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog" top_module="cipher_core"/>
+        </Source>
+        <Source name="../../src/galoismult.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/keyexpansion.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/mixcolumn.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/mixcolumns.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/rcon.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/rotword.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/sbox.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog" top_module="sbox"/>
+        </Source>
+        <Source name="../../src/sbox_sync.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/shiftrows.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/subword.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/keyexpansion_controller_tb.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog" top_module="keyexpansion_controller_tb"/>
+        </Source>
+        <Source name="../../src/keyexpansion_controller.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/flopenr.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/subbyte.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/mux16_1_bytes.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/mux4.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/subword_tb.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog" top_module="subword_tb"/>
+        </Source>
+        <Source name="../../src/shift_reg.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../../src/subbyte_tb.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog" top_module="subbyte_tb"/>
+        </Source>
+        <Source name="../../src/sbox.txt" type="Unknown Type" type_short="Unknown">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="lab071.sty"/>
+</RadiantProject>

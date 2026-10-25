@@ -16,12 +16,12 @@
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="0" build_time="1792886946">
-            <Task name="Lattice_Synthesis" build_result="0" update_result="2" update_time="1792886946"/>
-            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1792886946"/>
-            <Task name="LSE_Lint" build_result="0" update_result="2" update_time="1792886946"/>
-            <Task name="SynTrace" build_result="0" update_result="2" update_time="1792886946"/>
-            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1792886946"/>
+        <Milestone name="Synthesis" build_result="1" build_time="1792969755">
+            <Task name="Lattice_Synthesis" build_result="1" update_result="2" update_time="1792969755"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1792969768"/>
+            <Task name="LSE_Lint" build_result="0" update_result="2" update_time="1792968329"/>
+            <Task name="SynTrace" build_result="0" update_result="2" update_time="1792968329"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1792968329"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
             <Task name="HDLE" build_result="0" update_result="3" update_time="0"/>
@@ -31,7 +31,8 @@
             <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
         <Report name="lab07_impl_1.lsedata" last_build_time="0" last_build_size="0"/>
-        <Report name="lab07_impl_1_rtl.udb" last_build_time="0" last_build_size="0"/>
+        <Report name="lab07_impl_1_rtl.udb" last_build_time="1792969768" last_build_size="21512"/>
         <Report name="lab07_impl_1_syn.udb" last_build_time="0" last_build_size="0"/>
     </Strategy>
 </BuildStatus>
+  

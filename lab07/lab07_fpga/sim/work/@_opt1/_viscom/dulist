@@ -1,0 +1,5 @@
+2 4 mux4 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 24 0
+2 9 sbox_sync 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 20 0
+1 9 shift_reg 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 68 0
+2 7 subword 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 59 0
+2 10 subword_tb 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 44 0

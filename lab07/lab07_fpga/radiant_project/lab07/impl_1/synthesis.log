@@ -1,0 +1,189 @@
+Lattice Synthesis Engine launched.
+
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+
+###################### Device Information ######################
+----------------------------------------------------------------
+Lattice Family        | iCE40UP
+----------------------------------------------------------------
+Device                | iCE40UP5K
+----------------------------------------------------------------
+Package               | SG48
+----------------------------------------------------------------
+Performance Grade     | High-Performance_1.2V
+----------------------------------------------------------------
+################################################################
+
+####################### Device Resources #######################
+----------------------------------------------------------------
+Logic Cells           | 5280
+----------------------------------------------------------------
+RAM Blocks            | 30
+----------------------------------------------------------------
+DSP Blocks            | 8
+----------------------------------------------------------------
+PLLs                  | 1
+----------------------------------------------------------------
+I/O Pins              | 56
+----------------------------------------------------------------
+################################################################
+
+Resolving user-selected strategy settings...
+
+INFO <35001797> - synthesis: Use DCC Insertion disabled by default.
+
+###################### Strategy Settings #######################
+----------------------------------------------------------------
+Optimization Goal     | Area
+----------------------------------------------------------------
+Top-level Module Name | subbyte_tb
+----------------------------------------------------------------
+Target Frequency      | 200.000 MHz
+----------------------------------------------------------------
+Maximum Fanout        | 1000
+----------------------------------------------------------------
+Timing Path Count     | 3
+----------------------------------------------------------------
+RAM Read/Write Check  | False
+----------------------------------------------------------------
+BRAM Utilization      | 100.0%
+----------------------------------------------------------------
+DSP Usage             | True
+----------------------------------------------------------------
+DSP Utilization       | 100.0%
+----------------------------------------------------------------
+FSM Encoding Style    | Auto
+----------------------------------------------------------------
+Resolve Mixed Drivers | False
+----------------------------------------------------------------
+Fix Gated Clocks      | True
+----------------------------------------------------------------
+Mux Style             | Auto
+----------------------------------------------------------------
+Use Carry Chain       | True
+----------------------------------------------------------------
+Carry Chain Length    | Infinite
+----------------------------------------------------------------
+Loop Limit            | 1950
+----------------------------------------------------------------
+Use I/O Insertion     | True
+----------------------------------------------------------------
+Use I/O Registers     | True
+----------------------------------------------------------------
+Resource Sharing      | True
+----------------------------------------------------------------
+Propagate Constants   | True
+----------------------------------------------------------------
+Remove Duplicate Reg  | True
+----------------------------------------------------------------
+Force GSR             | False
+----------------------------------------------------------------
+ROM Style             | Auto
+----------------------------------------------------------------
+RAM Style             | Auto
+----------------------------------------------------------------
+Remove LOC Properties | False
+----------------------------------------------------------------
+Partition Flow        | False
+----------------------------------------------------------------
+Use DCC Insertion     | None
+----------------------------------------------------------------
+################################################################
+
+
+The -comp option is TRUE.
+The -syn option is FALSE.
+
+Output HDL filename: lab07_impl_1.vm
+-path . (searchpath added)
+-path .. (searchpath added)
+-path ../../../src (searchpath added)
+-path C:/lscc/radiant/2026.1/ispfpga/ice40tp/data (searchpath added)
+Mixed language design
+Verilog design file: C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v
+Verilog design file: ../../../src/aes_core_tb.sv
+Verilog design file: ../../../src/aes_sbox_tb.sv
+Verilog design file: ../../../src/aes_spi_tb.sv
+Verilog design file: ../../../src/flopen.sv
+Verilog design file: ../../../src/mux3.sv
+Verilog design file: ../../../src/addroundkey.sv
+Verilog design file: ../../../src/aes.sv
+Verilog design file: ../../../src/aes_core.sv
+Verilog design file: ../../../src/aes_spi.sv
+Verilog design file: ../../../src/cipher_controller.sv
+Verilog design file: ../../../src/cipher_core.sv
+Verilog design file: ../../../src/galoismult.sv
+Verilog design file: ../../../src/keyexpansion.sv
+Verilog design file: ../../../src/mixcolumn.sv
+Verilog design file: ../../../src/mixcolumns.sv
+Verilog design file: ../../../src/rcon.sv
+Verilog design file: ../../../src/rotword.sv
+Verilog design file: ../../../src/sbox.sv
+Verilog design file: ../../../src/sbox_sync.sv
+Verilog design file: ../../../src/shiftrows.sv
+Verilog design file: ../../../src/subword.sv
+Verilog design file: ../../../src/keyexpansion_controller_tb.sv
+Verilog design file: ../../../src/keyexpansion_controller.sv
+Verilog design file: ../../../src/flopenr.sv
+Verilog design file: ../../../src/subbyte.sv
+Verilog design file: ../../../src/mux16_1_bytes.sv
+Verilog design file: ../../../src/mux4.sv
+Verilog design file: ../../../src/subword_tb.sv
+Verilog design file: ../../../src/shift_reg.sv
+Verilog design file: ../../../src/subbyte_tb.sv
+VHDL library: pmi
+VHDL design file: C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd
+
+Compiling design...
+
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\generic.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\simulation\verilog\iCE40UP\iCE40UP_sp.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v. VERI-1482
+Analyzing Verilog file ../../../src/aes_core_tb.sv. VERI-1482
+Analyzing Verilog file ../../../src/aes_sbox_tb.sv. VERI-1482
+Analyzing Verilog file ../../../src/aes_spi_tb.sv. VERI-1482
+Analyzing Verilog file ../../../src/flopen.sv. VERI-1482
+Analyzing Verilog file ../../../src/mux3.sv. VERI-1482
+Analyzing Verilog file ../../../src/addroundkey.sv. VERI-1482
+Analyzing Verilog file ../../../src/aes.sv. VERI-1482
+Analyzing Verilog file ../../../src/aes_core.sv. VERI-1482
+Analyzing Verilog file ../../../src/aes_spi.sv. VERI-1482
+Analyzing Verilog file ../../../src/cipher_controller.sv. VERI-1482
+Analyzing Verilog file ../../../src/cipher_core.sv. VERI-1482
+Analyzing Verilog file ../../../src/galoismult.sv. VERI-1482
+Analyzing Verilog file ../../../src/keyexpansion.sv. VERI-1482
+Analyzing Verilog file ../../../src/mixcolumn.sv. VERI-1482
+Analyzing Verilog file ../../../src/mixcolumns.sv. VERI-1482
+Analyzing Verilog file ../../../src/rcon.sv. VERI-1482
+Analyzing Verilog file ../../../src/rotword.sv. VERI-1482
+Analyzing Verilog file ../../../src/sbox.sv. VERI-1482
+Analyzing Verilog file ../../../src/sbox_sync.sv. VERI-1482
+Analyzing Verilog file ../../../src/shiftrows.sv. VERI-1482
+Analyzing Verilog file ../../../src/subword.sv. VERI-1482
+Analyzing Verilog file ../../../src/keyexpansion_controller_tb.sv. VERI-1482
+Analyzing Verilog file ../../../src/keyexpansion_controller.sv. VERI-1482
+Analyzing Verilog file ../../../src/flopenr.sv. VERI-1482
+Analyzing Verilog file ../../../src/subbyte.sv. VERI-1482
+Analyzing Verilog file ../../../src/mux16_1_bytes.sv. VERI-1482
+Analyzing Verilog file ../../../src/mux4.sv. VERI-1482
+Analyzing Verilog file ../../../src/subword_tb.sv. VERI-1482
+Analyzing Verilog file ../../../src/shift_reg.sv. VERI-1482
+Analyzing Verilog file ../../../src/subbyte_tb.sv. VERI-1482
+Top module name (Verilog): subbyte_tb
+INFO <35901018> - synthesis: ../../../src/subbyte_tb.sv(1): compiling module subbyte_tb. VERI-1018
+WARNING <35901142> - synthesis: ../../../src/subbyte_tb.sv(21): system task stop ignored for synthesis. VERI-1142
+WARNING <35901220> - synthesis: ../../../src/subbyte_tb.sv(22): using initial value of a since it is never assigned. VERI-1220
+INFO <35901018> - synthesis: ../../../src/subbyte.sv(1): compiling module subbyte. VERI-1018
+WARNING <35901209> - synthesis: ../../../src/subbyte.sv(21): expression size 32 truncated to fit in target size 5. VERI-1209
+INFO <35901018> - synthesis: ../../../src/mux16_1_bytes.sv(1): compiling module mux16_bytes. VERI-1018
+INFO <35901018> - synthesis: ../../../src/sbox_sync.sv(7): compiling module sbox_sync. VERI-1018
+WARNING <35931002> - synthesis: ../../../src/sbox_sync.sv(14): net sbox does not have a driver. VDB-1002
+INFO <35901018> - synthesis: ../../../src/shift_reg.sv(1): compiling module shift_reg(DEPTH=16). VERI-1018
+LSE: Compile Design done
+

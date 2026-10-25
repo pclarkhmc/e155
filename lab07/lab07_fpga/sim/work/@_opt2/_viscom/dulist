@@ -1,0 +1,5 @@
+1 11 mux16_bytes 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 12 0
+1 9 sbox_sync 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 20 0
+1 9 shift_reg 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 68 0
+1 7 subbyte 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 52 0
+1 10 subbyte_tb 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 44 0

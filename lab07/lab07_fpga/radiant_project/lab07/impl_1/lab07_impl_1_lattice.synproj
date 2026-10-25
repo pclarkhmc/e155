@@ -26,9 +26,6 @@
 -use_io_insertion 1
 -resolve_mixed_drivers 0
 
-# Constraint Files
--sdc "lab07_impl_1_cpe.ldc"
-
 # Search Paths
 -path "C:/lscc/radiant/2026.1/ispfpga/ice40tp/data"
 -path "."
@@ -63,8 +60,15 @@
 -sver "../../../src/subword.sv"
 -sver "../../../src/keyexpansion_controller_tb.sv"
 -sver "../../../src/keyexpansion_controller.sv"
+-sver "../../../src/flopenr.sv"
+-sver "../../../src/subbyte.sv"
+-sver "../../../src/mux16_1_bytes.sv"
+-sver "../../../src/mux4.sv"
+-sver "../../../src/subword_tb.sv"
+-sver "../../../src/shift_reg.sv"
+-sver "../../../src/subbyte_tb.sv"
 -path ".."
--top keyexpansion_controller_tb
+-top subbyte_tb
 # Output Configuration
 -udb "lab07_impl_1_rtl.udb"
 -output_hdl "lab07_impl_1.vm"
