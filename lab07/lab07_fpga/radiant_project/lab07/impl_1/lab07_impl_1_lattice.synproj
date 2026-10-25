@@ -40,9 +40,6 @@
 -lib pmi -vhd "C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd"
 
 # Source Files
--sver "../../../src/aes_core_tb.sv"
--sver "../../../src/aes_sbox_tb.sv"
--sver "../../../src/aes_spi_tb.sv"
 -sver "../../../src/flopen.sv"
 -sver "../../../src/mux3.sv"
 -sver "../../../src/addroundkey.sv"
@@ -61,17 +58,14 @@
 -sver "../../../src/sbox_sync.sv"
 -sver "../../../src/shiftrows.sv"
 -sver "../../../src/subword.sv"
--sver "../../../src/keyexpansion_controller_tb.sv"
 -sver "../../../src/keyexpansion_controller.sv"
 -sver "../../../src/flopenr.sv"
 -sver "../../../src/subbyte.sv"
 -sver "../../../src/mux16_1_bytes.sv"
 -sver "../../../src/mux4.sv"
--sver "../../../src/subword_tb.sv"
 -sver "../../../src/shift_reg.sv"
--sver "../../../src/subbyte_tb.sv"
 -path ".."
--top subbyte_tb
+-top subbyte
 # Output Configuration
 -udb "lab07_impl_1_rtl.udb"
 -output_hdl "lab07_impl_1.vm"

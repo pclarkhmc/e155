@@ -1,0 +1,36 @@
+---------------------------------------------------
+Report for cell subbyte
+   Instance path: subbyte
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        234        100.0
+                               LUTGATE	        234        100.0
+                                 IOBUF	        259        100.0
+                                PFUREG	        135        100.0
+                                   EBR	          1        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                           mux16_bytes	          1        39.3
+                             sbox_sync	          1         0.0
+                   shift_reg(DEPTH=16)	          1         3.4
+---------------------------------------------------
+Report for cell shift_reg(DEPTH=16)
+   Instance path: subbyte/shift_reg_subbyte
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          8         3.4
+                               LUTGATE	          8         3.4
+                                PFUREG	        128        94.8
+---------------------------------------------------
+Report for cell mux16_bytes
+   Instance path: subbyte/mux16_bytes
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         92        39.3
+                               LUTGATE	         92        39.3
+---------------------------------------------------
+Report for cell sbox_sync
+   Instance path: subbyte/sbox
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1        100.0

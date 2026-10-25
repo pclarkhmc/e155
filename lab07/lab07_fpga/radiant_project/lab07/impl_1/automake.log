@@ -1,19 +1,96 @@
-  | Auto
-----------------------------------------------------------------
-Remove LOC Properties | False
-----------------------------------------------------------------
-Partition Flow        | False
-----------------------------------------------------------------
-Use DCC Insertion     | None
-----------------------------------------------------------------
-################################################################
+
+pnmainc -log pnmain "lab07_impl_1_map.tcl"
+map:  version Radiant Software (64-bit) 2026.1.0.37.0
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2026 Lattice Semiconductor Corporation,  All rights reserved.
+
+Command line:   map -i lab07_impl_1_syn.udb -o lab07_impl_1_map.udb -mp lab07_impl_1.mrp -hierrpt -gui -msgset C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/promote.xml 
+
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2026.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
 
 
-The -comp option is FALSE.
-The -syn option is FALSE.
 
-Output HDL filename: lab07_impl_1.vm
--sdc option: SDC file input is lab07_impl_1_cpe.ldc.
-ERROR <35001494> - LDC file lab07_impl_1_cpe.ldc does not exist.
+Design:  subbyte
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:  High-Performance_1.2V
 
-child process exited abnormally
+Running general design DRC...
+
+
+
+
+Design Summary:
+   Number of slice registers: 135 out of  5280 (3%)
+   Number of I/O registers:      0 out of   117 (0%)
+   Number of LUT4s:           234 out of  5280 (4%)
+      Number of logic LUT4s:             113
+      Number of inserted feedthru LUT4s: 121
+      Number of ripple logic:              0 (0 LUT4s)
+   Number of IO sites used:   259 out of 39 (664%)
+      Number of IO sites used for general PIO: 259
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 259 out of 36 (719%)
+      Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 259 out of 39 (664%)
+   Number of DSPs:             0 out of 8 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  0 out of 1 (0%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             1 out of 30 (3%)
+   Number of PLLs:             0 out of 1 (0%)
+   Number of Clocks:  1
+      Net clk_c: 136 loads, 136 rising, 0 falling (Driver: Port clk)
+   Number of Clock Enables:  4
+      Net VCC_net: 3 loads, 0 SLICEs
+      Net n734: 2 loads, 2 SLICEs
+      Net n856: 120 loads, 120 SLICEs
+      Net n737: 4 loads, 4 SLICEs
+   Number of LSRs:  1
+      Pin reset: 126 loads, 126 SLICEs (Net: reset_c)
+   Top 10 highest fanout non-clock nets:
+      Net reset_c: 138 loads
+      Net n856: 120 loads
+      Net count[0]: 54 loads
+      Net count[1]: 45 loads
+      Net count[2]: 24 loads
+      Net count[3]: 15 loads
+      Net en: 9 loads
+      Net n737: 4 loads
+      Net VCC_net: 3 loads
+      Net y_c[120]: 3 loads
+ERROR <51001122> - Design doesn't fit into device specified, refer to the design summary section for more details.
+Running physical design DRC...
+
+ 
+
+
+   Number of warnings:  0
+   Number of criticals: 0
+   Number of errors:    1
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 66 MB
+
+**** CMD map_run - CPU/Elapsed: 0 secs / 0 secs , MEM/Increased: 59.777 Mb/ 0.184 Mb, DATE: 16:27:55 10/25/26
+Error: the command map_run failed.
+
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /0 secs 

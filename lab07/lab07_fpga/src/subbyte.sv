@@ -18,7 +18,7 @@ module subbyte(
 		end
 		else begin
 			if (count != 5'b10000) 
-				count <= count + 1;
+				count <= count + 5'b00001;
 			else begin
 				en <= 0;
 				done <= 1;

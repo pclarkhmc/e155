@@ -1,8 +1,10 @@
 2 7 flopenr 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 38 0
 2 7 rotword 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 14 0
-2 4 sbox 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 14 0
-2 7 subword 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 16 0
+2 4 mux4 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 24 0
+1 9 sbox_sync 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 20 0
+1 9 shift_reg 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 131072 0 68 0
+1 7 subword 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 55 0
 2 4 rcon 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 33 0
-2 12 keyexpansion 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 50 0
-2 23 keyexpansion_controller 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 41 0
-1 26 keyexpansion_controller_tb 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 98 0
+1 12 keyexpansion 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 56 0
+1 23 keyexpansion_controller 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 52 0
+2 26 keyexpansion_controller_tb 4 fast 63 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/work 0 0 0 0 168 0

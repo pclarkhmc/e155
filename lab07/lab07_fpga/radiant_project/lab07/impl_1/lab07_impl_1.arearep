@@ -1,0 +1,38 @@
+----------------------------------------------------------------------
+Report for cell subbyte.TECH
+Register bits:  135 of 5280 (2.557%)
+I/O cells:      259
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1          100.0
+                            FD1P3XZ       135          100.0
+                                 IB       130          100.0
+                               LUT4       111          100.0
+                                 OB       129          100.0
+SUB MODULES
+                        mux16_bytes         1
+                          sbox_sync         1
+                shift_reg(DEPTH=16)         1
+                              TOTAL       509
+----------------------------------------------------------------------
+Report for cell shift_reg(DEPTH=16).v1
+Instance Path : shift_reg_subbyte
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ       128           94.8
+                               LUT4         8            7.2
+                              TOTAL       136
+----------------------------------------------------------------------
+Report for cell mux16_bytes.v1
+Instance Path : mux16_bytes
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        92           82.9
+                              TOTAL        92
+----------------------------------------------------------------------
+Report for cell sbox_sync.v1
+Instance Path : sbox
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1          100.0
+                              TOTAL         1

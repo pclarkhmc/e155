@@ -20,27 +20,67 @@ module keyexpansion_controller_tb();
 		#4;
 		reset = 0;
 		
-		#4;
+		#40;
+		
 		round = 1;
+		reset = 1;
 		#4;
+		reset = 0;
+		#40;
+		
 		round = 2;
+		reset = 1;
 		#4;
+		reset = 0;
+		#40;
+		
 		round = 3;
+		reset = 1;
 		#4;
+		reset = 0;
+		#40;
+		
 		round = 4;
+		reset = 1;
 		#4;
+		reset = 0;
+		#40;
+		
 		round = 5;
+		reset = 1;
 		#4;
+		reset = 0;
+		#40;
+		
 		round = 6;
+		reset = 1;
 		#4;
+		reset = 0;
+		#40;
+		
 		round = 7;
+		reset = 1;
 		#4;
+		reset = 0;
+		#40;
+		
 		round = 8;
+		reset = 1;
 		#4;
+		reset = 0;
+		#40;
+		
 		round = 9;
+		reset = 1;
 		#4;
+		reset = 0;
+		#40;
+		
 		round = 10;
+		reset = 1;
 		#4;
+		reset = 0;
+		#40;
 		$stop;
 	end
 endmodule 

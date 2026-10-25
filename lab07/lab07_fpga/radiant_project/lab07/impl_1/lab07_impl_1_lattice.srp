@@ -1,3 +1,15 @@
+synthesis:  version Radiant Software (64-bit) 2026.1.0.37.0
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2026 Lattice Semiconductor Corporation,  All rights reserved.
+Sun Oct 25 16:26:29 2026
+
+
+Command Line:  C:\lscc\radiant\2026.1\ispfpga\bin\nt64\synthesis.exe -f C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/impl_1/lab07_impl_1_lattice.synproj -logfile lab07_impl_1_lattice.srp -gui -msgset C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/promote.xml 
+
 Lattice Synthesis Engine launched.
 
 Synthesis options:
@@ -40,7 +52,7 @@ INFO <35001797> - synthesis: Use DCC Insertion disabled by default.
 ----------------------------------------------------------------
 Optimization Goal     | Area
 ----------------------------------------------------------------
-Top-level Module Name | subbyte_tb
+Top-level Module Name | subbyte
 ----------------------------------------------------------------
 Target Frequency      | 200.000 MHz
 ----------------------------------------------------------------
@@ -100,4 +112,393 @@ The -syn option is FALSE.
 
 Output HDL filename: lab07_impl_1.vm
 -sdc option: SDC file input is lab07_impl_1_cpe.ldc.
-ERROR <35001494> - synthesis: LDC file lab07_impl_1_cpe.ldc does not exist.
+-path . (searchpath added)
+-path .. (searchpath added)
+-path ../../../src (searchpath added)
+-path C:/lscc/radiant/2026.1/ispfpga/ice40tp/data (searchpath added)
+Mixed language design
+Verilog design file: C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v
+Verilog design file: ../../../src/flopen.sv
+Verilog design file: ../../../src/mux3.sv
+Verilog design file: ../../../src/addroundkey.sv
+Verilog design file: ../../../src/aes.sv
+Verilog design file: ../../../src/aes_core.sv
+Verilog design file: ../../../src/aes_spi.sv
+Verilog design file: ../../../src/cipher_controller.sv
+Verilog design file: ../../../src/cipher_core.sv
+Verilog design file: ../../../src/galoismult.sv
+Verilog design file: ../../../src/keyexpansion.sv
+Verilog design file: ../../../src/mixcolumn.sv
+Verilog design file: ../../../src/mixcolumns.sv
+Verilog design file: ../../../src/rcon.sv
+Verilog design file: ../../../src/rotword.sv
+Verilog design file: ../../../src/sbox.sv
+Verilog design file: ../../../src/sbox_sync.sv
+Verilog design file: ../../../src/shiftrows.sv
+Verilog design file: ../../../src/subword.sv
+Verilog design file: ../../../src/keyexpansion_controller.sv
+Verilog design file: ../../../src/flopenr.sv
+Verilog design file: ../../../src/subbyte.sv
+Verilog design file: ../../../src/mux16_1_bytes.sv
+Verilog design file: ../../../src/mux4.sv
+Verilog design file: ../../../src/shift_reg.sv
+VHDL library: pmi
+VHDL design file: C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd
+
+Compiling design...
+
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\generic.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\simulation\verilog\iCE40UP\iCE40UP_sp.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v. VERI-1482
+Analyzing Verilog file ../../../src/flopen.sv. VERI-1482
+Analyzing Verilog file ../../../src/mux3.sv. VERI-1482
+Analyzing Verilog file ../../../src/addroundkey.sv. VERI-1482
+Analyzing Verilog file ../../../src/aes.sv. VERI-1482
+Analyzing Verilog file ../../../src/aes_core.sv. VERI-1482
+Analyzing Verilog file ../../../src/aes_spi.sv. VERI-1482
+Analyzing Verilog file ../../../src/cipher_controller.sv. VERI-1482
+Analyzing Verilog file ../../../src/cipher_core.sv. VERI-1482
+Analyzing Verilog file ../../../src/galoismult.sv. VERI-1482
+Analyzing Verilog file ../../../src/keyexpansion.sv. VERI-1482
+Analyzing Verilog file ../../../src/mixcolumn.sv. VERI-1482
+Analyzing Verilog file ../../../src/mixcolumns.sv. VERI-1482
+Analyzing Verilog file ../../../src/rcon.sv. VERI-1482
+Analyzing Verilog file ../../../src/rotword.sv. VERI-1482
+Analyzing Verilog file ../../../src/sbox.sv. VERI-1482
+Analyzing Verilog file ../../../src/sbox_sync.sv. VERI-1482
+Analyzing Verilog file ../../../src/shiftrows.sv. VERI-1482
+Analyzing Verilog file ../../../src/subword.sv. VERI-1482
+Analyzing Verilog file ../../../src/keyexpansion_controller.sv. VERI-1482
+Analyzing Verilog file ../../../src/flopenr.sv. VERI-1482
+Analyzing Verilog file ../../../src/subbyte.sv. VERI-1482
+Analyzing Verilog file ../../../src/mux16_1_bytes.sv. VERI-1482
+Analyzing Verilog file ../../../src/mux4.sv. VERI-1482
+Analyzing Verilog file ../../../src/shift_reg.sv. VERI-1482
+Top module name (Verilog): subbyte
+INFO <35901018> - synthesis: ../../../src/subbyte.sv(1): compiling module subbyte. VERI-1018
+WARNING <35901209> - synthesis: ../../../src/subbyte.sv(21): expression size 32 truncated to fit in target size 5. VERI-1209
+INFO <35901018> - synthesis: ../../../src/mux16_1_bytes.sv(1): compiling module mux16_bytes. VERI-1018
+INFO <35901018> - synthesis: ../../../src/sbox_sync.sv(7): compiling module sbox_sync. VERI-1018
+WARNING <35931002> - synthesis: ../../../src/sbox_sync.sv(14): net sbox does not have a driver. VDB-1002
+INFO <35901018> - synthesis: ../../../src/shift_reg.sv(1): compiling module shift_reg(DEPTH=16). VERI-1018
+[Parameter Setting Section Start]
+
+	[Parameter Settings for Instance(s): shift_reg_subbyte]
+	(Module: shift_reg)
+		WIDTH                     8
+		DEPTH                     16
+
+[Parameter Setting Section End]
+WARNING <1009991> - synthesis: ../../../src/sbox_sync.sv(14): RAM 'sbox_original_ramnet' has no write-port
+
+WARNING <1009991> - synthesis: ../../../src/sbox_sync.sv(14): initial value for RAM 'sbox_original_ramnet' must be preserved to avoid dangling nets after RAM blasting
+
+
+
+
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: clk
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: reset
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[127]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[126]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[125]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[124]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[123]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[122]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[121]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[120]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[119]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[118]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[117]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[116]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[115]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[114]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[113]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[112]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[111]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[110]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[109]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[108]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[107]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[106]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[105]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[104]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[103]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[102]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[101]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[100]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[99]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[98]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[97]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[96]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[95]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[94]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[93]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[92]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[91]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[90]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[89]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[88]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[87]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[86]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[85]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[84]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[83]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[82]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[81]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[80]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[79]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[78]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[77]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[76]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[75]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[74]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[73]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[72]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[71]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[70]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[69]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[68]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[67]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[66]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[65]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[64]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[63]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[62]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[61]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[60]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[59]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[58]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[57]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[56]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[55]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[54]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[53]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[52]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[51]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[50]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[49]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[48]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[47]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[46]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[45]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[44]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[43]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[42]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[41]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[40]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[39]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[38]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[37]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[36]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[35]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[34]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[33]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[32]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[31]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[30]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[29]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[28]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[27]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[26]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[25]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[24]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[23]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[22]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[21]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[20]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[19]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[18]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[17]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[16]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[15]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[14]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[13]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[12]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[11]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[10]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[9]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[8]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[7]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[6]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[5]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[4]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[3]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[2]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[1]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: a[0]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[127]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[126]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[125]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[124]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[123]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[122]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[121]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[120]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[119]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[118]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[117]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[116]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[115]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[114]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[113]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[112]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[111]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[110]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[109]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[108]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[107]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[106]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[105]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[104]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[103]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[102]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[101]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[100]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[99]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[98]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[97]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[96]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[95]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[94]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[93]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[92]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[91]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[90]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[89]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[88]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[87]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[86]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[85]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[84]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[83]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[82]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[81]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[80]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[79]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[78]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[77]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[76]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[75]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[74]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[73]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[72]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[71]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[70]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[69]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[68]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[67]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[66]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[65]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[64]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[63]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[62]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[61]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[60]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[59]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[58]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[57]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[56]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[55]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[54]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[53]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[52]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[51]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[50]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[49]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[48]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[47]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[46]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[45]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[44]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[43]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[42]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[41]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[40]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[39]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[38]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[37]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[36]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[35]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[34]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[33]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[32]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[31]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[30]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[29]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[28]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[27]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[26]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[25]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[24]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[23]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[22]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[21]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[20]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[19]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[18]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[17]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[16]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[15]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[14]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[13]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[12]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[11]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[10]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[9]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[8]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[7]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[6]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[5]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[4]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[3]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[2]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[1]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: y[0]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: done
+
+################### Begin Area Report (subbyte)######################
+Number of register bits => 135 of 5280 (2 % )
+EBR_B => 1
+FD1P3XZ => 135
+IB => 130
+LUT4 => 111
+OB => 129
+################### End Area Report ##################
+Number of odd-length carry chains : 0
+Number of even-length carry chains : 0
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c, loads : 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : reset_c, loads : 138
+  Net : n856, loads : 121
+  Net : count[0], loads : 54
+  Net : count[1], loads : 45
+  Net : count[2], loads : 24
+  Net : count[3], loads : 15
+  Net : en, loads : 9
+  Net : n737, loads : 8
+  Net : n9, loads : 6
+  Net : n734, loads : 6
+################### End Clock Report ##################
+
+################### Begin Constraint Report ######################
+Constraint Summary:
+  Total number of constraints: 0
+  Total number of constraints dropped: 0
+###################  End Constraint Report  ######################
+
+Peak Memory Usage: 92 MB
+
+--------------------------------------------------------------
+Total CPU Time: 0 secs 
+Total REAL Time: 3 secs 
+--------------------------------------------------------------
+Checksum -- synthesis -- netlist: 81c4b149f73ff4a88d00e80c347cbe18aabda0f8
