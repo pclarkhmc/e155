@@ -30,6 +30,14 @@ Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 Top level modules:
 	rcon
 
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/sbox.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/sbox.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/lab07.mpf' is used as the ini file.
+-- Compiling module sbox
+
+Top level modules:
+	sbox
+
 } {} {}} C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mixcolumn.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mixcolumn.sv
 Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 ** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/lab07.mpf' is used as the ini file.
@@ -94,14 +102,6 @@ Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 Top level modules:
 	mixcolumns
 
-} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/shiftrows.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/shiftrows.sv
-Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/lab07.mpf' is used as the ini file.
--- Compiling module shiftrows
-
-Top level modules:
-	shiftrows
-
 } {} {}} C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/rotword.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/rotword.sv
 Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 ** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/lab07.mpf' is used as the ini file.
@@ -109,6 +109,14 @@ Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 
 Top level modules:
 	rotword
+
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/shiftrows.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/shiftrows.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/lab07.mpf' is used as the ini file.
+-- Compiling module shiftrows
+
+Top level modules:
+	shiftrows
 
 } {} {}} C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes.sv
 Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025

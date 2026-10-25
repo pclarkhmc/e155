@@ -16,8 +16,8 @@ module keyexpansion_controller(
 	
 	// output mux
 	always_comb begin
-		if (round == 0)	key_out <= key_in;
-		else key_out <= new_key;
+		if (round == 0)	key_out = key_in;
+		else key_out = new_key;
 	end
 
 endmodule
