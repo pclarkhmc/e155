@@ -23,20 +23,62 @@ module aes_core(input  logic         clk,
                 input  logic [127:0] plaintext, 
                 output logic         done, 
                 output logic [127:0] cyphertext);
-
-    // TODO: Your code goes here
 	
-	//register
+	logic old_load, start, en;
+	logic [3:0] round;
+	logic [4:0] count;
+	assign start = load != old_load;
 	
-	//subbyte
-	sbox_sync sbox_sync1(.a(),.clk(),.y());
+	always_ff @(posedge clk) begin
+		// track load 
+		old_load <= load;
+		
+		// load handling logic
+		if (load) round <= 0;
+		if (start) count <= 0;
+		else count <= count + 1; // count logic 
+		
+		// on high count, increment round and cycle en
+		if ((count == 4'b1111) && (round < 10)) begin
+				round <= round + 1;
+				en <= 1;
+			end
+		else begin
+			round <= round;
+				en <= 0;
+		end
+			
+		// done logic
+		if (round == 10) done <= 1;
+		else done <= 0;
+		
+	end
 	
-	//shift
-	shiftrows shiftrows1(.a(),.y());
-
-	//mixcols
-	mixcolumns mixcolumns(.a(),.y());
+	// Per round logic: control signals
+	logic [1:0] sel;
+	always_comb begin
+		if (round == 0)
+			begin
+				sel <= 0; // input key_in
+			end
+		else if (round == 10) 
+			begin
+				sel <= 1; // skip stage
+			end
+		else  
+			begin
+				sel <= 2; // round 1-9
+			end
+	end 
 	
-	//Addr
-    galoismult galoismult(.a(),.y());
+	// key expansion
+	logic key_ready;
+	logic [127:0] key_out;
+	keyexpansion_controller keyexpansion_controller(.clk(clk), .reset(start), .round(round),.key_in(key),.key_out(key_out),.key_ready(key_ready));
+	
+	// cipher_core 
+	cipher_core cipher_core(.clk(clk), .en(en), .reset(en), .sel(sel), .key_in(key_out), .data_out(cyphertext), .done(done)); 
+	
+	assign done = (round == 10);
+	
 endmodule

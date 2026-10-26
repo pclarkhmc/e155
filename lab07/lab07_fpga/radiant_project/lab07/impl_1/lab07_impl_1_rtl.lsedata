@@ -1,4 +1,4 @@
-<top name = "subbyte"  library = "work"  arch = ""  entry = "Verilog">
+<top name = "cipher_core"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
     <clockitem name = "clk"  type = "port" />

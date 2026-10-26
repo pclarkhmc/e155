@@ -7,6 +7,8 @@ R0
 R1
 R0
 R1
+R0
+R1
 !s12c _opt2
 R1
 Z2 !s12c _opt1
@@ -50,12 +52,12 @@ Z3 dC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07
 T_opt
 !i145 1
 !i144 0
-!s110 1792972066
-VVRV[go4h_jU[>iDE_hIbJ0
+!s110 1792979550
+VV>RLT]cmT3g_@n5lX5nGD3
 04 26 4 work keyexpansion_controller_tb fast 0
-=1-8cf8c5f816aa-6ade9522-f5-42ac
+=1-8cf8c5f816aa-6adeb25d-89-3580
 R1
-!s12f OEM25U10 
+!s12f OEM25U9 
 Z4 !s12b OEM100
 Z5 !s124 OEM100
 Z6 !s135 nogc
@@ -100,7 +102,7 @@ R3
 vaddroundkey
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/addroundkey.sv
 Z11 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
-Z12 !s110 1792972051
+Z12 !s110 1792979529
 !i10b 1
 !s100 8EKf9g=>@j1UoHn0P6@K_2
 I@7Cb6ml7l85ge56AA8TbL0
@@ -109,14 +111,14 @@ Z13 dC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim
 Z14 w1792882913
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/addroundkey.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/addroundkey.sv
-!i122 604
+!i122 634
 L0 8 6
 Z15 VDg1SIo80bB@j0V0VzS_@n1
 Z16 OL;L;2025.2;82
 r1
 !s85 0
 31
-Z17 !s108 1792972051.000000
+Z17 !s108 1792979529.000000
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/addroundkey.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/addroundkey.sv|
 !i113 0
@@ -134,7 +136,7 @@ R13
 R14
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes.sv
-!i122 605
+!i122 635
 L0 6 12
 R15
 R16
@@ -159,7 +161,7 @@ R13
 R14
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv
-!i122 606
+!i122 636
 L0 20 23
 R15
 R16
@@ -175,7 +177,7 @@ R19
 vaes_spi
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_spi.sv
 R11
-Z20 !s110 1792972052
+R12
 !i10b 1
 !s100 bY[YEoNQ0?^IE]]n?miZ12
 I9VV8b<;X=d9l4HiLfomXM0
@@ -184,14 +186,14 @@ R13
 R14
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_spi.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_spi.sv
-!i122 609
+!i122 639
 L0 8 29
 R15
 R16
 r1
 !s85 0
 31
-Z21 !s108 1792972052.000000
+R17
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_spi.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_spi.sv|
 !i113 0
@@ -200,7 +202,7 @@ R19
 vcipher_controller
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/cipher_controller.sv
 R11
-R20
+Z20 !s110 1792979530
 !i10b 1
 !s100 _CNQ46BoOfn`F=BeWj<1N0
 I@CnmcGod=>WDoSYS3W5Xi0
@@ -209,14 +211,14 @@ R13
 R14
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/cipher_controller.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/cipher_controller.sv
-!i122 611
+!i122 641
 L0 1 4
 R15
 R16
 r1
 !s85 0
 31
-R21
+Z21 !s108 1792979530.000000
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/cipher_controller.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/cipher_controller.sv|
 !i113 0
@@ -234,7 +236,7 @@ R13
 w1792959026
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/cipher_core.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/cipher_core.sv
-!i122 612
+!i122 642
 L0 1 32
 R15
 R16
@@ -259,7 +261,7 @@ R13
 w1792886954
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/flopen.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/flopen.sv
-!i122 613
+!i122 643
 L0 1 8
 R15
 R16
@@ -275,7 +277,7 @@ R19
 vflopenr
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/flopenr.sv
 R11
-Z22 !s110 1792972054
+Z22 !s110 1792979532
 !i10b 1
 !s100 EMN_SYln;TmbXjHO?;e[b1
 IM_3_IYg7FNGd4MZn5DSSV2
@@ -284,14 +286,14 @@ R13
 w1792886948
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/flopenr.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/flopenr.sv
-!i122 627
+!i122 657
 L0 1 17
 R15
 R16
 r1
 !s85 0
 31
-Z23 !s108 1792972054.000000
+Z23 !s108 1792979532.000000
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/flopenr.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/flopenr.sv|
 !i113 0
@@ -309,7 +311,7 @@ R13
 R14
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/galoismult.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/galoismult.sv
-!i122 614
+!i122 644
 Z24 L0 8 8
 R15
 R16
@@ -325,23 +327,23 @@ R19
 vkeyexpansion
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion.sv
 R11
-Z25 !s110 1792972053
+R20
 !i10b 1
-!s100 GgF<HE_?cSQ4ELlnj:Ema2
-IU66DV=?[B@k;hL8KifXVm0
+!s100 8YQl`ZbPeW;MSB_:4Jak<1
+I;KK;;l[7Tgcga3h;Ham1O3
 S1
 R13
-w1792971846
+Z25 w1792973143
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion.sv
-!i122 615
-Z26 L0 8 19
+!i122 645
+L0 8 20
 R15
 R16
 r1
 !s85 0
 31
-Z27 !s108 1792972053.000000
+R21
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion.sv|
 !i113 0
@@ -350,23 +352,23 @@ R19
 vkeyexpansion_controller
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller.sv
 R11
-R25
+R20
 !i10b 1
-!s100 E[DCdO0EAbLkUCQ9>Nmb40
-I7j?V?6BT6T117B2z:LLoR3
+!s100 4ZLUECIEcH6iN@U@:BffP3
+IoYXKSV1W]bBnGQfZ8dRf01
 S1
 R13
-w1792972041
+R25
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller.sv
-!i122 616
-Z28 L0 1 26
+!i122 646
+L0 1 36
 R15
 R16
 r1
 !s85 0
 31
-R27
+R21
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller.sv|
 !i113 0
@@ -375,23 +377,23 @@ R19
 vkeyexpansion_controller_tb
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller_tb.sv
 R11
-R25
+R20
 !i10b 1
-!s100 Oa>F>dF[Dh1O_fb[^WmZ<1
-IHhJ1?P;4`9I7oeEAaOnG33
+!s100 33RQ]WN06>Bz>FU6Dj^Gd3
+IOa_oO628miPNKd1E_U_9z1
 S1
 R13
-w1792971645
+R25
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller_tb.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller_tb.sv
-!i122 617
-L0 1 86
+!i122 647
+L0 1 56
 R15
 R16
 r1
 !s85 0
 31
-R27
+R21
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller_tb.sv|
 !i113 0
@@ -400,7 +402,7 @@ R19
 vmixcolumn
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mixcolumn.sv
 R11
-R25
+Z26 !s110 1792979531
 !i10b 1
 !s100 eL^5ZhIblGikW[d@F3MDa0
 I<JN3_ionE039EI<M[82`63
@@ -409,14 +411,14 @@ R13
 R14
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mixcolumn.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mixcolumn.sv
-!i122 618
-R26
+!i122 648
+L0 8 19
 R15
 R16
 r1
 !s85 0
 31
-R27
+Z27 !s108 1792979531.000000
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mixcolumn.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mixcolumn.sv|
 !i113 0
@@ -425,7 +427,7 @@ R19
 vmixcolumns
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mixcolumns.sv
 R11
-R25
+R26
 !i10b 1
 !s100 8ocjmI>GhFSE^5Ob1`3B]0
 I5H4menV:ZO7ch;dZZ>>oo3
@@ -434,7 +436,7 @@ R13
 R14
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mixcolumns.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mixcolumns.sv
-!i122 619
+!i122 649
 R24
 R15
 R16
@@ -450,7 +452,7 @@ R19
 vmux16_bytes
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux16_1_bytes.sv
 R11
-Z29 !s110 1792972055
+R22
 !i10b 1
 !s100 iZV]l]cJB7`HgHT[P9LP10
 Ila1Vlo4nZK@P1:?Alg@a72
@@ -459,14 +461,14 @@ R13
 w1792958970
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux16_1_bytes.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux16_1_bytes.sv
-!i122 633
-Z30 L0 1 9
+!i122 663
+Z28 L0 1 9
 R15
 R16
 r1
 !s85 0
 31
-Z31 !s108 1792972055.000000
+R23
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux16_1_bytes.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux16_1_bytes.sv|
 !i113 0
@@ -475,7 +477,7 @@ R19
 vmux3
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux3.sv
 R11
-R25
+R26
 !i10b 1
 !s100 NKZLMhC2^zY6cI_6F5iLz1
 IChU<>R`olAk^BkVJ38^0W1
@@ -484,7 +486,7 @@ R13
 w1792642159
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux3.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux3.sv
-!i122 620
+!i122 650
 L0 1 7
 R15
 R16
@@ -498,7 +500,7 @@ R27
 R18
 R19
 vmux4
-Z32 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv
+Z29 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv
 R11
 R22
 !i10b 1
@@ -507,23 +509,23 @@ IHAlc]b:S2bfHHPEkRHaTn0
 S1
 R13
 w1792964702
-Z33 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv
-Z34 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv
-!i122 629
-R30
+Z30 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv
+Z31 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv
+!i122 659
+R28
 R15
 R16
 r1
 !s85 0
 31
 R23
-Z35 !s107 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv|
-Z36 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv|
+Z32 !s107 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv|
+Z33 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv|
 !i113 0
 R18
 R19
 vmux_4
-R32
+R29
 R11
 !s110 1792963854
 !i10b 1
@@ -532,25 +534,25 @@ Il2U3_?9RiAWoDM=7MOUlg1
 S1
 R13
 w1792960103
-R33
-R34
-!i122 191
 R30
+R31
+!i122 191
+R28
 R15
 R16
 r1
 !s85 0
 31
 !s108 1792963854.000000
-R35
-R36
+R32
+R33
 !i113 0
 R18
 R19
 vrcon
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/rcon.sv
 R11
-R25
+R26
 !i10b 1
 !s100 b@1Ld=lLVkGI8LlJ66z0Y2
 IH1ZN4ce4DT=Qb6dV;i_Pk1
@@ -559,7 +561,7 @@ R13
 R14
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/rcon.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/rcon.sv
-!i122 621
+!i122 651
 L0 1 20
 R15
 R16
@@ -575,7 +577,7 @@ R19
 vrotword
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/rotword.sv
 R11
-R25
+R26
 !i10b 1
 !s100 4lGa[`ZYZ>0IZV;N5iPW]2
 IZ>]iZ4ofF;ThmDFn6U5oi0
@@ -584,7 +586,7 @@ R13
 w1792888860
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/rotword.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/rotword.sv
-!i122 622
+!i122 652
 L0 1 6
 R15
 R16
@@ -600,7 +602,7 @@ R19
 vsbox
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/sbox.sv
 R11
-R22
+R26
 !i10b 1
 !s100 @A882Qg:5Xc=T=c;OK:Z:3
 IBd0T9K03Ej5IW4C3f^:>c0
@@ -609,14 +611,14 @@ R13
 w1792889181
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/sbox.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/sbox.sv
-!i122 623
+!i122 653
 L0 8 10
 R15
 R16
 r1
 !s85 0
 31
-R23
+R27
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/sbox.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/sbox.sv|
 !i113 0
@@ -625,7 +627,7 @@ R19
 vsbox_sync
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/sbox_sync.sv
 R11
-R22
+R26
 !i10b 1
 !s100 `RFMS[1?7Ug_3B;fZ6K8:3
 Imei]8VR016d10[F2Gc;=K0
@@ -634,14 +636,14 @@ R13
 w1792969558
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/sbox_sync.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/sbox_sync.sv
-!i122 624
+!i122 654
 L0 7 16
 R15
 R16
 r1
 !s85 0
 31
-R23
+R27
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/sbox_sync.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/sbox_sync.sv|
 !i113 0
@@ -659,7 +661,7 @@ R13
 w1792968063
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/shift_reg.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/shift_reg.sv
-!i122 630
+!i122 660
 L0 1 25
 R15
 R16
@@ -675,7 +677,7 @@ R19
 vshiftrows
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/shiftrows.sv
 R11
-R22
+R26
 !i10b 1
 !s100 <ilKV<Y6Q<3ihz8Mk4[S?1
 IZK8FT<HB:f8IlgCm[?IVk2
@@ -684,14 +686,14 @@ R13
 R14
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/shiftrows.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/shiftrows.sv
-!i122 625
+!i122 655
 L0 7 9
 R15
 R16
 r1
 !s85 0
 31
-R23
+R27
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/shiftrows.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/shiftrows.sv|
 !i113 0
@@ -700,7 +702,7 @@ R19
 vsubbyte
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subbyte.sv
 R11
-R29
+R22
 !i10b 1
 !s100 zgbQ=XUoYaWOk8bFGh>aU1
 IUS1UJ4;jjICCz5`YjGMIU0
@@ -709,14 +711,14 @@ R13
 w1792971364
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subbyte.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subbyte.sv
-!i122 631
-Z37 L0 1 35
+!i122 661
+Z34 L0 1 35
 R15
 R16
 r1
 !s85 0
 31
-R31
+R23
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subbyte.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subbyte.sv|
 !i113 0
@@ -725,7 +727,7 @@ R19
 vsubbyte_tb
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subbyte_tb.sv
 R11
-R29
+R22
 !i10b 1
 !s100 FPT2Xj`_`gjWfLoFPUD@?0
 IClM^E7Jc3j^gFD5dIPa1F0
@@ -734,14 +736,14 @@ R13
 w1792966304
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subbyte_tb.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subbyte_tb.sv
-!i122 632
+!i122 662
 L0 1 27
 R15
 R16
 r1
 !s85 0
 31
-R31
+R23
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subbyte_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subbyte_tb.sv|
 !i113 0
@@ -759,8 +761,8 @@ R13
 w1792968182
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv
-!i122 626
-R37
+!i122 656
+R34
 R15
 R16
 r1
@@ -784,8 +786,8 @@ R13
 w1792964323
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv
-!i122 628
-R28
+!i122 658
+L0 1 26
 R15
 R16
 r1
@@ -800,23 +802,23 @@ R19
 vtestbench_aes_core
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core_tb.sv
 R11
-R20
+R12
 !i10b 1
 !s100 FIO7h3@d^kFng7_gbKhj30
 I]H]Kzm6lNTg=^YHYLWe=:1
 S1
 R13
-Z38 w1792632832
+Z35 w1792632832
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core_tb.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core_tb.sv
-!i122 607
+!i122 637
 L0 11 42
 R15
 R16
 r1
 !s85 0
 31
-R21
+R17
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core_tb.sv|
 !i113 0
@@ -825,23 +827,23 @@ R19
 vtestbench_aes_sbox
 2C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_sbox_tb.sv
 R11
-R20
+R12
 !i10b 1
 !s100 E802:^hIgYbZd^<0leGNb3
 Ie6oEQB3Ch[T:3QYkQXjg62
 S1
 R13
-R38
+R35
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_sbox_tb.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_sbox_tb.sv
-!i122 608
+!i122 638
 L0 7 67
 R15
 R16
 r1
 !s85 0
 31
-R21
+R17
 !s107 C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_sbox_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_sbox_tb.sv|
 !i113 0
@@ -856,10 +858,10 @@ R20
 IYW<^21=Agn7>^T`Gi5UjK0
 S1
 R13
-R38
+R35
 8C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_spi_tb.sv
 FC:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_spi_tb.sv
-!i122 610
+!i122 640
 L0 8 73
 R15
 R16

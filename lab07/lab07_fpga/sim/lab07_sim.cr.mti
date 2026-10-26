@@ -6,6 +6,14 @@ Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 Top level modules:
 	sbox_sync
 
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
+-- Compiling module keyexpansion_controller
+
+Top level modules:
+	keyexpansion_controller
+
 } {} {}} C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_sbox_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_sbox_tb.sv
 Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 ** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
@@ -126,14 +134,6 @@ Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 Top level modules:
 	aes
 
-} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv
-Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
--- Compiling module aes_core
-
-Top level modules:
-	aes_core
-
 } {} {}} C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_spi_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_spi_tb.sv
 Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 ** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
@@ -182,14 +182,6 @@ Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 Top level modules:
 	subword_tb
 
-} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/cipher_core.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/cipher_core.sv
-Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
--- Compiling module cipher_core
-
-Top level modules:
-	cipher_core
-
 } {} {}} C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/flopen.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/flopen.sv
 Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 ** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
@@ -205,6 +197,14 @@ Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
 
 Top level modules:
 	keyexpansion_controller_tb
+
+} {} {}} C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
+-- Compiling module keyexpansion
+
+Top level modules:
+	keyexpansion
 
 } {} {}} C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv
 Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
