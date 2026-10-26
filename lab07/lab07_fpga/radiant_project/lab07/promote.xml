@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<userSetting name="C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/promote.xml" version="Diamond (64-bit) 2026.1.0.37.0" date="Sun Oct 25 18:56:51 2026" vendor="Lattice Semiconductor Corporation" >
-  <msg mid="35901328" type="Info" internal="true" />
+<userSetting name="C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/promote.xml" version="Diamond (64-bit) 2026.1.0.37.0" date="Sun Oct 25 21:40:51 2026" vendor="Lattice Semiconductor Corporation" >
   <msg mid="2043310" type="Info" internal="true" />
+  <msg mid="35901328" type="Info" internal="true" />
   <msg mid="2043330" type="Warning" internal="true" />
   <msg mid="35901209" type="Warning" internal="true" />
   <msg mid="35901142" type="Warning" internal="true" />
@@ -14,8 +14,8 @@
   <msg mid="35901012" type="Warning" internal="true" />
   <msg mid="2043137" type="Error" internal="true" />
   <msg mid="2043018" type="Info" internal="true" />
-  <msg mid="2043063" type="Warning" internal="true" />
   <msg mid="2043188" type="Error" internal="true" />
+  <msg mid="2043063" type="Warning" internal="true" />
   <msg mid="2043100" type="Error" internal="true" />
   <msg mid="2044344" type="Error" internal="true" />
   <msg mid="2044561" type="Info" internal="true" />
@@ -25,8 +25,8 @@
   <msg mid="2043349" type="Error" internal="true" />
   <msg mid="2043952" type="Error" internal="true" />
   <msg mid="2044435" type="Warning" internal="true" />
-  <msg mid="2043116" type="Error" internal="true" />
   <msg mid="2043927" type="Warning" internal="true" />
+  <msg mid="2043116" type="Error" internal="true" />
   <msg mid="2044021" type="Info" internal="true" />
   <msg mid="2043010" type="Error" internal="true" />
   <msg mid="2043967" type="Info" internal="true" />

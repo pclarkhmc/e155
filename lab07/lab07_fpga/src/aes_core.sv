@@ -24,61 +24,19 @@ module aes_core(input  logic         clk,
                 output logic         done, 
                 output logic [127:0] cyphertext);
 	
-	logic old_load, start, en;
 	logic cypher_done, key_ready;
-	logic [3:0] round;
-
-	// control signals
-	assign start = old_load & ~load; // falling edge of load
-	assign en = cypher_done && (round != 0) && (round < 10);
-
-	always_ff @(posedge clk) begin
-		// track load
-		old_load <= load;
-
-		// round logic
-		if (load)
-			begin
-				round <= 0;
-			end
-		else if (start)
-			begin
-				round <= 1;
-			end
-		else if (en) begin
-				round <= round + 1;
-			end
-			
-		// done logic
-		if ((round == 10) && cypher_done && key_ready) done <= 1;
-		else done <= 0;
-		
-	end
-	
-	// Per round logic: control signals
-	logic [1:0] sel;
-	always_comb begin
-		if (round == 0)
-			begin
-				sel = 0; // input key_in
-			end
-		else if (round == 10) 
-			begin
-				sel = 1; // skip stage
-			end
-		else  
-			begin
-				sel = 2; // round 1-9
-			end
-	end 
-	
-	// key expansion
 	logic [127:0] key_out;
+
+	// controller
+	logic start, advance;
+	logic [3:0] round;
+	aes_controller aes_controller(.clk(clk), .load(load), .key_ready(key_ready), .cypher_done(cypher_done),
+									.start(start), .advance(advance), .round(round), .done(done));
+
+	// key expansion
 	keyexpansion_controller keyexpansion_controller(.clk(clk), .reset(start), .round(round),.key_in(key),.key_out(key_out),.key_ready(key_ready));
 	
 	// cipher_core
-	logic advance_state;
-	assign advance_state = (en | start);
-	cipher_core cipher_core(.clk(clk), .en(advance_state), .reset(advance_state), .sel(sel), .plaintext(plaintext), .key_in(key_out), .cyphertext(cyphertext), .done(cypher_done)); 
+	cipher_core cipher_core(.clk(clk), .advance(advance), .round(round), .plaintext(plaintext), .key_in(key_out), .cyphertext(cyphertext), .done(cypher_done)); 
 		
 endmodule

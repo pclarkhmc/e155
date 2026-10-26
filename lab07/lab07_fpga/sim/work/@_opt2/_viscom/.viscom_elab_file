@@ -1,1 +1,1 @@
-C:/lscc/radiant/2026.1/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 934320 work.subbyte_tb -quiet -auto_acc_if_foreign -work work +acc -allow_unnamed -o _opt2 -id 1-8cf8c5f816aa-6ade86e0-e7-46c4 +__betafsm
+C:/lscc/radiant/2026.1/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 934320 work.aes_core -quiet -auto_acc_if_foreign -work work +acc -allow_unnamed -o _opt2 -id 1-8cf8c5f816aa-6aded8dc-b2-3bdc +__betafsm

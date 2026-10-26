@@ -1,0 +1,26 @@
+#Start recording tcl command: 10/25/2026 16:21:04
+#Project Location: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07; Project name: lab07
+prj_open "C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/lab07.rdf"
+prj_set_impl_opt -impl "impl_1" {top} {testbench_aes_core}
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/source/impl_1/lab07.sdc"
+prj_set_source_opt -src "C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/source/impl_1/lab07.sdc" {module_filename} {../../src/aes_core_tb.sv}
+prj_syn_sim_source -src "C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core_tb.sv" SimulateOnly
+prj_syn_sim_source -src "C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_sbox_tb.sv" SimulateOnly
+prj_syn_sim_source -src "C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_spi_tb.sv" SimulateOnly
+prj_syn_sim_source -src "C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller_tb.sv" SimulateOnly
+prj_syn_sim_source -src "C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subbyte_tb.sv" SimulateOnly
+prj_syn_sim_source -src "C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv" SimulateOnly
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_set_impl_opt -impl "impl_1" {top} {subbyte}
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_set_impl_opt -impl "impl_1" {top} {cipher_core}
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 10/25/2026 21:34:07

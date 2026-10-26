@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2026 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Oct 25 18:56:45 2026
+Sun Oct 25 21:40:14 2026
 
 
 Command Line:  C:\lscc\radiant\2026.1\ispfpga\bin\nt64\synthesis.exe -f C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/impl_1/lab07_impl_1_lattice.synproj -logfile lab07_impl_1_lattice.srp -gui -msgset C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/promote.xml 
@@ -95,7 +95,7 @@ INFO <35001797> - synthesis: Use DCC Insertion disabled by default.
 ----------------------------------------------------------------
 Optimization Goal     | Area
 ----------------------------------------------------------------
-Top-level Module Name | cipher_core
+Top-level Module Name | aes
 ----------------------------------------------------------------
 Target Frequency      | 200.000 MHz
 ----------------------------------------------------------------
@@ -219,13 +219,25 @@ Analyzing Verilog file ../../../src/subbyte.sv. VERI-1482
 Analyzing Verilog file ../../../src/mux16_1_bytes.sv. VERI-1482
 Analyzing Verilog file ../../../src/mux4.sv. VERI-1482
 Analyzing Verilog file ../../../src/shift_reg.sv. VERI-1482
-Top module name (Verilog): cipher_core
+Top module name (Verilog): aes
+INFO <35901018> - synthesis: ../../../src/aes.sv(6): compiling module aes. VERI-1018
+INFO <35901018> - synthesis: ../../../src/aes_spi.sv(8): compiling module aes_spi. VERI-1018
+INFO <35901018> - synthesis: ../../../src/aes_core.sv(20): compiling module aes_core. VERI-1018
+WARNING <35901209> - synthesis: ../../../src/aes_core.sv(49): expression size 32 truncated to fit in target size 4. VERI-1209
+INFO <35901018> - synthesis: ../../../src/keyexpansion_controller.sv(1): compiling module keyexpansion_controller. VERI-1018
+INFO <35901018> - synthesis: ../../../src/keyexpansion.sv(8): compiling module keyexpansion. VERI-1018
+INFO <35901018> - synthesis: ../../../src/rotword.sv(1): compiling module rotword. VERI-1018
+INFO <35901018> - synthesis: ../../../src/subword.sv(1): compiling module subword. VERI-1018
+WARNING <35901209> - synthesis: ../../../src/subword.sv(20): expression size 32 truncated to fit in target size 3. VERI-1209
+INFO <35901018> - synthesis: ../../../src/mux4.sv(1): compiling module mux4. VERI-1018
+INFO <35901018> - synthesis: ../../../src/sbox_sync.sv(7): compiling module sbox_sync. VERI-1018
+WARNING <35931002> - synthesis: ../../../src/sbox_sync.sv(14): net sbox does not have a driver. VDB-1002
+INFO <35901018> - synthesis: ../../../src/shift_reg.sv(1): compiling module shift_reg. VERI-1018
+INFO <35901018> - synthesis: ../../../src/rcon.sv(1): compiling module rcon. VERI-1018
 INFO <35901018> - synthesis: ../../../src/cipher_core.sv(1): compiling module cipher_core. VERI-1018
 INFO <35901018> - synthesis: ../../../src/flopen.sv(1): compiling module flopen(WIDTH=128). VERI-1018
 INFO <35901018> - synthesis: ../../../src/subbyte.sv(1): compiling module subbyte. VERI-1018
 INFO <35901018> - synthesis: ../../../src/mux16_1_bytes.sv(1): compiling module mux16_bytes. VERI-1018
-INFO <35901018> - synthesis: ../../../src/sbox_sync.sv(7): compiling module sbox_sync. VERI-1018
-WARNING <35931002> - synthesis: ../../../src/sbox_sync.sv(14): net sbox does not have a driver. VDB-1002
 INFO <35901018> - synthesis: ../../../src/shift_reg.sv(1): compiling module shift_reg(DEPTH=16). VERI-1018
 INFO <35901018> - synthesis: ../../../src/shiftrows.sv(7): compiling module shiftrows. VERI-1018
 INFO <35901018> - synthesis: ../../../src/mixcolumns.sv(8): compiling module mixcolumns. VERI-1018
@@ -233,18 +245,12 @@ INFO <35901018> - synthesis: ../../../src/mixcolumn.sv(8): compiling module mixc
 INFO <35901018> - synthesis: ../../../src/galoismult.sv(8): compiling module galoismult. VERI-1018
 INFO <35901018> - synthesis: ../../../src/mux3.sv(1): compiling module mux3(WIDTH=128). VERI-1018
 INFO <35901018> - synthesis: ../../../src/addroundkey.sv(8): compiling module addroundkey. VERI-1018
-WARNING <35931002> - synthesis: ../../../src/cipher_core.sv(10): net s1[127] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: ../../../src/cipher_core.sv(11): net reset does not have a driver. VDB-1002
 
 <A name="lse_parameter"></A><B><U><big>Parameter Setting</big></U></B>
 
 [Parameter Setting Section Start]
 
-	[Parameter Settings for top-level module]
-	(Module: cipher_core)
-		Nr                        10
-
-	[Parameter Settings for Instance(s): Reg1]
+	[Parameter Settings for Instance(s): reg1]
 	(Module: flopen)
 		WIDTH                     128
 
@@ -257,534 +263,39 @@ WARNING <35931002> - synthesis: ../../../src/cipher_core.sv(11): net reset does 
 		WIDTH                     8
 		DEPTH                     16
 
+	[Parameter Settings for Instance(s): shift_reg_subbyte]
+	(Module: shift_reg)
+		WIDTH                     8
+		DEPTH                     4
+
 [Parameter Setting Section End]
 WARNING <1009991> - synthesis: ../../../src/sbox_sync.sv(14): RAM 'sbox_original_ramnet' has no write-port
 
 WARNING <1009991> - synthesis: ../../../src/sbox_sync.sv(14): initial value for RAM 'sbox_original_ramnet' must be preserved to avoid dangling nets after RAM blasting
 
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: clk
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[127]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[126]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[125]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[124]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[123]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[122]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[121]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[120]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[119]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[118]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[117]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[116]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[115]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[114]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[113]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[112]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[111]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[110]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[109]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[108]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[107]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[106]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[105]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[104]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[103]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[102]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[101]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[100]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[99]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[98]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[97]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[96]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[95]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[94]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[93]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[92]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[91]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[90]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[89]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[88]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[87]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[86]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[85]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[84]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[83]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[82]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[81]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[80]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[79]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[78]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[77]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[76]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[75]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[74]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[73]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[72]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[71]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[70]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[69]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[68]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[67]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[66]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[65]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[64]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[63]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[62]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[61]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[60]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[59]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[58]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[57]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[56]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[55]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[54]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[53]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[52]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[51]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[50]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[49]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[48]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[47]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[46]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[45]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[44]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[43]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[42]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[41]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[40]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[39]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[38]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[37]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[36]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[35]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[34]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[33]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[32]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[31]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[30]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[29]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[28]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[27]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[26]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[25]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[24]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[23]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[22]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[21]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[20]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[19]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[18]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[17]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[16]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[15]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[14]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[13]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[12]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[11]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[10]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[9]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[8]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[7]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[6]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[5]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[4]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[3]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[2]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[1]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[0]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[127]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[126]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[125]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[124]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[123]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[122]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[121]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[120]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[119]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[118]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[117]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[116]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[115]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[114]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[113]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[112]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[111]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[110]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[109]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[108]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[107]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[106]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[105]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[104]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[103]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[102]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[101]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[100]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[99]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[98]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[97]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[96]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[95]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[94]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[93]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[92]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[91]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[90]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[89]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[88]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[87]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[86]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[85]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[84]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[83]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[82]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[81]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[80]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[79]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[78]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[77]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[76]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[75]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[74]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[73]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[72]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[71]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[70]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[69]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[68]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[67]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[66]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[65]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[64]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[63]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[62]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[61]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[60]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[59]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[58]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[57]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[56]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[55]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[54]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[53]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[52]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[51]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[50]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[49]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[48]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[47]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[46]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[45]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[44]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[43]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[42]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[41]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[40]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[39]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[38]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[37]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[36]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[35]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[34]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[33]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[32]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[31]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[30]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[29]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[28]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[27]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[26]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[25]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[24]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[23]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[22]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[21]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[20]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[19]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[18]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[17]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[16]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[15]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[14]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[13]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[12]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[11]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[10]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[9]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[8]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[7]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[6]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[5]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[4]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[3]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[2]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[1]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[0]
 
 
 
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: clk
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[127]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[126]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[125]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[124]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[123]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[122]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[121]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[120]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[119]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[118]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[117]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[116]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[115]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[114]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[113]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[112]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[111]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[110]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[109]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[108]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[107]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[106]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[105]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[104]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[103]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[102]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[101]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[100]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[99]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[98]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[97]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[96]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[95]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[94]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[93]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[92]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[91]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[90]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[89]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[88]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[87]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[86]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[85]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[84]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[83]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[82]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[81]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[80]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[79]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[78]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[77]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[76]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[75]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[74]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[73]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[72]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[71]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[70]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[69]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[68]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[67]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[66]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[65]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[64]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[63]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[62]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[61]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[60]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[59]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[58]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[57]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[56]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[55]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[54]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[53]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[52]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[51]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[50]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[49]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[48]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[47]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[46]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[45]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[44]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[43]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[42]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[41]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[40]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[39]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[38]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[37]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[36]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[35]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[34]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[33]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[32]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[31]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[30]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[29]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[28]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[27]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[26]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[25]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[24]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[23]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[22]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[21]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[20]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[19]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[18]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[17]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[16]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[15]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[14]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[13]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[12]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[11]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[10]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[9]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[8]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[7]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[6]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[5]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[4]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[3]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[2]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[1]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: data[0]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[127]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[126]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[125]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[124]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[123]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[122]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[121]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[120]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[119]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[118]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[117]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[116]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[115]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[114]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[113]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[112]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[111]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[110]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[109]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[108]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[107]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[106]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[105]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[104]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[103]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[102]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[101]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[100]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[99]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[98]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[97]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[96]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[95]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[94]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[93]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[92]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[91]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[90]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[89]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[88]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[87]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[86]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[85]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[84]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[83]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[82]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[81]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[80]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[79]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[78]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[77]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[76]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[75]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[74]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[73]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[72]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[71]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[70]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[69]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[68]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[67]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[66]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[65]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[64]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[63]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[62]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[61]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[60]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[59]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[58]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[57]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[56]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[55]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[54]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[53]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[52]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[51]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[50]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[49]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[48]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[47]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[46]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[45]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[44]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[43]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[42]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[41]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[40]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[39]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[38]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[37]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[36]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[35]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[34]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[33]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[32]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[31]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[30]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[29]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[28]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[27]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[26]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[25]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[24]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[23]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[22]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[21]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[20]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[19]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[18]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[17]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[16]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[15]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[14]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[13]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[12]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[11]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[10]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[9]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[8]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[7]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[6]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[5]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[4]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[3]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[2]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[1]
-CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: key[0]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: clk
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: sck
+INFO <35002061> - synthesis: Port accepted for I/O register mapping: sdi
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: sdo
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: load
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: done
+INFO <35002039> - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
 
 
 <A name="lse_area"></A><B><U><big>Area Report</big></U></B>
 
-################### Begin Area Report (cipher_core)######################
-Number of register bits => 0 of 5280 (0 % )
+################### Begin Area Report (aes)######################
+Number of register bits => 823 of 5280 (15 % )
+EBR_B => 2
+FD1P3XZ => 823
+IB => 4
+INV => 1
+IOL_B => 1
+LUT4 => 1166
+OB => 2
 ################### End Area Report ##################
 Number of odd-length carry chains : 0
 Number of even-length carry chains : 0
@@ -794,11 +305,23 @@ Number of even-length carry chains : 0
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 0
+Number of Clocks: 2
+  Net : clk_c, loads : 0
+  Net : sck_c, loads : 1
 Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
+  Net : core/advance_state, loads : 206
+  Net : core/sel_0__N_135, loads : 137
+  Net : core/keyexpansion_controller/n1752, loads : 134
+  Net : core/keyexpansion_controller/n443, loads : 133
+  Net : core/sel[0], loads : 132
+  Net : core/sel[1], loads : 132
+  Net : spi/wasdone, loads : 128
+  Net : n2069, loads : 127
+  Net : core/en, loads : 61
+  Net : core/start_c, loads : 60
 ################### End Clock Report ##################
 
 
@@ -810,13 +333,13 @@ Constraint Summary:
   Total number of constraints dropped: 0
 ###################  End Constraint Report  ######################
 
-Peak Memory Usage: 97 MB
+Peak Memory Usage: 104 MB
 
 --------------------------------------------------------------
-Total CPU Time: 0 secs 
-Total REAL Time: 3 secs 
+Total CPU Time: 1 secs 
+Total REAL Time: 4 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: 9ed30d15a554e00d2aa4d00313f36732f0d076b5
+Checksum -- synthesis -- netlist: f1b3cd31a83e52535083ec6e6b9c0a811dcac9e4
 
 
 

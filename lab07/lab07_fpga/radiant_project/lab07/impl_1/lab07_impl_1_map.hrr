@@ -1,36 +1,218 @@
 ---------------------------------------------------
-Report for cell subbyte
-   Instance path: subbyte
+Report for cell aes
+   Instance path: aes
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        234        100.0
-                               LUTGATE	        234        100.0
-                                 IOBUF	        259        100.0
-                                PFUREG	        135        100.0
-                                   EBR	          1        100.0
+                                 IOLGC	       1.00        100.0
+                                  LUT4	       1569        100.0
+                               LUTGATE	       1569        100.0
+                                 IOREG	          1        100.0
+                                 IOBUF	          6        100.0
+                                PFUREG	        823        100.0
+                                   EBR	          2        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                           mux16_bytes	          1        39.3
+                              aes_core	          1        65.1
+                               aes_spi	          1         8.2
+---------------------------------------------------
+Report for cell aes_spi
+   Instance path: aes/spi
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       1.00        100.0
+                                  LUT4	        128         8.2
+                               LUTGATE	        128         8.2
+                                 IOREG	          1        100.0
+                                PFUREG	        384        46.7
+---------------------------------------------------
+Report for cell aes_core
+   Instance path: aes/core
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1022        65.1
+                               LUTGATE	       1022        65.1
+                                PFUREG	        439        53.3
+                                   EBR	          2        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                           cipher_core	          1        44.6
+               keyexpansion_controller	          1        19.6
+---------------------------------------------------
+Report for cell keyexpansion_controller
+   Instance path: aes/core/keyexpansion_controller
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        308        19.6
+                               LUTGATE	        308        19.6
+                                PFUREG	        170        20.7
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                          keyexpansion	          1         8.0
+---------------------------------------------------
+Report for cell keyexpansion
+   Instance path: aes/core/keyexpansion_controller/keyexpansion1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        126         8.0
+                               LUTGATE	        126         8.0
+                                PFUREG	         37         4.5
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                                  rcon	          1         0.4
+                               subword	          1         1.5
+---------------------------------------------------
+Report for cell subword
+   Instance path: aes/core/keyexpansion_controller/keyexpansion1/sub1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         23         1.5
+                               LUTGATE	         23         1.5
+                                PFUREG	         37         4.5
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                                  mux4	          1         1.0
                              sbox_sync	          1         0.0
-                   shift_reg(DEPTH=16)	          1         3.4
+                             shift_reg	          1         0.0
 ---------------------------------------------------
-Report for cell shift_reg(DEPTH=16)
-   Instance path: subbyte/shift_reg_subbyte
+Report for cell shift_reg
+   Instance path: aes/core/keyexpansion_controller/keyexpansion1/sub1/shift_reg_subbyte
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          8         3.4
-                               LUTGATE	          8         3.4
-                                PFUREG	        128        94.8
----------------------------------------------------
-Report for cell mux16_bytes
-   Instance path: subbyte/mux16_bytes
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         92        39.3
-                               LUTGATE	         92        39.3
+                                PFUREG	         32         3.9
 ---------------------------------------------------
 Report for cell sbox_sync
-   Instance path: subbyte/sbox
+   Instance path: aes/core/keyexpansion_controller/keyexpansion1/sub1/sbox
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                   EBR	          1        100.0
+                                   EBR	          1        50.0
+---------------------------------------------------
+Report for cell mux4
+   Instance path: aes/core/keyexpansion_controller/keyexpansion1/sub1/mux4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         16         1.0
+                               LUTGATE	         16         1.0
+---------------------------------------------------
+Report for cell rcon
+   Instance path: aes/core/keyexpansion_controller/keyexpansion1/rcon1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          6         0.4
+                               LUTGATE	          6         0.4
+---------------------------------------------------
+Report for cell cipher_core
+   Instance path: aes/core/cipher_core
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        699        44.6
+                               LUTGATE	        699        44.6
+                                PFUREG	        263        32.0
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                           addroundkey	          1         8.2
+                     flopen(WIDTH=128)	          1         8.2
+                            mixcolumns	          1         6.9
+                       mux3(WIDTH=128)	          1        14.7
+                               subbyte	          1         6.6
+---------------------------------------------------
+Report for cell subbyte
+   Instance path: aes/core/cipher_core/subbyte1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        104         6.6
+                               LUTGATE	        104         6.6
+                                PFUREG	        135        16.4
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                           mux16_bytes	          1         5.5
+                          sbox_sync_U0	          1         0.0
+                   shift_reg(DEPTH=16)	          1         0.5
+---------------------------------------------------
+Report for cell shift_reg(DEPTH=16)
+   Instance path: aes/core/cipher_core/subbyte1/shift_reg_subbyte
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          8         0.5
+                               LUTGATE	          8         0.5
+                                PFUREG	        128        15.6
+---------------------------------------------------
+Report for cell sbox_sync_U0
+   Instance path: aes/core/cipher_core/subbyte1/sbox
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1        50.0
+---------------------------------------------------
+Report for cell mux16_bytes
+   Instance path: aes/core/cipher_core/subbyte1/mux16_bytes
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         86         5.5
+                               LUTGATE	         86         5.5
+---------------------------------------------------
+Report for cell flopen(WIDTH=128)
+   Instance path: aes/core/cipher_core/reg1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        128         8.2
+                               LUTGATE	        128         8.2
+                                PFUREG	        128        15.6
+---------------------------------------------------
+Report for cell mux3(WIDTH=128)
+   Instance path: aes/core/cipher_core/mux3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        230        14.7
+                               LUTGATE	        230        14.7
+---------------------------------------------------
+Report for cell mixcolumns
+   Instance path: aes/core/cipher_core/mixcolumns
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        109         6.9
+                               LUTGATE	        109         6.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                             mixcolumn	          1         1.7
+                          mixcolumn_U1	          1         1.5
+                          mixcolumn_U2	          1         1.8
+                          mixcolumn_U3	          1         1.9
+---------------------------------------------------
+Report for cell mixcolumn
+   Instance path: aes/core/cipher_core/mixcolumns/mc3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         27         1.7
+                               LUTGATE	         27         1.7
+---------------------------------------------------
+Report for cell mixcolumn_U1
+   Instance path: aes/core/cipher_core/mixcolumns/mc2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         24         1.5
+                               LUTGATE	         24         1.5
+---------------------------------------------------
+Report for cell mixcolumn_U2
+   Instance path: aes/core/cipher_core/mixcolumns/mc1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         28         1.8
+                               LUTGATE	         28         1.8
+---------------------------------------------------
+Report for cell mixcolumn_U3
+   Instance path: aes/core/cipher_core/mixcolumns/mc0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         30         1.9
+                               LUTGATE	         30         1.9
+---------------------------------------------------
+Report for cell addroundkey
+   Instance path: aes/core/cipher_core/addroundkey
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        128         8.2
+                               LUTGATE	        128         8.2

@@ -65,7 +65,7 @@
 -sver "../../../src/mux4.sv"
 -sver "../../../src/shift_reg.sv"
 -path ".."
--top cipher_core
+-top aes
 # Output Configuration
 -udb "lab07_impl_1_rtl.udb"
 -output_hdl "lab07_impl_1.vm"

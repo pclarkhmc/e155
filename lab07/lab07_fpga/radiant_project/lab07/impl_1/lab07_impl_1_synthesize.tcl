@@ -12,7 +12,12 @@ if {![file exists {C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radian
 cd {C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/impl_1}
 # synthesize IPs
 # synthesize VMs
+# propgate constraints
+file delete -force -- lab07_impl_1_cpe.ldc
+::radiant::runengine::run_engine_newmsg cpe -syn lse -f "lab07_impl_1.cprj" -a "iCE40UP"  -o lab07_impl_1_cpe.ldc
 # synthesize top design
+file delete -force -- lab07_impl_1.vm lab07_impl_1.ldc
+::radiant::runengine::run_engine_newmsg synthesis -f "C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/impl_1/lab07_impl_1_lattice.synproj" -logfile "lab07_impl_1_lattice.srp"
 ::radiant::runengine::run_postsyn [list -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o lab07_impl_1_syn.udb lab07_impl_1.vm] [list lab07_impl_1.ldc]
 
 } out]} {

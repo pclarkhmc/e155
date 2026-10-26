@@ -38,703 +38,83 @@
 # Compile of shiftrows.sv was successful.
 # Compile of subword.sv was successful.
 # Compile of flopenr.sv was successful.
-# 24 compiles, 0 failed with no errors.
-# Compile of addroundkey.sv was successful.
-# Compile of aes.sv was successful.
-# Compile of aes_core.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of cipher_controller.sv was successful.
-# Compile of cipher_core.sv was successful.
-# Compile of flopen.sv was successful.
-# Compile of galoismult.sv was successful.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_controller.sv was successful.
-# Compile of keyexpansion_controller_tb.sv was successful.
-# Compile of mixcolumn.sv was successful.
-# Compile of mixcolumns.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of rcon.sv was successful.
-# Compile of rotword.sv was successful.
-# Compile of sbox.sv was successful.
-# Compile of sbox_sync.sv was successful.
-# Compile of shiftrows.sv was successful.
-# Compile of subword.sv was successful.
-# Compile of flopenr.sv was successful.
 # Compile of subword_tb.sv was successful.
-# 25 compiles, 0 failed with no errors.
-vsim -gui work.subword_tb -voptargs=+acc
+# Compile of mux4.sv was successful.
+# Compile of shift_reg.sv was successful.
+# Compile of subbyte.sv was successful.
+# Compile of subbyte_tb.sv was successful.
+# Compile of mux16_1_bytes.sv was successful.
+# 30 compiles, 0 failed with no errors.
+vsim -gui work.aes_core -voptargs=+acc
 # ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui work.subword_tb -voptargs="+acc" 
-# Start time: 14:30:22 on Oct 25,2026
+# vsim -gui work.aes_core -voptargs="+acc" 
+# Start time: 21:36:43 on Oct 25,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
 # ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# ** Error: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv(26): Module 'mux4' is not defined.
-#  For instance 'mux4' at path 'subword_tb.DUT'
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
-# Error loading design
-# End time: 14:30:24 on Oct 25,2026, Elapsed time: 0:00:02
-# Errors: 1, Warnings: 5
-# Compile of addroundkey.sv was successful.
-# Compile of aes.sv was successful.
-# Compile of aes_core.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of cipher_controller.sv was successful.
-# Compile of cipher_core.sv was successful.
-# Compile of flopen.sv was successful.
-# Compile of galoismult.sv was successful.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_controller.sv was successful.
-# Compile of keyexpansion_controller_tb.sv was successful.
-# Compile of mixcolumn.sv was successful.
-# Compile of mixcolumns.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of rcon.sv was successful.
-# Compile of rotword.sv was successful.
-# Compile of sbox.sv was successful.
-# Compile of sbox_sync.sv was successful.
-# Compile of shiftrows.sv was successful.
-# Compile of subword.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of subword_tb.sv was successful.
-# Compile of mux4.sv was successful.
-# 26 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.subword_tb
-# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.subword_tb 
-# Start time: 14:31:05 on Oct 25,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# ** Error: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv(26): Module 'mux4' is not defined.
-#  For instance 'mux4' at path 'subword_tb.DUT'
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
-# Error loading design
-# End time: 14:31:06 on Oct 25,2026, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 4
-# Compile of addroundkey.sv was successful.
-# Compile of aes.sv was successful.
-# Compile of aes_core.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of cipher_controller.sv was successful.
-# Compile of cipher_core.sv was successful.
-# Compile of flopen.sv was successful.
-# Compile of galoismult.sv was successful.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_controller.sv was successful.
-# Compile of keyexpansion_controller_tb.sv was successful.
-# Compile of mixcolumn.sv was successful.
-# Compile of mixcolumns.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of rcon.sv was successful.
-# Compile of rotword.sv was successful.
-# Compile of sbox.sv was successful.
-# Compile of sbox_sync.sv was successful.
-# Compile of shiftrows.sv was successful.
-# Compile of subword.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of subword_tb.sv was successful.
-# Compile of mux4.sv was successful.
-# 26 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.subword_tb
-# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.subword_tb 
-# Start time: 14:31:39 on Oct 25,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# ** Note: (vopt-143) Recognized 1 FSM in module "subword(fast)".
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
-# Loading work.subword_tb(fast)
-# Loading work.subword(fast)
-# Loading work.mux4(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.flopenr(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'sel'. The port definition is at: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv(3).
-#    Time: 0 ns  Iteration: 0  Instance: /subword_tb/DUT/mux4 File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv Line: 26
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'y'. The port definition is at: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv(4).
-#    Time: 0 ns  Iteration: 0  Instance: /subword_tb/DUT/mux4 File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv Line: 26
-add wave -position insertpoint sim:/subword_tb/DUT/*
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv(22)
-#    Time: 210 ns  Iteration: 0  Instance: /subword_tb
-# Break in Module subword_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv line 22
-quit -sim
-# End time: 14:37:21 on Oct 25,2026, Elapsed time: 0:05:42
-# Errors: 0, Warnings: 5
-# Compile of addroundkey.sv was successful.
-# Compile of aes.sv was successful.
-# Compile of aes_core.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of cipher_controller.sv was successful.
-# Compile of cipher_core.sv was successful.
-# Compile of flopen.sv was successful.
-# Compile of galoismult.sv was successful.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_controller.sv was successful.
-# Compile of keyexpansion_controller_tb.sv was successful.
-# Compile of mixcolumn.sv was successful.
-# Compile of mixcolumns.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of rcon.sv was successful.
-# Compile of rotword.sv was successful.
-# Compile of sbox.sv was successful.
-# Compile of sbox_sync.sv was successful.
-# Compile of shiftrows.sv was successful.
-# Compile of subword.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of subword_tb.sv was successful.
-# Compile of mux4.sv was successful.
-# 26 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.subword_tb
-# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.subword_tb 
-# Start time: 14:37:37 on Oct 25,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.subword_tb(fast)
-# Loading work.subword(fast)
-# Loading work.mux4(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.flopenr(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'sel'. The port definition is at: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv(3).
-#    Time: 0 ns  Iteration: 0  Instance: /subword_tb/DUT/mux4 File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv Line: 29
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'y'. The port definition is at: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv(4).
-#    Time: 0 ns  Iteration: 0  Instance: /subword_tb/DUT/mux4 File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv Line: 29
-add wave -position insertpoint sim:/subword_tb/DUT/*
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv(22)
-#    Time: 210 ns  Iteration: 0  Instance: /subword_tb
-# Break in Module subword_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv line 22
-quit -sim
-# End time: 14:38:50 on Oct 25,2026, Elapsed time: 0:01:13
-# Errors: 0, Warnings: 5
-# Compile of addroundkey.sv was successful.
-# Compile of aes.sv was successful.
-# Compile of aes_core.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of cipher_controller.sv was successful.
-# Compile of cipher_core.sv was successful.
-# Compile of flopen.sv was successful.
-# Compile of galoismult.sv was successful.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_controller.sv was successful.
-# Compile of keyexpansion_controller_tb.sv was successful.
-# Compile of mixcolumn.sv was successful.
-# Compile of mixcolumns.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of rcon.sv was successful.
-# Compile of rotword.sv was successful.
-# Compile of sbox.sv was successful.
-# Compile of sbox_sync.sv was successful.
-# Compile of shiftrows.sv was successful.
-# Compile of subword.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of subword_tb.sv was successful.
-# Compile of mux4.sv was successful.
-# 26 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.subword_tb
-# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.subword_tb 
-# Start time: 14:39:04 on Oct 25,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.subword_tb(fast)
-# Loading work.subword(fast)
-# Loading work.mux4(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.flopenr(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'sel'. The port definition is at: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv(3).
-#    Time: 0 ns  Iteration: 0  Instance: /subword_tb/DUT/mux4 File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv Line: 29
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'y'. The port definition is at: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv(4).
-#    Time: 0 ns  Iteration: 0  Instance: /subword_tb/DUT/mux4 File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv Line: 29
-add wave -position insertpoint sim:/subword_tb/DUT/*
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv(22)
-#    Time: 225 ns  Iteration: 0  Instance: /subword_tb
-# Break in Module subword_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv line 22
-add wave -position insertpoint sim:/subword_tb/DUT/mux4/*
-add wave -position insertpoint sim:/subword_tb/DUT/sbox/*
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.subword_tb(fast)
-# Loading work.subword(fast)
-# Loading work.mux4(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.flopenr(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'sel'. The port definition is at: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv(3).
-#    Time: 0 ns  Iteration: 0  Instance: /subword_tb/DUT/mux4 File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv Line: 29
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'y'. The port definition is at: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv(4).
-#    Time: 0 ns  Iteration: 0  Instance: /subword_tb/DUT/mux4 File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv Line: 29
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv(22)
-#    Time: 225 ns  Iteration: 0  Instance: /subword_tb
-# Break in Module subword_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv line 22
-quit -sim
-# End time: 14:45:24 on Oct 25,2026, Elapsed time: 0:06:20
-# Errors: 0, Warnings: 4
-# Compile of addroundkey.sv was successful.
-# Compile of aes.sv was successful.
-# Compile of aes_core.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of cipher_controller.sv was successful.
-# Compile of cipher_core.sv was successful.
-# Compile of flopen.sv was successful.
-# Compile of galoismult.sv was successful.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_controller.sv was successful.
-# Compile of keyexpansion_controller_tb.sv was successful.
-# Compile of mixcolumn.sv was successful.
-# Compile of mixcolumns.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of rcon.sv was successful.
-# Compile of rotword.sv was successful.
-# Compile of sbox.sv was successful.
-# Compile of sbox_sync.sv was successful.
-# Compile of shiftrows.sv was successful.
-# Compile of subword.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of subword_tb.sv was successful.
-# Compile of mux4.sv was successful.
-# 26 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.subword_tb
-# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.subword_tb 
-# Start time: 14:45:40 on Oct 25,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.subword_tb(fast)
-# Loading work.subword(fast)
-# Loading work.mux4(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.flopenr(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'sel'. The port definition is at: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv(3).
-#    Time: 0 ns  Iteration: 0  Instance: /subword_tb/DUT/mux4 File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv Line: 29
-add wave -position insertpoint sim:/subword_tb/DUT/*
-add wave -position insertpoint sim:/subword_tb/DUT/mux4/*
-add wave -position insertpoint sim:/subword_tb/DUT/sbox/*
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv(22)
-#    Time: 225 ns  Iteration: 0  Instance: /subword_tb
-# Break in Module subword_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv line 22
-quit -sim
-# End time: 15:13:21 on Oct 25,2026, Elapsed time: 0:27:41
-# Errors: 0, Warnings: 4
-# Compile of addroundkey.sv was successful.
-# Compile of aes.sv was successful.
-# Compile of aes_core.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of cipher_controller.sv was successful.
-# Compile of cipher_core.sv was successful.
-# Compile of flopen.sv was successful.
-# Compile of galoismult.sv was successful.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_controller.sv was successful.
-# Compile of keyexpansion_controller_tb.sv was successful.
-# Compile of mixcolumn.sv was successful.
-# Compile of mixcolumns.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of rcon.sv was successful.
-# Compile of rotword.sv was successful.
-# Compile of sbox.sv was successful.
-# Compile of sbox_sync.sv was successful.
-# Compile of shiftrows.sv was successful.
-# Compile of subword.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of subword_tb.sv was successful.
-# Compile of mux4.sv was successful.
-# Compile of shift_reg.sv was successful.
-# 27 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.subword_tb
-# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.subword_tb 
-# Start time: 15:14:09 on Oct 25,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.subword_tb(fast)
+# Loading work.aes_core(fast)
+# Loading work.keyexpansion_controller(fast)
+# Loading work.keyexpansion(fast)
+# Loading work.rotword(fast)
 # Loading work.subword(fast)
 # Loading work.mux4(fast)
 # Loading work.sbox_sync(fast)
 # Loading work.shift_reg(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'sel'. The port definition is at: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv(3).
-#    Time: 0 ns  Iteration: 0  Instance: /subword_tb/DUT/mux4 File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv Line: 28
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'data_out'. The port definition is at: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/shift_reg.sv(9).
-#    Time: 0 ns  Iteration: 0  Instance: /subword_tb/DUT/shift_reg_subbyte File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv Line: 33
-add wave -position insertpoint sim:/subword_tb/DUT/*
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv(22)
-#    Time: 225 ns  Iteration: 0  Instance: /subword_tb
-# Break in Module subword_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv line 22
-add wave -position insertpoint sim:/subword_tb/DUT/mux4/*
-add wave -position insertpoint sim:/subword_tb/DUT/shift_reg_subbyte/*
-run -all
-# Break key hit
-# Simulation stop requested.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.subword_tb(fast)
-# Loading work.subword(fast)
-# Loading work.mux4(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.shift_reg(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'sel'. The port definition is at: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv(3).
-#    Time: 0 ns  Iteration: 0  Instance: /subword_tb/DUT/mux4 File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv Line: 28
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'data_out'. The port definition is at: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/shift_reg.sv(9).
-#    Time: 0 ns  Iteration: 0  Instance: /subword_tb/DUT/shift_reg_subbyte File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv Line: 33
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv(22)
-#    Time: 225 ns  Iteration: 0  Instance: /subword_tb
-# Break in Module subword_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv line 22
+# Loading work.rcon(fast)
+# Loading work.cipher_core(fast)
+# Loading work.flopen(fast)
+# Loading work.subbyte(fast)
+# Loading work.mux16_bytes(fast)
+# Loading work.shift_reg(fast__1)
+# Loading work.shiftrows(fast)
+# Loading work.mixcolumns(fast)
+# Loading work.mixcolumn(fast)
+# Loading work.galoismult(fast)
+# Loading work.mux3(fast)
+# Loading work.addroundkey(fast)
 quit -sim
-# End time: 15:26:54 on Oct 25,2026, Elapsed time: 0:12:45
-# Errors: 0, Warnings: 4
-# Compile of addroundkey.sv was successful.
-# Compile of aes.sv was successful.
-# Compile of aes_core.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of cipher_controller.sv was successful.
-# Compile of cipher_core.sv was successful.
-# Compile of flopen.sv was successful.
-# Compile of galoismult.sv was successful.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_controller.sv was successful.
-# Compile of keyexpansion_controller_tb.sv was successful.
-# Compile of mixcolumn.sv was successful.
-# Compile of mixcolumns.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of rcon.sv was successful.
-# Compile of rotword.sv was successful.
-# Compile of sbox.sv was successful.
-# Compile of sbox_sync.sv was successful.
-# Compile of shiftrows.sv was successful.
-# Compile of subword.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of subword_tb.sv was successful.
-# Compile of mux4.sv was successful.
-# Compile of shift_reg.sv was successful.
-# 27 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.subword_tb
-# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.subword_tb 
-# Start time: 15:27:18 on Oct 25,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.subword_tb(fast)
-# Loading work.subword(fast)
-# Loading work.mux4(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.shift_reg(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'sel'. The port definition is at: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv(3).
-#    Time: 0 ns  Iteration: 0  Instance: /subword_tb/DUT/mux4 File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv Line: 28
-add wave -position insertpoint sim:/subword_tb/DUT/*
-add wave -position insertpoint sim:/subword_tb/DUT/mux4/*
-add wave -position insertpoint sim:/subword_tb/DUT/sbox/*
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv(22)
-#    Time: 225 ns  Iteration: 0  Instance: /subword_tb
-# Break in Module subword_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv line 22
-add wave -position insertpoint sim:/subword_tb/DUT/shift_reg_subbyte/*
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.subword_tb(fast)
-# Loading work.subword(fast)
-# Loading work.mux4(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.shift_reg(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'sel'. The port definition is at: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv(3).
-#    Time: 0 ns  Iteration: 0  Instance: /subword_tb/DUT/mux4 File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv Line: 28
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv(22)
-#    Time: 225 ns  Iteration: 0  Instance: /subword_tb
-# Break in Module subword_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv line 22
-quit -sim
-# End time: 15:29:11 on Oct 25,2026, Elapsed time: 0:01:53
+# End time: 21:37:04 on Oct 25,2026, Elapsed time: 0:00:21
 # Errors: 0, Warnings: 3
-# Compile of addroundkey.sv was successful.
-# Compile of aes.sv was successful.
-# Compile of aes_core.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of cipher_controller.sv was successful.
-# Compile of cipher_core.sv was successful.
-# Compile of flopen.sv was successful.
-# Compile of galoismult.sv was successful.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_controller.sv was successful.
-# Compile of keyexpansion_controller_tb.sv was successful.
-# Compile of mixcolumn.sv was successful.
-# Compile of mixcolumns.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of rcon.sv was successful.
-# Compile of rotword.sv was successful.
-# Compile of sbox.sv was successful.
-# Compile of sbox_sync.sv was successful.
-# Compile of shiftrows.sv was successful.
-# Compile of subword.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of subword_tb.sv was successful.
-# Compile of mux4.sv was successful.
-# Compile of shift_reg.sv was successful.
-# 27 compiles, 0 failed with no errors.
-run -all
-# No Design Loaded!
-vsim -gui -voptargs=+acc work.subword_tb
+vsim -gui -voptargs=+acc work.testbench_aes_core
 # ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.subword_tb 
-# Start time: 15:29:31 on Oct 25,2026
+# vsim -gui -voptargs="+acc" work.testbench_aes_core 
+# Start time: 21:37:16 on Oct 25,2026
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
 # ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
-# Loading work.subword_tb(fast)
+# Loading work.testbench_aes_core(fast)
+# Loading work.aes_core(fast)
+# Loading work.keyexpansion_controller(fast)
+# Loading work.keyexpansion(fast)
+# Loading work.rotword(fast)
 # Loading work.subword(fast)
 # Loading work.mux4(fast)
 # Loading work.sbox_sync(fast)
 # Loading work.shift_reg(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'sel'. The port definition is at: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv(3).
-#    Time: 0 ns  Iteration: 0  Instance: /subword_tb/DUT/mux4 File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv Line: 28
-add wave -position insertpoint sim:/subword_tb/DUT/*
+# Loading work.rcon(fast)
+# Loading work.cipher_core(fast)
+# Loading work.flopen(fast)
+# Loading work.subbyte(fast)
+# Loading work.mux16_bytes(fast)
+# Loading work.shift_reg(fast__1)
+# Loading work.shiftrows(fast)
+# Loading work.mixcolumns(fast)
+# Loading work.mixcolumn(fast)
+# Loading work.galoismult(fast)
+# Loading work.mux3(fast)
+# Loading work.addroundkey(fast)
+add wave -position insertpoint sim:/testbench_aes_core/dut/*
 run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv(22)
-#    Time: 225 ns  Iteration: 0  Instance: /subword_tb
-# Break in Module subword_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv line 22
-add wave -position insertpoint sim:/subword_tb/DUT/shift_reg_subbyte/*
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.subword_tb(fast)
-# Loading work.subword(fast)
-# Loading work.mux4(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.shift_reg(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'sel'. The port definition is at: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv(3).
-#    Time: 0 ns  Iteration: 0  Instance: /subword_tb/DUT/mux4 File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv Line: 28
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv(22)
-#    Time: 225 ns  Iteration: 0  Instance: /subword_tb
-# Break in Module subword_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv line 22
+# Testbench ran successfully
+# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core_tb.sv(48)
+#    Time: 18350 ns  Iteration: 1  Instance: /testbench_aes_core
+# Break in Module testbench_aes_core at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core_tb.sv line 48
 quit -sim
-# End time: 15:33:39 on Oct 25,2026, Elapsed time: 0:04:08
-# Errors: 0, Warnings: 3
-# Compile of addroundkey.sv was successful.
-# Compile of aes.sv was successful.
-# Compile of aes_core.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of cipher_controller.sv was successful.
-# Compile of cipher_core.sv was successful.
-# Compile of flopen.sv was successful.
-# Compile of galoismult.sv was successful.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_controller.sv was successful.
-# Compile of keyexpansion_controller_tb.sv was successful.
-# Compile of mixcolumn.sv was successful.
-# Compile of mixcolumns.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of rcon.sv was successful.
-# Compile of rotword.sv was successful.
-# Compile of sbox.sv was successful.
-# Compile of sbox_sync.sv was successful.
-# Compile of shiftrows.sv was successful.
-# Compile of subword.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of subword_tb.sv was successful.
-# Compile of mux4.sv was successful.
-# Compile of shift_reg.sv was successful.
-# 27 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.subword_tb
-# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.subword_tb 
-# Start time: 15:33:53 on Oct 25,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.subword_tb(fast)
-# Loading work.subword(fast)
-# Loading work.mux4(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.shift_reg(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'sel'. The port definition is at: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/mux4.sv(3).
-#    Time: 0 ns  Iteration: 0  Instance: /subword_tb/DUT/mux4 File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword.sv Line: 28
-add wave -position insertpoint sim:/subword_tb/DUT/*
-add wave -position insertpoint sim:/subword_tb/DUT/shift_reg_subbyte/*
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv(22)
-#    Time: 225 ns  Iteration: 0  Instance: /subword_tb
-# Break in Module subword_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv line 22
-quit -sim
-# End time: 15:36:41 on Oct 25,2026, Elapsed time: 0:02:48
-# Errors: 0, Warnings: 4
-# Compile of addroundkey.sv was successful.
-# Compile of aes.sv was successful.
-# Compile of aes_core.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of cipher_controller.sv was successful.
-# Compile of cipher_core.sv was successful.
-# Compile of flopen.sv was successful.
-# Compile of galoismult.sv was successful.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_controller.sv was successful.
-# Compile of keyexpansion_controller_tb.sv was successful.
-# Compile of mixcolumn.sv was successful.
-# Compile of mixcolumns.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of rcon.sv was successful.
-# Compile of rotword.sv was successful.
-# Compile of sbox.sv was successful.
-# Compile of sbox_sync.sv was successful.
-# Compile of shiftrows.sv was successful.
-# Compile of subword.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of subword_tb.sv was successful.
-# Compile of mux4.sv was successful.
-# Compile of shift_reg.sv was successful.
-# 27 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.subword_tb
-# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.subword_tb 
-# Start time: 15:37:05 on Oct 25,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.subword_tb(fast)
-# Loading work.subword(fast)
-# Loading work.mux4(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.shift_reg(fast)
-add wave -position insertpoint sim:/subword_tb/DUT/*
-add wave -position insertpoint sim:/subword_tb/DUT/shift_reg_subbyte/*
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv(22)
-#    Time: 225 ns  Iteration: 0  Instance: /subword_tb
-# Break in Module subword_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv line 22
-quit -sim
-# End time: 15:38:32 on Oct 25,2026, Elapsed time: 0:01:27
-# Errors: 0, Warnings: 3
-# Compile of addroundkey.sv was successful.
-# Compile of aes.sv was successful.
-# Compile of aes_core.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of cipher_controller.sv was successful.
-# Compile of cipher_core.sv was successful.
-# Compile of flopen.sv was successful.
-# Compile of galoismult.sv was successful.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_controller.sv was successful.
-# Compile of keyexpansion_controller_tb.sv was successful.
-# Compile of mixcolumn.sv was successful.
-# Compile of mixcolumns.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of rcon.sv was successful.
-# Compile of rotword.sv was successful.
-# Compile of sbox.sv was successful.
-# Compile of sbox_sync.sv was successful.
-# Compile of shiftrows.sv was successful.
-# Compile of subword.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of subword_tb.sv was successful.
-# Compile of mux4.sv was successful.
-# Compile of shift_reg.sv was successful.
-# 27 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.subword_tb
-# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.subword_tb 
-# Start time: 15:38:46 on Oct 25,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.subword_tb(fast)
-# Loading work.subword(fast)
-# Loading work.mux4(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.shift_reg(fast)
-add wave -position insertpoint sim:/subword_tb/DUT/*
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv(22)
-#    Time: 225 ns  Iteration: 0  Instance: /subword_tb
-# Break in Module subword_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv line 22
-add wave -position insertpoint sim:/subword_tb/DUT/shift_reg_subbyte/*
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.subword_tb(fast)
-# Loading work.subword(fast)
-# Loading work.mux4(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.shift_reg(fast)
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv(22)
-#    Time: 225 ns  Iteration: 0  Instance: /subword_tb
-# Break in Module subword_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv line 22
-quit -sim
-# End time: 15:41:09 on Oct 25,2026, Elapsed time: 0:02:23
+# End time: 22:15:56 on Oct 25,2026, Elapsed time: 0:38:40
 # Errors: 0, Warnings: 2
 # Compile of addroundkey.sv was successful.
 # Compile of aes.sv was successful.
@@ -763,73 +143,10 @@ quit -sim
 # Compile of subword_tb.sv was successful.
 # Compile of mux4.sv was successful.
 # Compile of shift_reg.sv was successful.
-# 27 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.subword_tb
-# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.subword_tb 
-# Start time: 15:41:25 on Oct 25,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.subword_tb(fast)
-# Loading work.subword(fast)
-# Loading work.mux4(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.shift_reg(fast)
-add wave -position insertpoint sim:/subword_tb/DUT/*
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv(22)
-#    Time: 225 ns  Iteration: 0  Instance: /subword_tb
-# Break in Module subword_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subword_tb.sv line 22
-quit -sim
-# End time: 15:44:05 on Oct 25,2026, Elapsed time: 0:02:40
-# Errors: 0, Warnings: 3
-# Compile of addroundkey.sv was successful.
-# Compile of aes.sv was successful.
-# Compile of aes_core.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of cipher_controller.sv was successful.
-# Compile of cipher_core.sv was successful.
-# Compile of flopen.sv was successful.
-# Compile of galoismult.sv was successful.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_controller.sv was successful.
-# Compile of keyexpansion_controller_tb.sv was successful.
-# Compile of mixcolumn.sv was successful.
-# Compile of mixcolumns.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of rcon.sv was successful.
-# Compile of rotword.sv was successful.
-# Compile of sbox.sv was successful.
-# Compile of sbox_sync.sv was successful.
-# Compile of shiftrows.sv was successful.
-# Compile of subword.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of subword_tb.sv was successful.
-# Compile of mux4.sv was successful.
-# Compile of shift_reg.sv was successful.
 # Compile of subbyte.sv was successful.
 # Compile of subbyte_tb.sv was successful.
-# 29 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.subbyte_tb
-# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.subbyte_tb 
-# Start time: 15:46:16 on Oct 25,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# ** Error: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subbyte.sv(29): Module 'mux16_bytes' is not defined.
-#  For instance 'mux16_bytes' at path 'subbyte_tb.DUT'
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
-# Error loading design
-# End time: 15:46:17 on Oct 25,2026, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 4
+# Compile of mux16_1_bytes.sv was successful.
+# 30 compiles, 0 failed with no errors.
 # Compile of addroundkey.sv was successful.
 # Compile of aes.sv was successful.
 # Compile of aes_core.sv was successful.
@@ -860,154 +177,47 @@ vsim -gui -voptargs=+acc work.subbyte_tb
 # Compile of subbyte.sv was successful.
 # Compile of subbyte_tb.sv was successful.
 # Compile of mux16_1_bytes.sv was successful.
-# 30 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.subbyte_tb
+# Compile of aes_controller.sv was successful.
+# 31 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_aes_core
 # ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.subbyte_tb 
-# Start time: 15:46:56 on Oct 25,2026
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim -gui -voptargs="+acc" work.testbench_aes_core 
+# Start time: 22:16:35 on Oct 25,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
 # ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
-# Loading work.subbyte_tb(fast)
+# Loading work.testbench_aes_core(fast)
+# Loading work.aes_core(fast)
+# Loading work.aes_controller(fast)
+# Loading work.keyexpansion_controller(fast)
+# Loading work.keyexpansion(fast)
+# Loading work.rotword(fast)
+# Loading work.subword(fast)
+# Loading work.mux4(fast)
+# Loading work.sbox_sync(fast)
+# Loading work.shift_reg(fast)
+# Loading work.rcon(fast)
+# Loading work.cipher_core(fast)
+# Loading work.flopen(fast)
 # Loading work.subbyte(fast)
 # Loading work.mux16_bytes(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.shift_reg(fast)
-add wave -position insertpoint sim:/subbyte_tb/DUT/*
+# Loading work.shift_reg(fast__1)
+# Loading work.shiftrows(fast)
+# Loading work.mixcolumns(fast)
+# Loading work.mixcolumn(fast)
+# Loading work.galoismult(fast)
+# Loading work.mux3(fast)
+# Loading work.addroundkey(fast)
+add wave -position insertpoint sim:/testbench_aes_core/dut/*
 run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subbyte_tb.sv(21)
-#    Time: 315 ns  Iteration: 0  Instance: /subbyte_tb
-# Break in Module subbyte_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/subbyte_tb.sv line 21
+# Testbench ran successfully
+# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core_tb.sv(48)
+#    Time: 18350 ns  Iteration: 1  Instance: /testbench_aes_core
+# Break in Module testbench_aes_core at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core_tb.sv line 48
 quit -sim
-# End time: 16:36:48 on Oct 25,2026, Elapsed time: 0:49:52
-# Errors: 0, Warnings: 4
-# Compile of addroundkey.sv was successful.
-# Compile of aes.sv was successful.
-# Compile of aes_core.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of cipher_controller.sv was successful.
-# Compile of cipher_core.sv was successful.
-# Compile of flopen.sv was successful.
-# Compile of galoismult.sv was successful.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_controller.sv was successful.
-# Compile of keyexpansion_controller_tb.sv was successful.
-# Compile of mixcolumn.sv was successful.
-# Compile of mixcolumns.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of rcon.sv was successful.
-# Compile of rotword.sv was successful.
-# Compile of sbox.sv was successful.
-# Compile of sbox_sync.sv was successful.
-# Compile of shiftrows.sv was successful.
-# Compile of subword.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of subword_tb.sv was successful.
-# Compile of mux4.sv was successful.
-# Compile of shift_reg.sv was successful.
-# Compile of subbyte.sv was successful.
-# Compile of subbyte_tb.sv was successful.
-# Compile of mux16_1_bytes.sv was successful.
-# 30 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.keyexpansion_controller_tb
-# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.keyexpansion_controller_tb 
-# Start time: 16:37:12 on Oct 25,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# ** Warning: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion.sv(17): (vopt-2685) [TFMPC] - Too few port connections for 'sub1'.  Expected 5, found 3.
-# ** Warning: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion.sv(17): (vopt-2718) [TFMPC] - Missing connection for port 'done'.
-# ** Warning: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion.sv(17): (vopt-2718) [TFMPC] - Missing connection for port 'reset'.
-# ** Warning: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller.sv(15): (vopt-2685) [TFMPC] - Too few port connections for 'keyexpansion1'.  Expected 4, found 3.
-# ** Warning: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller.sv(15): (vopt-2718) [TFMPC] - Missing connection for port 'clk'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=6.
-# Loading sv_std.std
-# Loading work.keyexpansion_controller_tb(fast)
-# Loading work.keyexpansion_controller(fast)
-# Loading work.flopenr(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.rotword(fast)
-# Loading work.subword(fast)
-# Loading work.mux4(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.shift_reg(fast)
-# Loading work.rcon(fast)
-view -new wave
-# .main_pane.wave1.interior.cs.body.pw.wf
-add wave -position insertpoint sim:/keyexpansion_controller_tb/DUT/*
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller_tb.sv(44)
-#    Time: 520 ns  Iteration: 0  Instance: /keyexpansion_controller_tb
-# Break in Module keyexpansion_controller_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller_tb.sv line 44
-quit -sim
-# End time: 16:40:54 on Oct 25,2026, Elapsed time: 0:03:42
-# Errors: 0, Warnings: 8
-# Compile of addroundkey.sv was successful.
-# Compile of aes.sv was successful.
-# Compile of aes_core.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of cipher_controller.sv was successful.
-# Compile of cipher_core.sv was successful.
-# Compile of flopen.sv was successful.
-# Compile of galoismult.sv was successful.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_controller.sv was successful.
-# Compile of keyexpansion_controller_tb.sv was successful.
-# Compile of mixcolumn.sv was successful.
-# Compile of mixcolumns.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of rcon.sv was successful.
-# Compile of rotword.sv was successful.
-# Compile of sbox.sv was successful.
-# Compile of sbox_sync.sv was successful.
-# Compile of shiftrows.sv was successful.
-# Compile of subword.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of subword_tb.sv was successful.
-# Compile of mux4.sv was successful.
-# Compile of shift_reg.sv was successful.
-# Compile of subbyte.sv was successful.
-# Compile of subbyte_tb.sv was successful.
-# Compile of mux16_1_bytes.sv was successful.
-# 30 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.keyexpansion_controller_tb
-# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.keyexpansion_controller_tb 
-# Start time: 16:41:16 on Oct 25,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# ** Warning: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion.sv(17): (vopt-2685) [TFMPC] - Too few port connections for 'sub1'.  Expected 5, found 4.
-# ** Warning: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion.sv(17): (vopt-2718) [TFMPC] - Missing connection for port 'done'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
-# Loading sv_std.std
-# Loading work.keyexpansion_controller_tb(fast)
-# Loading work.keyexpansion_controller(fast)
-# Loading work.flopenr(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.rotword(fast)
-# Loading work.subword(fast)
-# Loading work.mux4(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.shift_reg(fast)
-# Loading work.rcon(fast)
-# couldn't load library "C:/lscc/radiant/2026.1/questasim/win64/nlviewST.dll": invalid argument
-add wave -position insertpoint sim:/keyexpansion_controller_tb/DUT/*
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller_tb.sv(84)
-#    Time: 488 ns  Iteration: 0  Instance: /keyexpansion_controller_tb
-# Break in Module keyexpansion_controller_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller_tb.sv line 84
-quit -sim
-# End time: 16:47:29 on Oct 25,2026, Elapsed time: 0:06:13
+# End time: 22:22:41 on Oct 25,2026, Elapsed time: 0:06:06
 # Errors: 0, Warnings: 5
 # Compile of addroundkey.sv was successful.
 # Compile of aes.sv was successful.
@@ -1039,245 +249,20 @@ quit -sim
 # Compile of subbyte.sv was successful.
 # Compile of subbyte_tb.sv was successful.
 # Compile of mux16_1_bytes.sv was successful.
-# 30 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.keyexpansion_controller_tb
+# Compile of aes_controller.sv was successful.
+# 31 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_aes_core
 # ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.keyexpansion_controller_tb 
-# Start time: 16:47:46 on Oct 25,2026
+# vsim -gui -voptargs="+acc" work.testbench_aes_core 
+# Start time: 22:22:56 on Oct 25,2026
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# ** Warning: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion.sv(17): (vopt-2685) [TFMPC] - Too few port connections for 'sub1'.  Expected 5, found 4.
-# ** Warning: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion.sv(17): (vopt-2718) [TFMPC] - Missing connection for port 'done'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
-# Loading sv_std.std
-# Loading work.keyexpansion_controller_tb(fast)
-# Loading work.keyexpansion_controller(fast)
-# Loading work.flopenr(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.rotword(fast)
-# Loading work.subword(fast)
-# Loading work.mux4(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.shift_reg(fast)
-# Loading work.rcon(fast)
-add wave -position insertpoint sim:/keyexpansion_controller_tb/DUT/*
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller_tb.sv(84)
-#    Time: 488 ns  Iteration: 0  Instance: /keyexpansion_controller_tb
-# Break in Module keyexpansion_controller_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller_tb.sv line 84
-add wave -position insertpoint sim:/keyexpansion_controller_tb/DUT/key_reg/*
-add wave -position insertpoint sim:/keyexpansion_controller_tb/DUT/keyexpansion1/*
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
-# Loading work.keyexpansion_controller_tb(fast)
-# Loading work.keyexpansion_controller(fast)
-# Loading work.flopenr(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.rotword(fast)
-# Loading work.subword(fast)
-# Loading work.mux4(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.shift_reg(fast)
-# Loading work.rcon(fast)
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller_tb.sv(84)
-#    Time: 488 ns  Iteration: 0  Instance: /keyexpansion_controller_tb
-# Break in Module keyexpansion_controller_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller_tb.sv line 84
-quit -sim
-# End time: 18:52:03 on Oct 25,2026, Elapsed time: 2:04:17
-# Errors: 0, Warnings: 4
-# Compile of addroundkey.sv was successful.
-# Compile of aes.sv was successful.
-# Compile of aes_core.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of cipher_controller.sv was successful.
-# Compile of cipher_core.sv was successful.
-# Compile of flopen.sv was successful.
-# Compile of galoismult.sv was successful.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_controller.sv was successful.
-# Compile of keyexpansion_controller_tb.sv was successful.
-# Compile of mixcolumn.sv was successful.
-# Compile of mixcolumns.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of rcon.sv was successful.
-# Compile of rotword.sv was successful.
-# Compile of sbox.sv was successful.
-# Compile of sbox_sync.sv was successful.
-# Compile of shiftrows.sv was successful.
-# Compile of subword.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of subword_tb.sv was successful.
-# Compile of mux4.sv was successful.
-# Compile of shift_reg.sv was successful.
-# Compile of subbyte.sv was successful.
-# Compile of subbyte_tb.sv was successful.
-# Compile of mux16_1_bytes.sv was successful.
-# 30 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.keyexpansion_controller_tb
-# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.keyexpansion_controller_tb 
-# Start time: 18:52:28 on Oct 25,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.keyexpansion_controller_tb(fast)
-# Loading work.keyexpansion_controller(fast)
-# Loading work.keyexpansion(fast)
-# Loading work.rotword(fast)
-# Loading work.subword(fast)
-# Loading work.mux4(fast)
-# Loading work.sbox_sync(fast)
-# Loading work.shift_reg(fast)
-# Loading work.rcon(fast)
-add wave -position insertpoint sim:/keyexpansion_controller_tb/DUT/*
-run -all
-# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller_tb.sv(54)
-#    Time: 450 ns  Iteration: 0  Instance: /keyexpansion_controller_tb
-# Break in Module keyexpansion_controller_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller_tb.sv line 54
-quit -sim
-# End time: 20:39:54 on Oct 25,2026, Elapsed time: 1:47:26
-# Errors: 0, Warnings: 3
-# Compile of addroundkey.sv was successful.
-# Compile of aes.sv was successful.
-# Compile of aes_core.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of cipher_controller.sv was successful.
-# Compile of cipher_core.sv was successful.
-# Compile of flopen.sv was successful.
-# Compile of galoismult.sv was successful.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_controller.sv was successful.
-# Compile of keyexpansion_controller_tb.sv was successful.
-# Compile of mixcolumn.sv was successful.
-# Compile of mixcolumns.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of rcon.sv was successful.
-# Compile of rotword.sv was successful.
-# Compile of sbox.sv was successful.
-# Compile of sbox_sync.sv was successful.
-# Compile of shiftrows.sv was successful.
-# Compile of subword.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of subword_tb.sv was successful.
-# Compile of mux4.sv was successful.
-# Compile of shift_reg.sv was successful.
-# Compile of subbyte.sv was successful.
-# Compile of subbyte_tb.sv was successful.
-# Compile of mux16_1_bytes.sv was successful.
-# 30 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.testbench_aes_core
-# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.testbench_aes_core 
-# Start time: 20:40:36 on Oct 25,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# ** Error (suppressible): C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv(80): (vopt-2912) Port 'key_in' not found in module 'cipher_core' (5th connection).
-# ** Error (suppressible): C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv(80): (vopt-2912) Port 'data_out' not found in module 'cipher_core' (6th connection).
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=1.
-# Error loading design
-# End time: 20:40:36 on Oct 25,2026, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 3
-# Compile of addroundkey.sv was successful.
-# Compile of aes.sv was successful.
-# Compile of aes_core.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of cipher_controller.sv was successful.
-# Compile of cipher_core.sv was successful.
-# Compile of flopen.sv was successful.
-# Compile of galoismult.sv was successful.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_controller.sv was successful.
-# Compile of keyexpansion_controller_tb.sv was successful.
-# Compile of mixcolumn.sv was successful.
-# Compile of mixcolumns.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of rcon.sv was successful.
-# Compile of rotword.sv was successful.
-# Compile of sbox.sv was successful.
-# Compile of sbox_sync.sv was successful.
-# Compile of shiftrows.sv was successful.
-# Compile of subword.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of subword_tb.sv was successful.
-# Compile of mux4.sv was successful.
-# Compile of shift_reg.sv was successful.
-# Compile of subbyte.sv was successful.
-# Compile of subbyte_tb.sv was successful.
-# Compile of mux16_1_bytes.sv was successful.
-# 30 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.testbench_aes_core
-# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.testbench_aes_core 
-# Start time: 20:43:30 on Oct 25,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# ** Error (suppressible): C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv(82): (vopt-12003) Variable 'done' written by continuous and procedural assignments. See C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv(52). 
-# Optimization failed
-# ** Error: (vopt-2064) Compiler back-end code generation process terminated due to previous errors with code 12.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=1.
-# Error loading design
-# End time: 20:43:31 on Oct 25,2026, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 3
-# Compile of addroundkey.sv was successful.
-# Compile of aes.sv was successful.
-# Compile of aes_core.sv was successful.
-# Compile of aes_core_tb.sv was successful.
-# Compile of aes_sbox_tb.sv was successful.
-# Compile of aes_spi.sv was successful.
-# Compile of aes_spi_tb.sv was successful.
-# Compile of cipher_controller.sv was successful.
-# Compile of cipher_core.sv was successful.
-# Compile of flopen.sv was successful.
-# Compile of galoismult.sv was successful.
-# Compile of keyexpansion.sv was successful.
-# Compile of keyexpansion_controller.sv was successful.
-# Compile of keyexpansion_controller_tb.sv was successful.
-# Compile of mixcolumn.sv was successful.
-# Compile of mixcolumns.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of rcon.sv was successful.
-# Compile of rotword.sv was successful.
-# Compile of sbox.sv was successful.
-# Compile of sbox_sync.sv was successful.
-# Compile of shiftrows.sv was successful.
-# Compile of subword.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of subword_tb.sv was successful.
-# Compile of mux4.sv was successful.
-# Compile of shift_reg.sv was successful.
-# Compile of subbyte.sv was successful.
-# Compile of subbyte_tb.sv was successful.
-# Compile of mux16_1_bytes.sv was successful.
-# 30 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.testbench_aes_core
-# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
-# vsim -gui -voptargs="+acc" work.testbench_aes_core 
-# Start time: 20:44:14 on Oct 25,2026
-# ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
 # ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
 # Loading work.testbench_aes_core(fast)
 # Loading work.aes_core(fast)
+# Loading work.aes_controller(fast)
 # Loading work.keyexpansion_controller(fast)
 # Loading work.keyexpansion(fast)
 # Loading work.rotword(fast)
@@ -1297,10 +282,9 @@ vsim -gui -voptargs=+acc work.testbench_aes_core
 # Loading work.galoismult(fast)
 # Loading work.mux3(fast)
 # Loading work.addroundkey(fast)
-# ** Error (suppressible): (vsim-3839) Variable '/testbench_aes_core/dut/done', driven via a port connection, is multiply driven. See C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv(80).
-#    Time: 0 ns  Iteration: 0  Instance: /testbench_aes_core/dut File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv Line: 53
-# ** Error (suppressible): (vsim-3839) Variable '/testbench_aes_core/dut/done', driven via a port connection, is multiply driven. See C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv(80).
-#    Time: 0 ns  Iteration: 0  Instance: /testbench_aes_core/dut File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv Line: 52
-# Error loading design
-# End time: 20:44:24 on Oct 25,2026, Elapsed time: 0:00:10
-# Errors: 2, Warnings: 3
+add wave -position insertpoint sim:/testbench_aes_core/dut/*
+run -all
+# Testbench ran successfully
+# ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core_tb.sv(48)
+#    Time: 18350 ns  Iteration: 1  Instance: /testbench_aes_core
+# Break in Module testbench_aes_core at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core_tb.sv line 48

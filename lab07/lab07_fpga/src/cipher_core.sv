@@ -1,19 +1,36 @@
 module cipher_core(
-		input logic clk, en, reset,
-		input logic [1:0] sel,
-		input logic [127:0] plaintext,
-		input logic [127:0] key_in,
-		output logic [127:0] cyphertext,
-		output logic done
+		input logic 			clk,
+		input logic 			advance,	// new round	
+		input logic [3:0] 		round,
+		input logic [127:0] 	plaintext,
+		input logic [127:0] 	key_in,
+		output logic [127:0] 	cyphertext,
+		output logic 			done
 		);
 
 	logic [127:0] s1, s2, s3, s4, s5, s6;
+	logic [1:0] sel;
+	// Per round logic: control signals
+	always_comb begin
+		if (round == 0)
+			begin
+				sel = 0; // input key_in
+			end
+		else if (round == 10) 
+			begin
+				sel = 1; // skip stage
+			end
+		else  
+			begin
+				sel = 2; // round 1-9
+			end
+	end
 	
 	// State register
-	flopen #(128) reg1(.clk(clk), .en(en), .d(s6), .q(s1));
+	flopen #(128) reg1(.clk(clk), .en(advance), .d(s6), .q(s1));
 	
 	//subbyte
-	subbyte subbyte1(.clk(clk), .reset(reset), .done(done),.a(s1),.y(s2));
+	subbyte subbyte1(.clk(clk), .reset(advance), .done(done),.a(s1),.y(s2));
 	
 	//shift
 	shiftrows shiftrows1(.a(s2),.y(s3));

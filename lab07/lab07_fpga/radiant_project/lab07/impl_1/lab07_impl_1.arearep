@@ -1,5 +1,268 @@
 ----------------------------------------------------------------------
-Report for cell cipher_core.TECH
-Register bits:  0 of 5280 (0.000%)
-I/O cells:      0
-                              TOTAL         0
+Report for cell aes.TECH
+Register bits:  823 of 5280 (15.587%)
+I/O cells:      6
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         2          100.0
+                            FD1P3XZ       823          100.0
+                                 IB         4          100.0
+                                INV         1          100.0
+                              IOL_B         1          100.0
+                               LUT4      1166          100.0
+                                 OB         2          100.0
+SUB MODULES
+                        addroundkey         1
+                           aes_core         1
+                            aes_spi         1
+                        cipher_core         1
+                  flopen(WIDTH=128)         1
+                       keyexpansion         1
+            keyexpansion_controller         1
+                          mixcolumn         1
+                       mixcolumn_U1         1
+                       mixcolumn_U2         1
+                       mixcolumn_U3         1
+                         mixcolumns         1
+                        mux16_bytes         1
+                    mux3(WIDTH=128)         1
+                               mux4         1
+                               rcon         1
+                          sbox_sync         1
+                       sbox_sync_U0         1
+                          shift_reg         1
+                shift_reg(DEPTH=16)         1
+                            subbyte         1
+                            subword         1
+                              TOTAL      2021
+----------------------------------------------------------------------
+Report for cell aes_spi.v1
+Instance Path : spi
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ       384           46.7
+                                INV         1          100.0
+                              IOL_B         1          100.0
+                               LUT4       128           11.0
+                              TOTAL       514
+----------------------------------------------------------------------
+Report for cell aes_core.v1
+Instance Path : core
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         2          100.0
+                            FD1P3XZ       439           53.3
+                               LUT4      1034           88.7
+SUB MODULES
+                        addroundkey         1
+                        cipher_core         1
+                  flopen(WIDTH=128)         1
+                       keyexpansion         1
+            keyexpansion_controller         1
+                          mixcolumn         1
+                       mixcolumn_U1         1
+                       mixcolumn_U2         1
+                       mixcolumn_U3         1
+                         mixcolumns         1
+                        mux16_bytes         1
+                    mux3(WIDTH=128)         1
+                               mux4         1
+                               rcon         1
+                          sbox_sync         1
+                       sbox_sync_U0         1
+                          shift_reg         1
+                shift_reg(DEPTH=16)         1
+                            subbyte         1
+                            subword         1
+                              TOTAL      1495
+----------------------------------------------------------------------
+Report for cell keyexpansion_controller.v1
+Instance Path : core.keyexpansion_controller
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1           50.0
+                            FD1P3XZ       170           20.7
+                               LUT4       308           26.4
+SUB MODULES
+                       keyexpansion         1
+                               mux4         1
+                               rcon         1
+                          sbox_sync         1
+                          shift_reg         1
+                            subword         1
+                              TOTAL       485
+----------------------------------------------------------------------
+Report for cell keyexpansion.v1
+Instance Path : core.keyexpansion_controller.keyexpansion1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1           50.0
+                            FD1P3XZ        37            4.5
+                               LUT4       126           10.8
+SUB MODULES
+                               mux4         1
+                               rcon         1
+                          sbox_sync         1
+                          shift_reg         1
+                            subword         1
+                              TOTAL       169
+----------------------------------------------------------------------
+Report for cell subword.v1
+Instance Path : core.keyexpansion_controller.keyexpansion1.sub1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1           50.0
+                            FD1P3XZ        37            4.5
+                               LUT4        23            2.0
+SUB MODULES
+                               mux4         1
+                          sbox_sync         1
+                          shift_reg         1
+                              TOTAL        64
+----------------------------------------------------------------------
+Report for cell shift_reg.v1
+Instance Path : core.keyexpansion_controller.keyexpansion1.sub1.shift_reg_subbyte
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ        32            3.9
+                              TOTAL        32
+----------------------------------------------------------------------
+Report for cell sbox_sync.v1
+Instance Path : core.keyexpansion_controller.keyexpansion1.sub1.sbox
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1           50.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell mux4.v1
+Instance Path : core.keyexpansion_controller.keyexpansion1.sub1.mux4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        16            1.4
+                              TOTAL        16
+----------------------------------------------------------------------
+Report for cell rcon.v1
+Instance Path : core.keyexpansion_controller.keyexpansion1.rcon1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         6            0.5
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell cipher_core.v1
+Instance Path : core.cipher_core
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1           50.0
+                            FD1P3XZ       263           32.0
+                               LUT4       711           61.0
+SUB MODULES
+                        addroundkey         1
+                  flopen(WIDTH=128)         1
+                          mixcolumn         1
+                       mixcolumn_U1         1
+                       mixcolumn_U2         1
+                       mixcolumn_U3         1
+                         mixcolumns         1
+                        mux16_bytes         1
+                    mux3(WIDTH=128)         1
+                       sbox_sync_U0         1
+                shift_reg(DEPTH=16)         1
+                            subbyte         1
+                              TOTAL       987
+----------------------------------------------------------------------
+Report for cell subbyte.v1
+Instance Path : core.cipher_core.subbyte1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1           50.0
+                            FD1P3XZ       135           16.4
+                               LUT4       104            8.9
+SUB MODULES
+                        mux16_bytes         1
+                       sbox_sync_U0         1
+                shift_reg(DEPTH=16)         1
+                              TOTAL       243
+----------------------------------------------------------------------
+Report for cell shift_reg(DEPTH=16).v1
+Instance Path : core.cipher_core.subbyte1.shift_reg_subbyte
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ       128           15.6
+                               LUT4         8            0.7
+                              TOTAL       136
+----------------------------------------------------------------------
+Report for cell sbox_sync_U0.v1
+Instance Path : core.cipher_core.subbyte1.sbox
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1           50.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell mux16_bytes.v1
+Instance Path : core.cipher_core.subbyte1.mux16_bytes
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        86            7.4
+                              TOTAL        86
+----------------------------------------------------------------------
+Report for cell flopen(WIDTH=128).v1
+Instance Path : core.cipher_core.reg1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ       128           15.6
+                               LUT4       128           11.0
+                              TOTAL       256
+----------------------------------------------------------------------
+Report for cell mux3(WIDTH=128).v1
+Instance Path : core.cipher_core.mux3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4       242           20.8
+                              TOTAL       242
+----------------------------------------------------------------------
+Report for cell mixcolumns.v1
+Instance Path : core.cipher_core.mixcolumns
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4       109            9.3
+SUB MODULES
+                          mixcolumn         1
+                       mixcolumn_U1         1
+                       mixcolumn_U2         1
+                       mixcolumn_U3         1
+                              TOTAL       113
+----------------------------------------------------------------------
+Report for cell mixcolumn.v1
+Instance Path : core.cipher_core.mixcolumns.mc3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        27            2.3
+                              TOTAL        27
+----------------------------------------------------------------------
+Report for cell mixcolumn_U1.v1
+Instance Path : core.cipher_core.mixcolumns.mc2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        24            2.1
+                              TOTAL        24
+----------------------------------------------------------------------
+Report for cell mixcolumn_U2.v1
+Instance Path : core.cipher_core.mixcolumns.mc1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        28            2.4
+                              TOTAL        28
+----------------------------------------------------------------------
+Report for cell mixcolumn_U3.v1
+Instance Path : core.cipher_core.mixcolumns.mc0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        30            2.6
+                              TOTAL        30
+----------------------------------------------------------------------
+Report for cell addroundkey.v1
+Instance Path : core.cipher_core.addroundkey
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4       128           11.0
+                              TOTAL       128
