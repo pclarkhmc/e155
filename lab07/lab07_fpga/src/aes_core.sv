@@ -2,7 +2,7 @@
 // aes_core
 //   top level AES encryption module
 //   when load is asserted, takes the current key and plaintext
-//   generates cyphertext and asserts done when complete 11 cycles later
+//   generates cyphertext and asserts done on completion
 // 
 //   See FIPS-197 with Nk = 4, Nb = 4, Nr = 10
 //
@@ -27,12 +27,15 @@ module aes_core(input  logic         clk,
 	logic old_load, start, en;
 	logic cypher_done, key_ready;
 	logic [3:0] round;
+
+	// control signals
 	assign start = old_load & ~load; // falling edge of load
-	
+	assign en = cypher_done && (round != 0) && (round < 10);
+
 	always_ff @(posedge clk) begin
-		// track load 
+		// track load
 		old_load <= load;
-	
+
 		// round logic
 		if (load)
 			begin
@@ -41,16 +44,10 @@ module aes_core(input  logic         clk,
 		else if (start)
 			begin
 				round <= 1;
-				en <= 0;
 			end
-		else if (cypher_done && (round < 10)) begin
+		else if (en) begin
 				round <= round + 1;
-				en <= 1;
 			end
-		else begin
-			round <= round;
-				en <= 0;
-		end
 			
 		// done logic
 		if ((round == 10) && cypher_done && key_ready) done <= 1;
@@ -63,15 +60,15 @@ module aes_core(input  logic         clk,
 	always_comb begin
 		if (round == 0)
 			begin
-				sel <= 0; // input key_in
+				sel = 0; // input key_in
 			end
 		else if (round == 10) 
 			begin
-				sel <= 1; // skip stage
+				sel = 1; // skip stage
 			end
 		else  
 			begin
-				sel <= 2; // round 1-9
+				sel = 2; // round 1-9
 			end
 	end 
 	
@@ -80,6 +77,7 @@ module aes_core(input  logic         clk,
 	keyexpansion_controller keyexpansion_controller(.clk(clk), .reset(start), .round(round),.key_in(key),.key_out(key_out),.key_ready(key_ready));
 	
 	// cipher_core
+	logic advance_state;
 	assign advance_state = (en | start);
 	cipher_core cipher_core(.clk(clk), .en(advance_state), .reset(advance_state), .sel(sel), .plaintext(plaintext), .key_in(key_out), .cyphertext(cyphertext), .done(cypher_done)); 
 		
