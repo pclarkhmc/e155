@@ -7,7 +7,7 @@ module cipher_core(
 		output logic done
 		);
 
-	logic [127:0] s1, s2, s3, s4, s5;
+	logic [127:0] s1, s2, s3, s4, s5, s6;
 	
 	// State register
 	flopen #(128) Reg1(.clk(clk), .en(en), .d(s5), .q(s1));
@@ -22,9 +22,11 @@ module cipher_core(
 	mixcolumns mixcolumns(.a(s3),.y(s4));
 	
 	// Mux
-	mux3 #(128) mux3 (.d0(plaintext), .d1(s3), .d2(s4), .s(sel), .y());
+	mux3 #(128) mux3 (.d0(plaintext), .d1(s3), .d2(s4), .s(sel), .y(s5));
 	
 	// add round key
-	addroundkey addroundkey(.a(), .key(key_in), .y(s5));
+	addroundkey addroundkey(.a(s5), .key(key_in), .y(s6));
+	
+	assign cyphertext = s6;
 
 endmodule
