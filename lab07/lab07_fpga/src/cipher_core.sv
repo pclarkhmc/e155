@@ -10,7 +10,7 @@ module cipher_core(
 	logic [127:0] s1, s2, s3, s4, s5, s6;
 	
 	// State register
-	flopen #(128) Reg1(.clk(clk), .en(en), .d(s5), .q(s1));
+	flopen #(128) reg1(.clk(clk), .en(en), .d(s6), .q(s1));
 	
 	//subbyte
 	subbyte subbyte1(.clk(clk), .reset(reset), .done(done),.a(s1),.y(s2));
