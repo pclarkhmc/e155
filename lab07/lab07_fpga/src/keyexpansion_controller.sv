@@ -1,26 +1,36 @@
 module keyexpansion_controller(
-	input logic clk, en, reset,
+	input logic clk, reset,
 	input logic [3:0] round,
 	input logic [127:0] key_in,
-	output logic [127:0] key_out
+	output logic [127:0] key_out,
+	output logic key_ready
 	);
 	
-	// register round and key
-	//logic [3:0] old_round;
-	//flopenr #(4) round_reg(.clk(clk), .en(en), .reset(reset), .d(round), .q(old_round));
-	logic [127:0] old_key, new_key;
-	flopenr #(128) key_reg(.clk(clk), .en(en), .reset(), .d(key_out), .q(old_key));
-
-	// generate new key
-	logic reset_key_ex;
-	keyexpansion keyexpansion1(.clk(clk), .reset(reset_key_ex), .oldkey(old_key), .round(round), .newkey(new_key));
+	// detect a new round
+	logic [3:0] old_round;
+	logic start, done;
+	always_ff @(posedge clk)
+		if (reset) old_round <= 4'hF;	// forces a start after reset
+		else old_round <= round;
+	assign start = (round != old_round);
 	
-	// output mux
-	always_comb begin
-		if (round == 0)	key_out = key_in;
-		else key_out = new_key;
-		if (key_out != old_key) reset_key_ex <= 1;
-		else reset_key_ex <= 0;
-	end
+	// generate new key from the held key
+	logic [127:0] new_key;
+	keyexpansion keyexpansion1(.clk(clk), .reset(start | reset), .oldkey(key_out), .round(round), .newkey(new_key), .done(done));
+	
+	// load key once per round
+	always_ff @(posedge clk)
+		// on reset, key not ready
+		if (reset) key_ready <= 0;
+		else if (round == 0) begin
+			key_out <= key_in; // feed in initial key
+			key_ready <= 1;
+		end
+		// on round change, reset key
+		else if (start) key_ready <= 0;
+		else if (done && !key_ready) begin
+			key_out <= new_key;
+			key_ready <= 1;
+		end
 
 endmodule

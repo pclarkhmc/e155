@@ -9,12 +9,13 @@ module keyexpansion(
 	input logic clk, reset,
 	input logic [127:0] oldkey,
 	input logic [3:0] round,
-	output logic [127:0] newkey
+	output logic [127:0] newkey,
+	output logic done
 	);
 	
 	logic [31:0] n1,n2,n3,rcon;
 	rotword rot1(.a(oldkey[31:0]), .y(n1));
-	subword sub1(.clk(clk), .reset(reset), .a(n1), .y(n2));
+	subword sub1(.clk(clk), .reset(reset), .a(n1), .y(n2), .done(done));
 	rcon	rcon1(.j(round), .y(rcon));
 	assign n3 = n2 ^ rcon;
 	
