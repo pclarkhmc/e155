@@ -25,6 +25,7 @@ module aes_core(input  logic         clk,
                 output logic [127:0] cyphertext);
 	
 	logic old_load, start, en;
+	logic cypher_done;
 	logic [3:0] round;
 	logic [4:0] count;
 	assign start = load != old_load;
@@ -39,7 +40,7 @@ module aes_core(input  logic         clk,
 		else count <= count + 1; // count logic 
 		
 		// on high count, increment round and cycle en
-		if ((count == 4'b1111) && (round < 10)) begin
+		if (cypher_done && (round < 10)) begin
 				round <= round + 1;
 				en <= 1;
 			end
@@ -76,9 +77,7 @@ module aes_core(input  logic         clk,
 	logic [127:0] key_out;
 	keyexpansion_controller keyexpansion_controller(.clk(clk), .reset(start), .round(round),.key_in(key),.key_out(key_out),.key_ready(key_ready));
 	
-	// cipher_core 
-	cipher_core cipher_core(.clk(clk), .en(en), .reset(en), .sel(sel), .key_in(key_out), .data_out(cyphertext), .done(done)); 
-	
-	assign done = (round == 10);
-	
+	// cipher_core
+	cipher_core cipher_core(.clk(clk), .en(en), .reset(en), .sel(sel), .plaintext(plaintext), .key_in(key_out), .cyphertext(cyphertext), .done(cypher_done)); 
+		
 endmodule

@@ -1143,3 +1143,164 @@ run -all
 # ** Note: $stop    : C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller_tb.sv(54)
 #    Time: 450 ns  Iteration: 0  Instance: /keyexpansion_controller_tb
 # Break in Module keyexpansion_controller_tb at C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/keyexpansion_controller_tb.sv line 54
+quit -sim
+# End time: 20:39:54 on Oct 25,2026, Elapsed time: 1:47:26
+# Errors: 0, Warnings: 3
+# Compile of addroundkey.sv was successful.
+# Compile of aes.sv was successful.
+# Compile of aes_core.sv was successful.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of cipher_controller.sv was successful.
+# Compile of cipher_core.sv was successful.
+# Compile of flopen.sv was successful.
+# Compile of galoismult.sv was successful.
+# Compile of keyexpansion.sv was successful.
+# Compile of keyexpansion_controller.sv was successful.
+# Compile of keyexpansion_controller_tb.sv was successful.
+# Compile of mixcolumn.sv was successful.
+# Compile of mixcolumns.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of rcon.sv was successful.
+# Compile of rotword.sv was successful.
+# Compile of sbox.sv was successful.
+# Compile of sbox_sync.sv was successful.
+# Compile of shiftrows.sv was successful.
+# Compile of subword.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of subword_tb.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of shift_reg.sv was successful.
+# Compile of subbyte.sv was successful.
+# Compile of subbyte_tb.sv was successful.
+# Compile of mux16_1_bytes.sv was successful.
+# 30 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_aes_core
+# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
+# vsim -gui -voptargs="+acc" work.testbench_aes_core 
+# Start time: 20:40:36 on Oct 25,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
+# ** Error (suppressible): C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv(80): (vopt-2912) Port 'key_in' not found in module 'cipher_core' (5th connection).
+# ** Error (suppressible): C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv(80): (vopt-2912) Port 'data_out' not found in module 'cipher_core' (6th connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=1.
+# Error loading design
+# End time: 20:40:36 on Oct 25,2026, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 3
+# Compile of addroundkey.sv was successful.
+# Compile of aes.sv was successful.
+# Compile of aes_core.sv was successful.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of cipher_controller.sv was successful.
+# Compile of cipher_core.sv was successful.
+# Compile of flopen.sv was successful.
+# Compile of galoismult.sv was successful.
+# Compile of keyexpansion.sv was successful.
+# Compile of keyexpansion_controller.sv was successful.
+# Compile of keyexpansion_controller_tb.sv was successful.
+# Compile of mixcolumn.sv was successful.
+# Compile of mixcolumns.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of rcon.sv was successful.
+# Compile of rotword.sv was successful.
+# Compile of sbox.sv was successful.
+# Compile of sbox_sync.sv was successful.
+# Compile of shiftrows.sv was successful.
+# Compile of subword.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of subword_tb.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of shift_reg.sv was successful.
+# Compile of subbyte.sv was successful.
+# Compile of subbyte_tb.sv was successful.
+# Compile of mux16_1_bytes.sv was successful.
+# 30 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_aes_core
+# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
+# vsim -gui -voptargs="+acc" work.testbench_aes_core 
+# Start time: 20:43:30 on Oct 25,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
+# ** Error (suppressible): C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv(82): (vopt-12003) Variable 'done' written by continuous and procedural assignments. See C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv(52). 
+# Optimization failed
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated due to previous errors with code 12.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=1.
+# Error loading design
+# End time: 20:43:31 on Oct 25,2026, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 3
+# Compile of addroundkey.sv was successful.
+# Compile of aes.sv was successful.
+# Compile of aes_core.sv was successful.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of cipher_controller.sv was successful.
+# Compile of cipher_core.sv was successful.
+# Compile of flopen.sv was successful.
+# Compile of galoismult.sv was successful.
+# Compile of keyexpansion.sv was successful.
+# Compile of keyexpansion_controller.sv was successful.
+# Compile of keyexpansion_controller_tb.sv was successful.
+# Compile of mixcolumn.sv was successful.
+# Compile of mixcolumns.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of rcon.sv was successful.
+# Compile of rotword.sv was successful.
+# Compile of sbox.sv was successful.
+# Compile of sbox_sync.sv was successful.
+# Compile of shiftrows.sv was successful.
+# Compile of subword.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of subword_tb.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of shift_reg.sv was successful.
+# Compile of subbyte.sv was successful.
+# Compile of subbyte_tb.sv was successful.
+# Compile of mux16_1_bytes.sv was successful.
+# 30 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_aes_core
+# ** Note: (vsim-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
+# vsim -gui -voptargs="+acc" work.testbench_aes_core 
+# Start time: 20:44:14 on Oct 25,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/sim/lab07_sim.mpf' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_aes_core(fast)
+# Loading work.aes_core(fast)
+# Loading work.keyexpansion_controller(fast)
+# Loading work.keyexpansion(fast)
+# Loading work.rotword(fast)
+# Loading work.subword(fast)
+# Loading work.mux4(fast)
+# Loading work.sbox_sync(fast)
+# Loading work.shift_reg(fast)
+# Loading work.rcon(fast)
+# Loading work.cipher_core(fast)
+# Loading work.flopen(fast)
+# Loading work.subbyte(fast)
+# Loading work.mux16_bytes(fast)
+# Loading work.shift_reg(fast__1)
+# Loading work.shiftrows(fast)
+# Loading work.mixcolumns(fast)
+# Loading work.mixcolumn(fast)
+# Loading work.galoismult(fast)
+# Loading work.mux3(fast)
+# Loading work.addroundkey(fast)
+# ** Error (suppressible): (vsim-3839) Variable '/testbench_aes_core/dut/done', driven via a port connection, is multiply driven. See C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv(80).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_aes_core/dut File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv Line: 53
+# ** Error (suppressible): (vsim-3839) Variable '/testbench_aes_core/dut/done', driven via a port connection, is multiply driven. See C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv(80).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_aes_core/dut File: C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv Line: 52
+# Error loading design
+# End time: 20:44:24 on Oct 25,2026, Elapsed time: 0:00:10
+# Errors: 2, Warnings: 3
