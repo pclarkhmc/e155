@@ -64,6 +64,7 @@
 -sver "../../../src/mux16_1_bytes.sv"
 -sver "../../../src/mux4.sv"
 -sver "../../../src/shift_reg.sv"
+-sver "../../../src/aes_controller.sv"
 -path ".."
 -top aes
 # Output Configuration

@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2026 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Oct 25 21:40:14 2026
+Mon Oct 26 19:24:13 2026
 
 
 Command Line:  C:\lscc\radiant\2026.1\ispfpga\bin\nt64\synthesis.exe -f C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/impl_1/lab07_impl_1_lattice.synproj -logfile lab07_impl_1_lattice.srp -gui -msgset C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/promote.xml 
@@ -185,6 +185,7 @@ Verilog design file: ../../../src/subbyte.sv
 Verilog design file: ../../../src/mux16_1_bytes.sv
 Verilog design file: ../../../src/mux4.sv
 Verilog design file: ../../../src/shift_reg.sv
+Verilog design file: ../../../src/aes_controller.sv
 VHDL library: pmi
 VHDL design file: C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd
 
@@ -219,11 +220,14 @@ Analyzing Verilog file ../../../src/subbyte.sv. VERI-1482
 Analyzing Verilog file ../../../src/mux16_1_bytes.sv. VERI-1482
 Analyzing Verilog file ../../../src/mux4.sv. VERI-1482
 Analyzing Verilog file ../../../src/shift_reg.sv. VERI-1482
+Analyzing Verilog file ../../../src/aes_controller.sv. VERI-1482
 Top module name (Verilog): aes
 INFO <35901018> - synthesis: ../../../src/aes.sv(6): compiling module aes. VERI-1018
+INFO <35901018> - synthesis: C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v(756): compiling module HSOSC(CLKHF_DIV=2'b01). VERI-1018
 INFO <35901018> - synthesis: ../../../src/aes_spi.sv(8): compiling module aes_spi. VERI-1018
 INFO <35901018> - synthesis: ../../../src/aes_core.sv(20): compiling module aes_core. VERI-1018
-WARNING <35901209> - synthesis: ../../../src/aes_core.sv(49): expression size 32 truncated to fit in target size 4. VERI-1209
+INFO <35901018> - synthesis: ../../../src/aes_controller.sv(1): compiling module aes_controller. VERI-1018
+WARNING <35901209> - synthesis: ../../../src/aes_controller.sv(33): expression size 32 truncated to fit in target size 4. VERI-1209
 INFO <35901018> - synthesis: ../../../src/keyexpansion_controller.sv(1): compiling module keyexpansion_controller. VERI-1018
 INFO <35901018> - synthesis: ../../../src/keyexpansion.sv(8): compiling module keyexpansion. VERI-1018
 INFO <35901018> - synthesis: ../../../src/rotword.sv(1): compiling module rotword. VERI-1018
@@ -249,6 +253,10 @@ INFO <35901018> - synthesis: ../../../src/addroundkey.sv(8): compiling module ad
 <A name="lse_parameter"></A><B><U><big>Parameter Setting</big></U></B>
 
 [Parameter Setting Section Start]
+
+	[Parameter Settings for Instance(s): hf_osc]
+	(Module: HSOSC)
+		CLKHF_DIV                 2'b01
 
 	[Parameter Settings for Instance(s): reg1]
 	(Module: flopen)
@@ -276,7 +284,6 @@ WARNING <1009991> - synthesis: ../../../src/sbox_sync.sv(14): initial value for 
 
 
 
-WARNING <35002062> - synthesis: Port rejected for I/O register mapping: clk
 WARNING <35002062> - synthesis: Port rejected for I/O register mapping: sck
 INFO <35002061> - synthesis: Port accepted for I/O register mapping: sdi
 WARNING <35002062> - synthesis: Port rejected for I/O register mapping: sdo
@@ -291,10 +298,11 @@ INFO <35002039> - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for Thunde
 Number of register bits => 823 of 5280 (15 % )
 EBR_B => 2
 FD1P3XZ => 823
-IB => 4
+HSOSC_CORE => 1
+IB => 3
 INV => 1
 IOL_B => 1
-LUT4 => 1166
+LUT4 => 1163
 OB => 2
 ################### End Area Report ##################
 Number of odd-length carry chains : 0
@@ -306,22 +314,22 @@ Number of even-length carry chains : 0
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 2
-  Net : clk_c, loads : 0
   Net : sck_c, loads : 1
+  Net : int_clk, loads : 0
 Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : core/advance_state, loads : 206
-  Net : core/sel_0__N_135, loads : 137
-  Net : core/keyexpansion_controller/n1752, loads : 134
-  Net : core/keyexpansion_controller/n443, loads : 133
-  Net : core/sel[0], loads : 132
-  Net : core/sel[1], loads : 132
+  Net : core/keyexpansion_controller/sel_0__N_779, loads : 260
+  Net : core/keyexpansion_controller/n1747, loads : 134
+  Net : core/aes_controller/en, loads : 133
+  Net : core/keyexpansion_controller/n442, loads : 133
+  Net : core/aes_controller/advance, loads : 132
+  Net : core/cipher_core/sel[1], loads : 132
+  Net : core/aes_controller/start, loads : 131
+  Net : core/cipher_core/sel_1__N_776, loads : 131
   Net : spi/wasdone, loads : 128
-  Net : n2069, loads : 127
-  Net : core/en, loads : 61
-  Net : core/start_c, loads : 60
+  Net : n2068, loads : 126
 ################### End Clock Report ##################
 
 
@@ -333,13 +341,13 @@ Constraint Summary:
   Total number of constraints dropped: 0
 ###################  End Constraint Report  ######################
 
-Peak Memory Usage: 104 MB
+Peak Memory Usage: 105 MB
 
 --------------------------------------------------------------
 Total CPU Time: 1 secs 
 Total REAL Time: 4 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: f1b3cd31a83e52535083ec6e6b9c0a811dcac9e4
+Checksum -- synthesis -- netlist: 89990e9e9a0d6f1078de416053e23999b54614f1
 
 
 

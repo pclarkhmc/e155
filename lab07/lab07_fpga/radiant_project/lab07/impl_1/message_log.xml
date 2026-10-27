@@ -777,6 +777,14 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v(756): </Dynamic>
+            <Dynamic>HSOSC(CLKHF_DIV=2'b01)</Dynamic>
+            <Navigation>C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v</Navigation>
+            <Navigation>756</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
             <Dynamic>C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_spi.sv(8): </Dynamic>
             <Dynamic>aes_spi</Dynamic>
             <Navigation>C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_spi.sv</Navigation>
@@ -791,13 +799,21 @@
             <Navigation>20</Navigation>
         </Message>
         <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_controller.sv(1): </Dynamic>
+            <Dynamic>aes_controller</Dynamic>
+            <Navigation>C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_controller.sv</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
             <ID>35901209</ID>
             <Severity>16</Severity>
-            <Dynamic>C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv(49): </Dynamic>
+            <Dynamic>C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_controller.sv(33): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>4</Dynamic>
-            <Navigation>C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_core.sv</Navigation>
-            <Navigation>49</Navigation>
+            <Navigation>C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/src/aes_controller.sv</Navigation>
+            <Navigation>33</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -983,6 +999,14 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v(756): </Dynamic>
+            <Dynamic>HSOSC(CLKHF_DIV=2'b01)</Dynamic>
+            <Navigation>C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v</Navigation>
+            <Navigation>756</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
             <Dynamic>../../../src/aes_spi.sv(8): </Dynamic>
             <Dynamic>aes_spi</Dynamic>
             <Navigation>../../../src/aes_spi.sv</Navigation>
@@ -997,13 +1021,21 @@
             <Navigation>20</Navigation>
         </Message>
         <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>../../../src/aes_controller.sv(1): </Dynamic>
+            <Dynamic>aes_controller</Dynamic>
+            <Navigation>../../../src/aes_controller.sv</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
             <ID>35901209</ID>
             <Severity>16</Severity>
-            <Dynamic>../../../src/aes_core.sv(49): </Dynamic>
+            <Dynamic>../../../src/aes_controller.sv(33): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>4</Dynamic>
-            <Navigation>../../../src/aes_core.sv</Navigation>
-            <Navigation>49</Navigation>
+            <Navigation>../../../src/aes_controller.sv</Navigation>
+            <Navigation>33</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -1185,11 +1217,6 @@
             <Severity>16</Severity>
             <Dynamic>../../../src/sbox_sync.sv(14): initial value for RAM 'sbox_original_ramnet' must be preserved to avoid dangling nets after RAM blasting
 </Dynamic>
-        </Message>
-        <Message>
-            <ID>35002062</ID>
-            <Severity>16</Severity>
-            <Dynamic>clk</Dynamic>
         </Message>
         <Message>
             <ID>35002062</ID>

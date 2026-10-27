@@ -23,6 +23,9 @@ if {[file exists {C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant
   file copy -force -- {C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/impl_1/lab07_impl_1_syn.udb} {C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/impl_1/incr/postsyn.udb}
   file copy -force -- {C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/impl_1/lab07_impl_1_map.udb} {C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/impl_1/incr/postmap.udb}
   file copy -force -- {C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/impl_1/lab07_impl_1.udb} {C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/impl_1/incr/postpar.udb}
+  if [file exists {C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/pdc.pdc}] {
+    file copy -force -- {C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/pdc.pdc} {C:/Users/pclark/Documents/GitHub/e155/lab07/lab07_fpga/radiant_project/lab07/impl_1/incr/lastrun.pdc}
+  }
 }
 
 } out]} {
