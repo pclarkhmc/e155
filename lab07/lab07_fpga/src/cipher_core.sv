@@ -10,7 +10,7 @@ module cipher_core(
 
 	logic [127:0] s1, s2, s3, s4, s5, s6;
 	logic [1:0] sel;
-	// Per round logic: control signals
+	// Per round logic / sel signal
 	always_comb begin
 		if (round == 0)
 			begin

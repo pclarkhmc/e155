@@ -11,7 +11,7 @@ module aes(
            output logic done);
 		   
 		   
-	// declare an internal clock of 48 Mhz
+	// declare an internal clock of 24 Mhz
 	logic int_clk;
 	HSOSC #(.CLKHF_DIV(2'b01))
 		 hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(int_clk));

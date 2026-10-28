@@ -10,7 +10,7 @@ module keyexpansion_controller(
 	logic [3:0] old_round;
 	logic start, done;
 	always_ff @(posedge clk)
-		if (reset) old_round <= 4'hF;	// forces a start after reset
+		if (reset) old_round <= 4'hF;	// cause a start after reset
 		else old_round <= round;
 	assign start = (round != old_round);
 	
@@ -18,6 +18,7 @@ module keyexpansion_controller(
 	logic [127:0] new_key;
 	keyexpansion keyexpansion1(.clk(clk), .reset(start | reset), .oldkey(key_out), .round(round), .newkey(new_key), .done(done));
 	
+	// key ready logic
 	// load key once per round
 	always_ff @(posedge clk)
 		// on reset, key not ready

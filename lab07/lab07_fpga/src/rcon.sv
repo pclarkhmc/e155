@@ -14,7 +14,7 @@ module rcon(
 			8 : y = 32'h80000000;
 			9 : y = 32'h1b000000;
 			10 : y = 32'h36000000;
-			default: y = 32'h00000000; // Catch-all condition
+			default: y = 32'h00000000;
 		endcase
 	end
 endmodule

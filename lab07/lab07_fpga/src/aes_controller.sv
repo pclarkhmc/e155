@@ -12,9 +12,9 @@ module aes_controller(
 	logic old_load;
 	logic en;
 	
-		// control signals
+	// control signals
 	assign start = old_load & ~load; // falling edge of load
-	assign en = cypher_done && (round != 0) && (round < 10);
+	assign en = cypher_done && (round != 0) && (round < 10); // increase round when done
 
 	always_ff @(posedge clk) begin
 		// track load
